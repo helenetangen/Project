@@ -1,0 +1,79 @@
+
+\documentclass[pdftex,10pt,b5paper,twoside]{book}
+\usepackage[lmargin=25mm,rmargin=25mm,tmargin=27mm,bmargin=30mm]{geometry}
+
+%\documentclass[pdftex,10pt,b5paper,twoside]{book}
+\usepackage{style}
+ %\usepackage[lmargin=25mm,rmargin=25mm,tmargin=27mm,bmargin=30mm]{geometry}
+%\usepackage{geometry}
+%\usepackage[top=3cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+
+
+
+\usepackage[sc]{titlesec}
+\titleformat{\chapter}[display]
+ 	     {\Huge\upshape\normalfont\bfseries}{\chaptertitlename\ \thechapter}{12pt}{\Huge\scshape}
+ 
+ \usepackage{svg}
+
+\renewcommand{\eqref}{\ref} % Geophysics format! Not AMS
+\begin{document}
+%
+\input{titlepage}
+%
+
+\pagestyle{empty}
+
+
+\vspace*{12cm}
+\begin{flushleft}
+Jean-Michael Poudroux:  \textit{Bivariate analysis of the homogeneous plane-wave assumption in Magnetotelluric Theory: Applied on two Case Studies in the North Sea and Barents Sea}, June 2015\\
+ 
+ Supervisors:\\
+  Rune Mittet $\&$ Vidar Markhus, Electromagnetic Geoservices  ASA (EMGS) \\
+  Arne Brataas, NTNU\\ 
+\end{flushleft}
+\clearpage
+\newpage
+%\input{acknowledgements}
+% 
+% 
+%\clearpage 
+%\newpage
+% \input{abstract}
+ 
+
+
+% \hypersetup{linkcolor=black} 
+ \tableofcontents 
+
+% optional
+% \newpage
+% \listoffigures
+% \newpage
+% \listoftables
+ 
+ \hypersetup{linkcolor=blue} %this gives blue reference links
+ %\hypersetup{citecolor=gray}
+%\listoftodos
+
+
+\pagestyle{fancy}
+%\rhead{\scshape Chapter. \thechapter }
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%\fancyhf
+%
+%%\newpage
+\input{chapter_1}
+\input{chapter_2}
+%Create more chapter_n.tex files
+%\input{chapter_3}
+%\input{chapter_4}
+%\input{chapter_5}
+
+\bibliographystyle{apalike}
+
+\bibliography{mybib}{}
+
+\end{document} 
