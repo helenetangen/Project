@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  19 OCT 2015 13:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  19 OCT 2015 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -522,12 +522,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
@@ -536,13 +536,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./Wind Farm Layout Optimization and the Genetic Algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 3684 strings out of 493117
- 55885 string characters out of 6135434
- 124428 words of memory out of 5000000
- 7105 multiletter control sequences out of 15000+600000
+ 3685 strings out of 493117
+ 55920 string characters out of 6135434
+ 124436 words of memory out of 5000000
+ 7106 multiletter control sequences out of 15000+600000
  5944 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,5n,38p,1160b,115s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,5n,38p,1227b,115s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/te
 xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/tex
 live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
@@ -552,7 +552,7 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/
 4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
 Output written on "Wind Farm Layout Optimization and the Genetic Algorithm.pdf"
- (1 page, 73129 bytes).
+ (1 page, 73336 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
