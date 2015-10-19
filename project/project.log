@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  14 OCT 2015 10:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  19 OCT 2015 14:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -937,7 +937,7 @@ LaTeX Info: Redefining \nameref on input line 20.
 \openout4 = `project.out'.
 
  (./titlepage.tex
-<logo_ntnu_eng.png, id=7, 449.5194pt x 98.0463pt>
+<logo_ntnu_eng.png, id=31, 449.5194pt x 98.0463pt>
 File: logo_ntnu_eng.png Graphic file (type png)
  <use logo_ntnu_eng.png>
 Package pdftex.def Info: logo_ntnu_eng.png used on input line 12.
@@ -989,11 +989,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Warning: Font shape `T1/lmr/bx/sc' undefined
 (Font)              using `T1/lmr/bx/n' instead on input line 48.
 
-No file project.toc.
+(./project.toc)
 \tf@toc=\write5
 \openout5 = `project.toc'.
 
-(./chapter_1 [3
+ (./chapter_1 [3
 
 
 ] [4
@@ -1012,39 +1012,33 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 79.
  (./project.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 79.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 79.
+Package rerunfilecheck Info: File `project.out' has not changed.
+(rerunfilecheck)             Checksum: 858BD805CD70C969D84F50FA8AEADD0F;373.
 
-
-Package rerunfilecheck Warning: File `project.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `project.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  858BD805CD70C969D84F50FA8AEADD0F;373.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 79.
  ) 
 Here is how much of TeX's memory you used:
- 20239 strings out of 493117
- 377651 string characters out of 6135434
- 534085 words of memory out of 5000000
- 23249 multiletter control sequences out of 15000+600000
- 44129 words of font info for 40 fonts, out of 8000000 for 9000
+ 20250 strings out of 493117
+ 377784 string characters out of 6135434
+ 535085 words of memory out of 5000000
+ 23257 multiletter control sequences out of 15000+600000
+ 47124 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,11n,94p,439b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
 texlive/2014/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
-e1/public/lm/lmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/l
-m/lmri10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmro10.p
-fb>
-Output written on project.pdf (7 pages, 168527 bytes).
+exmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2014/texmf-dist/
+fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
+1/public/lm/lmcsc10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+lm/lmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmri10.p
+fb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/lm/lmro10.pfb>
+Output written on project.pdf (7 pages, 193352 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  16 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
