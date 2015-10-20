@@ -38,8 +38,19 @@ where $P_{total}$ is the total energy produced in one year, $cost_{total}$ is a 
 \end{figure}
 
 
-The simulation was run for 2500 generations with the migration strategy that 3.3\% of the individuals with highest fitness was selected as migrants, to replace the individuals with lowest fitness in the new population every 20th generation.
+The simulation was run for 2500 generations with the migration strategy that 3.3\% of the individuals with highest fitness was selected as migrants, to replace the individuals with lowest fitness in the new population every 20th generation. \\
 
+
+\noindent \c{S}i\c{s}bot et al. published a case study of wind turbine placement on a wind farm at the Island G{\"o}k\c{c}eada, at the north east of the Aegean Sea \textcolor{red}{[\c{S}i\c{s}bot et al., 2010]}. A distributed genetic algorithm was used, but, unlike Huang, the individuals were evaluated based on a multiple objective functions; one that measures the total cost (installation and operational), and one that measure total power production. \c{S}i\c{s}bot et al. argue that in an environment with changing demands, the use of a multi-objective function gives the decision-makers the opportunity to evaluate the different designs based on cost and power production separately, without ill-informed, randomly generated weights.
+
+The selection process used is a controlled, elitist process, meaning that not only the fittest, but also some individuals that can spread diversity to the population are selected for reproduction. The genetic algorithm returns a set of Pareto optimal solutions; a set of solutions that are not dominated by any other solution in the set. Stated more formally, solutions \textbf{y} is said to dominate solution \textbf{x} if
+
+\begin{equation}
+\forall i: f_i(\textbf{x}) \leq f_i(\textbf{y}) \hspace{1mm} and \hspace{1mm} \exists j: f_j(\textbf{x}) < f_j(\textbf{y}) 
+\label{Dominated solutions}
+\end{equation}
+
+where $f_i$ is objective function \textcolor{red}{[Murata et al., 2001]}.
 
 \begin{thebibliography}{100} % 100 is a random guess of the total number of
 
