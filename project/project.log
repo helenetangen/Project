@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  20 OCT 2015 15:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  20 OCT 2015 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -370,63 +370,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
 [1
 
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+<images/GA.png, id=9, 577.15625pt x 387.4475pt>
+File: images/GA.png Graphic file (type png)
+ <use images/GA.png>
+Package pdftex.def Info: images/GA.png used on input line 32.
+(pdftex.def)             Requested size: 288.57741pt x 193.72327pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 63.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 63.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 63.
+<images/"Island Model".png, id=11, 485.815pt x 408.52625pt>
+File: images/"Island Model".png Graphic file (type png)
+
+<use images/"Island Model".png>
+Package pdftex.def Info: images/"Island Model".png used on input line 70.
+(pdftex.def)             Requested size: 242.9069pt x 204.26262pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<images/"Cellular Model".png, id=12, 455.7025pt x 395.4775pt>
+File: images/"Cellular Model".png Graphic file (type png)
+
+<use images/"Cellular Model".png>
+Package pdftex.def Info: images/"Cellular Model".png used on input line 82.
+(pdftex.def)             Requested size: 227.85068pt x 197.73827pt.
+ [2]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \vbox (57.78586pt too high) has occurred while \output is active []
+
+
+[3 <./images/GA.png> <./images/Island Model.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-[2] <images/"Ring Topology".png, id=17, 628.3475pt x 328.22626pt>
+[4 <./images/Cellular Model.png>]
+<images/"Ring Topology".png, id=29, 628.3475pt x 328.22626pt>
 File: images/"Ring Topology".png Graphic file (type png)
 
 <use images/"Ring Topology".png>
-Package pdftex.def Info: images/"Ring Topology".png used on input line 30.
+Package pdftex.def Info: images/"Ring Topology".png used on input line 106.
 (pdftex.def)             Requested size: 188.50569pt x 98.46863pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
-[3 <./images/Ring Topology.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 52--12
+[5 <./images/Ring Topology.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 128--12
 
  []
 
-[4] (./project.aux) ) 
+[6] [7] (./project.aux) ) 
 Here is how much of TeX's memory you used:
- 1770 strings out of 493117
- 24503 string characters out of 6135434
- 84878 words of memory out of 5000000
- 5218 multiletter control sequences out of 15000+600000
- 8242 words of font info for 29 fonts, out of 8000000 for 9000
+ 1790 strings out of 493117
+ 24942 string characters out of 6135434
+ 85912 words of memory out of 5000000
+ 5235 multiletter control sequences out of 15000+600000
+ 8847 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,23p,1350b,264s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-msy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
-i12.pfb>
-Output written on project.pdf (4 pages, 108762 bytes).
+ 38i,7n,23p,1345b,266s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti12.pfb>
+Output written on project.pdf (7 pages, 175302 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 69 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
