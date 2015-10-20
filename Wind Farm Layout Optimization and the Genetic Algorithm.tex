@@ -26,7 +26,7 @@ Objective = \frac{1}{P_{total}}w_1 + \frac{cost_{total}}{P_{total}}w_2
 where $P_{total}$ is the total energy produced in one year, $cost_{total}$ is a function of the number of wind turbines installed, and $w_1$ and $w_2$ are weights. In the current study, $w_1$ was kept small so that the focus would be on lowest cost per energy produced. The model was tested on a single type of turbines in three different scenarios (a) constant wind direction and intensity, (b) constant wind intensity, but from a 360$^{\circ}$ variable direction, and (c) a realistic wind scenario. This work laid the foundation of numerous studies of wind farm optimization using genetic algorithms. The genetic algorithms have been optimized, and they now run on much more realistic wind scenarios, and cost models.\\
 
 
-Huang improved the results of Mosetti et al. by using a distributed genetic algorithm \textcolor{red}{[Huang, 2007]}. Huang stated that using a distributed genetic algorithm will not only decrease the computation time by using parallelism, but also achieve higher fitness because more of the solution space will be explored. The distributed algorithm distributed the population of 600 individuals among 20 demes, using a ring-topology as shown in figure \ref{Ring Topology}.
+\noindent Huang improved the results of Mosetti et al. by using a distributed genetic algorithm \textcolor{red}{[Huang, 2007]}. Huang stated that using a distributed genetic algorithm will not only decrease the computation time by using parallelism, but also achieve higher fitness because more of the solution space will be explored. The distributed algorithm distributed the population of 600 individuals among 20 demes, using a ring-topology as shown in figure \ref{Ring Topology}.
 
 
 \begin{figure}[h!]
@@ -39,6 +39,15 @@ Huang improved the results of Mosetti et al. by using a distributed genetic algo
 
 
 The simulation was run for 2500 generations with the migration strategy that 3.3\% of the individuals with highest fitness was selected as migrants, to replace the individuals with lowest fitness in the new population every 20th generation.
+
+
+\begin{thebibliography}{100} % 100 is a random guess of the total number of
+
+\bibitem{mosetti} Mosetti G., Poloni C., and Diviacco B., ``Optimization of wind turbine positioning in large windfarms by means of genetic algorithm," \emph{Journal of Wind Engineering and Industrial Aerodynamics}, Vol. 51, pp. 105-116, 1994.
+
+\bibitem{huang} Huang, H. S., ''Distributed Genetic Algorithm for Optimization of Wind Farm Annual Profits,''\emph{International conference on Intelligent Systems Applications to Power Systems}, 2007.
+
+\end{thebibliography}
 
 
 \end{document}
