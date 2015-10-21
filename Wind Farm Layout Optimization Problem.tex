@@ -15,6 +15,7 @@
 \section{The wind farm layout optimization problem}
 
 
+This section defines the wind farm layout optimization problem and explains the key factors that makes the problem so complex. 
 %Brief sentece about why this section is included.
 
 
@@ -32,13 +33,10 @@ An overview of the wind farm layout optimization problem is presented by Samoran
 \subsection{The wake effect}
 
 
-Different mathematical models, that vary in both complexity and quality, exists to models to the wake effect. However, most research within the field of wind farm layout optimization use the Jensen model \textcolor{red}{[Jensen, 1983]}. The Jensen model is preferred both for its proven ability to accurately model the wind speed reduction caused by the wake effect, but also because of its simplicity. The Jensen model is explained thoroughly below.
+Different mathematical models, that vary in both complexity and quality, exists to models to the wake effect. However, most research within the field of wind farm layout optimization use the Jensen model \textcolor{red}{[Jensen, 1983]}. The Jensen model is preferred both for its proven ability to accurately model the wind speed reduction caused by the wake effect, but also because of its simplicity. The Jensen model is explained below.
 
 
 \subsubsection{The Jensen model}
-
-
-In figure \ref{Wake effect} the small black rectangle represents a wind turbine, and the blue area behind it illustrates the area that is affected by the wake created by the wind turbine.
 
 
 \begin{figure}[h!]
@@ -48,6 +46,31 @@ In figure \ref{Wake effect} the small black rectangle represents a wind turbine,
 \label{Wake effect}
 \end{center}
 \end{figure}
+
+
+In figure \ref{Wake effect} the small black rectangle represents a wind turbine, and the blue area behind it illustrates the area that is affected by the wake created by the wind turbine. In the figure, the wind is blowing from left to right with uniform wind speed of $U_0$. As the wind hits the wind turbine it creates a wake of turbulence behind it so that the wind speed at distance $x$ behind the wind turbine is $U < U_0$. The area behind the wind turbine that is affected by the wake at distance $x$ has the radius $r_1$ where $r_r$ is the rotor radius and $\alpha$ is the entrainment constant constant which decides how fast the wake expands
+
+
+\begin{equation}
+\alpha = \frac{0.5}{ln\frac{z}{z_0}}
+\label{Alpha}
+\end{equation}
+
+where $z$ is the hub height of the wind turbine and $z_0$ is a surface roughness constant. The wind speed $U$ is therefore \textcolor{red}{Jean help!}
+
+
+\begin{equation}
+U = U_0\left(1 - \frac{2a}{1 + \alpha\left(\frac{x}{r_1}\right)}\right)
+\label{Alpha}
+\end{equation}
+
+
+where $a$ is called the axial induction factor, and $C_T$ thrust coefficient.
+
+
+\begin{equation}
+a = 0.5 \left(1 - \sqrt{1 - C_T}\right)
+\end{equation}
 
 
 \end{document}
