@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  28 OCT 2015 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  28 OCT 2015 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,40 +498,79 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 <"Mutation".png, id=1, 487.8225pt x 257.96375pt>
 File: "Mutation".png Graphic file (type png)
  <use "Mutation".png>
-Package pdftex.def Info: "Mutation".png used on input line 46.
+Package pdftex.def Info: "Mutation".png used on input line 49.
 (pdftex.def)             Requested size: 97.56276pt x 51.59183pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Mutat
-ion.png>] [2] (./Genetic Algorithm.aux) ) 
+ion.png>] <"Single point crossover".png, id=12, 487.8225pt x 468.75125pt>
+File: "Single point crossover".png Graphic file (type png)
+
+<use "Single point crossover".png>
+Package pdftex.def Info: "Single point crossover".png used on input line 68.
+(pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
+
+<"Double point crossover".png, id=13, 487.8225pt x 468.75125pt>
+File: "Double point crossover".png Graphic file (type png)
+
+<use "Double point crossover".png>
+Package pdftex.def Info: "Double point crossover".png used on input line 80.
+(pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 90.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
+ [2 <./Single point crossover.png> <./Double point crossover.png>]
+LaTeX Font Info:    Try loading font information for U+msa on input line 92.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 92.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [3]
+(./Genetic Algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 3672 strings out of 493117
- 55281 string characters out of 6135434
- 124436 words of memory out of 5000000
- 7103 multiletter control sequences out of 15000+600000
- 5158 words of font info for 19 fonts, out of 8000000 for 9000
+ 3731 strings out of 493117
+ 56466 string characters out of 6135434
+ 125452 words of memory out of 5000000
+ 7143 multiletter control sequences out of 15000+600000
+ 7203 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,38p,955b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on "Genetic Algorithm.pdf" (2 pages, 60412 bytes).
+ 38i,7n,38p,1132b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb>
+Output written on "Genetic Algorithm.pdf" (3 pages, 134334 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
