@@ -64,6 +64,18 @@ Genetic algorithms are probabilistic search algorithms inspired by evolution. By
 
 
 \subsubsection{Representation}%Search space
+In genetics, they call an organisms hereditary information for its genotype, and its observable properties its phenotype. For example, the hereditary information in your genes (genotype) are responsible for your eye color (phenotype).\\
+
+\noindent The genetic search algorithm works on genotypes represented as bit strings. Goldberg explained this with a simple example. Let's say the objective function that we want to find an optimal solution for is $x^2$ for $x \in \{0, 31\}$. Then we can generate genotypes for the random solutions using bit strings of size 5, each representing a phenotype value between 0 and 31. Figure \ref{Representation} displays the genotype and phenotype for four randomly generated individuals for two generations. Here, the phenotypes are just the genotypes on decimal form, but in other problems the phenotype could be everything from eye color to a wind farm.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.25]{images/"Representation"}
+\caption{Genotypes and phenotypes for four individuals in two generations. On the left side is the randomly generated first generation, and on the right side is the next generation after selection, mutation and crossover operations. The fitness function used is $x^2$ and as shown the average fitness of the populations increases from 126 to 261 in only one generation.}
+\label{Representation}
+\end{center}
+\end{figure}
 
 
 \subsubsection{Operations}
