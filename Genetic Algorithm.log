@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  28 OCT 2015 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  28 OCT 2015 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -388,35 +388,47 @@ Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
 \c@subfigure=\count101
 \c@subtable=\count102
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box52
+\beforetitleunit=\skip45
+\aftertitleunit=\skip46
+\ttl@plus=\dimen129
+\ttl@minus=\dimen130
+\ttl@toksa=\toks19
+\titlewidth=\dimen131
+\titlewidthlast=\dimen132
+\titlewidthfirst=\dimen133
+)
 (./Genetic Algorithm.aux)
 \openout1 = `"Genetic Algorithm.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
-\scratchdimen=\dimen129
-\scratchbox=\box52
+\scratchdimen=\dimen134
+\scratchbox=\box53
 \nofMPsegments=\count104
 \nofMParguments=\count105
-\everyMPshowfont=\toks19
+\everyMPshowfont=\toks20
 \MPscratchCnt=\count106
-\MPscratchDim=\dimen130
+\MPscratchDim=\dimen135
 \MPnumerator=\count107
 \makeMPintoPDFobject=\count108
-\everyMPtoPDFconversion=\toks20
+\everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -497,80 +509,89 @@ e
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+<"GA".png, id=1, 577.15625pt x 387.4475pt>
+File: "GA".png Graphic file (type png)
+ <use "GA".png>
+Package pdftex.def Info: "GA".png used on input line 52.
+(pdftex.def)             Requested size: 288.57741pt x 193.72327pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-<"Mutation".png, id=1, 487.8225pt x 257.96375pt>
-File: "Mutation".png Graphic file (type png)
- <use "Mutation".png>
-Package pdftex.def Info: "Mutation".png used on input line 49.
-(pdftex.def)             Requested size: 97.56276pt x 51.59183pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Mutat
-ion.png>] <"Single point crossover".png, id=12, 487.8225pt x 468.75125pt>
-File: "Single point crossover".png Graphic file (type png)
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./GA.pn
+g>] <"Mutation".png, id=12, 487.8225pt x 257.96375pt>
+File: "Mutation".png Graphic file (type png)
+ <use "Mutation".png>
+Package pdftex.def Info: "Mutation".png used on input line 81.
+(pdftex.def)             Requested size: 97.56276pt x 51.59183pt.
 
-<use "Single point crossover".png>
-Package pdftex.def Info: "Single point crossover".png used on input line 68.
-(pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
-
-<"Double point crossover".png, id=13, 487.8225pt x 468.75125pt>
-File: "Double point crossover".png Graphic file (type png)
-
-<use "Double point crossover".png>
-Package pdftex.def Info: "Double point crossover".png used on input line 80.
-(pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 90.
+<"Single point crossover".png, id=13, 487.8225pt x 468.75125pt>
+File: "Single point crossover".png Graphic file (type png)
+
+<use "Single point crossover".png>
+Package pdftex.def Info: "Single point crossover".png used on input line 100.
+(pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./Mutation.png>]
+<"Double point crossover".png, id=18, 487.8225pt x 468.75125pt>
+File: "Double point crossover".png Graphic file (type png)
+
+<use "Double point crossover".png>
+Package pdftex.def Info: "Double point crossover".png used on input line 112.
+(pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 122.
+
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 90.
- [2 <./Single point crossover.png> <./Double point crossover.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 92.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
+LaTeX Font Info:    Try loading font information for U+msa on input line 122.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 92.
+LaTeX Font Info:    Try loading font information for U+msb on input line 122.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [3]
-(./Genetic Algorithm.aux) ) 
+) [3 <./Single point crossover.png> <./Double point crossover.png>] (./Genetic 
+Algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 3731 strings out of 493117
- 56466 string characters out of 6135434
- 125452 words of memory out of 5000000
- 7143 multiletter control sequences out of 15000+600000
+ 4016 strings out of 493117
+ 60139 string characters out of 6135434
+ 130402 words of memory out of 5000000
+ 7423 multiletter control sequences out of 15000+600000
  7203 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,38p,1132b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti10.pfb>
-Output written on "Genetic Algorithm.pdf" (3 pages, 134334 bytes).
+ 38i,7n,38p,1163b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb>
+Output written on "Genetic Algorithm.pdf" (3 pages, 158270 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
