@@ -63,22 +63,27 @@ Genetic algorithms are probabilistic search algorithms inspired by evolution. By
 \subsubsection{Representation}%Search space
 In genetics, they call an organisms hereditary information for its genotype, and its observable properties its phenotype. For example, the hereditary information in your genes (genotype) are responsible for your eye color (phenotype).\\
 
-\noindent The genetic search algorithm works on genotypes represented as bit strings. Goldberg explained this with a simple example. Let's say the objective function that we want to find an optimal solution for is $x^2$ for $x \in \{0, 31\}$. Then we can generate genotypes for the random solutions using bit strings of size 5, each representing a phenotype value between 0 and 31. Figure \ref{Representation} displays the genotype and phenotype for four randomly generated individuals for two generations. Here, the phenotypes are just the genotypes on decimal form, but in other problems the phenotype could be everything from eye color to a wind farm.
+\noindent The genetic search algorithm works on genotypes represented as bit strings. Goldberg explained this with a simple example. Let's say the objective function that we want to find an optimal solution for is $x^2$ for $x \in \{0, 31\}$. Then we can generate genotypes for the random solutions using bit strings of size 5, each representing a phenotype value between 0 and 31. Figure \ref{Representation} displays the genotype and phenotype for four randomly generated individuals for two generations. Here, the phenotypes are just the genotypes on decimal form, but in other problems the phenotype could be everything from eye color to a wind farm.\\
 
 
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.25]{images/"Representation"}
-\caption{Genotypes and phenotypes for four individuals in two generations. On the left side is the randomly generated first generation, and on the right side is the next generation after selection, mutation and crossover operations. The fitness function used is $x^2$ and as shown the average fitness of the populations increases from 126 to 261 in only one generation.}
+\includegraphics[scale=0.2]{images/"Representation"}
+\caption{Genotypes and phenotypes for four individuals in two generations. On the left side is the randomly generated first generation, and on the right side is the next generation after selection, mutation (red square) and crossover operations. The fitness function used is $x^2$ and as shown the average fitness of the populations increases from 126 to 261 in only one generation.}
 \label{Representation}
 \end{center}
 \end{figure}
 
 
+\noindent The different colors of each individual in figure \ref{Representation} is just there so that it is easy to understand the genetic operations. The operations will be explained in the section below, for now just accept that some fitness-based selection and genetic operations are performed on the individuals to the left to produce the individuals to the right. As you can see the average phenotype values increases from generation 0 to generation 1, and the average fitness, which is just the average of the squared phenotype values, increases form 126 yo 261 in only one generation. 
+
+
 \subsubsection{Operations}
+The sections above explain that the genetic algorithm uses selection of the fittest and genetic operations, but not exactly how this work. This section will explain different selection strategies and the most common genetic operations -  mutation and crossover.
 
 
 \paragraph{Selection}
+
 % Elitist selection
 % Controlled elitist
 % Roulette wheel selection

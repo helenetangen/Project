@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  28 OCT 2015 19:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  28 OCT 2015 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -541,26 +541,29 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
 <images/"Representation".png, id=11, 1290.8225pt x 730.73pt>
 File: images/"Representation".png Graphic file (type png)
 
 <use images/"Representation".png>
 Package pdftex.def Info: images/"Representation".png used on input line 71.
-(pdftex.def)             Requested size: 322.70483pt x 182.68205pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+(pdftex.def)             Requested size: 258.15993pt x 146.1434pt.
+ [2 <./images/Representation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
-[2 <./images/Representation.png>]
 <images/"Mutation".png, id=20, 487.8225pt x 257.96375pt>
 File: images/"Mutation".png Graphic file (type png)
 
 <use images/"Mutation".png>
-Package pdftex.def Info: images/"Mutation".png used on input line 97.
+Package pdftex.def Info: images/"Mutation".png used on input line 102.
 (pdftex.def)             Requested size: 97.56276pt x 51.59183pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
@@ -570,7 +573,7 @@ File: images/"Single point crossover".png Graphic file (type png)
 
 <use images/"Single point crossover".png>
 Package pdftex.def Info: images/"Single point crossover".png used on input line
- 116.
+ 121.
 (pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
 
 <images/"Double point crossover".png, id=26, 487.8225pt x 468.75125pt>
@@ -578,27 +581,23 @@ File: images/"Double point crossover".png Graphic file (type png)
 
 <use images/"Double point crossover".png>
 Package pdftex.def Info: images/"Double point crossover".png used on input line
- 128.
+ 133.
 (pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 138.
+[4 <./images/Single point crossover.png> <./images/Double point crossover.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 138.
- [4 <./images/Single point crossover.png> <./images/Double point crossover.png>
-] [5]
-(./Genetic Algorithm.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
+ [5]
+(./Genetic Algorithm.aux) ) 
 Here is how much of TeX's memory you used:
  4023 strings out of 493117
  60419 string characters out of 6135434
@@ -607,14 +606,15 @@ Here is how much of TeX's memory you used:
  7203 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,38p,1163b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "Genetic Algorithm.pdf" (5 pages, 226851 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti10.pfb>
+Output written on "Genetic Algorithm.pdf" (5 pages, 227483 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
