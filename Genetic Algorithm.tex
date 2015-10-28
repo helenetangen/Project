@@ -47,10 +47,6 @@ The genetic algorithm (GA) was first introduced by John Henry Holland, even thou
 \subsection{Simple Genetic Algorithms (SGAs)}
 Genetic algorithms are probabilistic search algorithms inspired by evolution. By performing selection based on survival of the fittest and genetic operations, genetic algorithms are able to solve problems that are too complex to be modeled mathematically. By utilizing evolution as search strategy, genetic algorithms are able to find sophisticated solutions to problems where the structure of the solution is complex, maybe even unknown. \\
 
-
-\noindent Genetic algorithms starts out by randomly generating a set of solutions to a problem, the set of solutions constitutes the population of the first generation of solutions. Next, each individual in the initial population is evaluated based on some predetermined objective function. Based on their objective function values, the fittest individuals are selected for reproduction, meaning that they become the parents of the next generation. By utilizing different genetic operations on the parent solutions a new child population is generated, hopefully with higher average fitness than the previous population since it is based on the fittest individuals from the previous population, and the process repeats itself until the population has found an desirable solution - a population of high-fitness solutions. The different phases of the genetic algorithm is displayed in figure \ref{GA}.\\
-
-
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{images/"GA"}
@@ -59,6 +55,7 @@ Genetic algorithms are probabilistic search algorithms inspired by evolution. By
 \end{center}
 \end{figure}
 
+\noindent Genetic algorithms starts out by randomly generating a set of solutions to a problem, the set of solutions constitutes the population of the first generation of solutions. Next, each individual in the initial population is evaluated based on some predetermined objective function. Based on their objective function values, the fittest individuals are selected for reproduction, meaning that they become the parents of the next generation. By utilizing different genetic operations on the parent solutions a new child population is generated, hopefully with higher average fitness than the previous population since it is based on the fittest individuals from the previous population, and the process repeats itself until the population has found an desirable solution - a population of high-fitness solutions. The different phases of the genetic algorithm is displayed in figure \ref{GA}.\\
 
 \noindent Two key properties are crucial for the genetic algorithm to be useful, (a) there has to be a way to measure the fitness of the individuals, (b) there need to be a way to represent the individuals so that genetic operations can be performed on them. The section below discuss how individuals usually are represented for genetic algorithms.
 
