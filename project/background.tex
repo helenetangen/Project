@@ -76,8 +76,8 @@ The genetic algorithm (GA) was first introduced by John Henry Holland, even thou
 % Summary
 
 
-\subsection{Simple Genetic Algorithm}
-
+\subsection{Simple Genetic Algorithms (SGAs)}
+Genetic algorithms are probabilistic search algorithms inspired by evolution. By performing selection based on survival of the fittest and genetic operations, genetic algorithms are able to solve problems that are too complex to be modeled mathematically. By utilizing evolution as search strategy, genetic algorithms are able to find sophisticated solutions to problems where the structure of the solution is complex, maybe even unknown. \\
 
 \begin{figure}[h!]
 \begin{center}
@@ -87,19 +87,62 @@ The genetic algorithm (GA) was first introduced by John Henry Holland, even thou
 \end{center}
 \end{figure}
 
+\noindent Genetic algorithms starts out by randomly generating a set of solutions to a problem, the set of solutions constitutes the population of the first generation of solutions. Next, each individual in the initial population is evaluated based on some predetermined objective function. Based on their objective function values, the fittest individuals are selected for reproduction, meaning that they become the parents of the next generation. By utilizing different genetic operations on the parent solutions a new child population is generated, hopefully with higher average fitness than the previous population since it is based on the fittest individuals from the previous population, and the process repeats itself until the population has found an desirable solution - a population of high-fitness solutions. The different phases of the genetic algorithm is displayed in figure \ref{GA}.\\
+
+\noindent Two key properties are crucial for the genetic algorithm to be useful, (a) there has to be a way to measure the fitness of the individuals, (b) there need to be a way to represent the individuals so that genetic operations can be performed on them. The section below discuss how individuals usually are represented for genetic algorithms.
+
 
 \subsubsection{Representation}%Search space
+In genetics, they call an organisms hereditary information for its genotype, and its observable properties its phenotype. For example, the hereditary information in your genes (genotype) are responsible for your eye color (phenotype).\\
+
+\noindent The genetic search algorithm works on genotypes represented as bit strings. Goldberg explained this with a simple example. Let's say the objective function that we want to find an optimal solution for is $x^2$ for $x \in \{0, 31\}$. Then we can generate genotypes for the random solutions using bit strings of size 5, each representing a phenotype value between 0 and 31. Figure \ref{Representation} displays the genotype and phenotype for four randomly generated individuals for two generations. Here, the phenotypes are just the genotypes on decimal form, but in other problems the phenotype could be everything from eye color to a wind farm.\\
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"Representation"}
+\caption{Genotypes and phenotypes for four individuals in two generations. On the left side is the randomly generated first generation, and on the right side is the next generation after selection, mutation (red square) and crossover operations. The fitness function used is $x^2$ and as shown the average fitness of the populations increases from 126 to 261 in only one generation.}
+\label{Representation}
+\end{center}
+\end{figure}
+
+
+\noindent The different colors of each individual in figure \ref{Representation} is just there so that it is easy to understand the genetic operations. The operations will be explained in the section below, for now just accept that some fitness-based selection and genetic operations are performed on the individuals to the left to produce the individuals to the right. As you can see the average phenotype values increases from generation 0 to generation 1, and the average fitness, which is just the average of the squared phenotype values, increases form 126 yo 261 in only one generation. 
 
 
 \subsubsection{Operations}
+The sections above explain that the genetic algorithm uses selection of the fittest and genetic operations, but not exactly how this work. This section will explain different selection strategies and the most common genetic operations -  mutation and crossover.
 
 
 \paragraph{Selection}
-% Elitist selection
-% Controlled elitist
-% Roulette wheel selection
-% Modified roulette wheel
-% Tournament selection
+Selection is the process of selecting which individuals from a given population that will be the parents of the next generation. It can be done in a number of ways, and some of the most popular strategies will be presented here. \\
+
+\noindent The simplest form of selection is called \textit{elitist selection}, meaning that the \textit{n} best individuals from the population are selected as parents for the next generation. This strategy is extremely simple, but unfortunately not very good because choosing only the best individuals each generation often leads to fast convergence of an non-optimal solution. It is important to prioritize exploration, at least in the beginning of the search, otherwise, parts of the search space that could have lead to the optimal solution is cut off too soon. To maintain diversity in the group long enough to find high-fitness solutions \textit{controlled elitist selection} is preferred.\\
+
+\noindent A very popular controlled elitist selection strategy is \textit{tournament selection} \textcolor{red}{[Razali et al., 2011]}. In tournament selection, groups of \textit{n} individuals are randomly drawn from the population and the best (fittest) individual from the group is chosen as the tournament winner, and is therefore selected. Figure \ref{Tournament selection} illustrates how tournament selection works. In the example, \textit{n} is equal to 3, therefore the three individuals with fitness 9, 4 and 6 are randomly drawn from the population. The individual with fitness 9 wins the tournament and is chosen for reproduction.\\
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"Tournament selection"}
+\caption{Tournament selection. A group of three individuals are randomly drawn from the pool of all individuals. The best individual  in the group, the one with fitness 9, is selected for reproduction.\textcolor{red}{[Razali et al., 2011]}}
+\label{Tournament selection}
+\end{center}
+\end{figure}
+
+
+\noindent By varying the value of \textit{n} you can control how much exploration your algorithm should do. If \textit{n} is equal to the population size, this is elitist selection, if \textit{n} is equal to 1 however the search is completely random. This means that low values of \textit{n} leads to more exploration of the search space, and higher values of \textit{n} leads to faster convergence. These properties makes it desirable to vary the value of \textit{n} during the genetic search so that exploration is prioritized at the beginning of the search, while exploitation is prioritized at the end.\\
+
+\noindent Goldberg presents another popular selection process, \textit{roulette wheel selection}. This form of selection uses a roulette wheel where each individual has a slot with size proportional to its fitness. This way, all individuals has a chance of being picked for selection, but the fittest individuals are more likely to be picked. Figure \ref{Roulette wheel selection} presents the roulette wheel for the individuals in figure \ref{Representation}. The yellow individual has a fitness of 18 and therefore a probability of $\frac{18}{40} = 0.45$ of being picked, the blue has the probability of $\frac{11}{40} = 0.275$, the purple $\frac{6}{40} = 0.15$ and the red $\frac{5}{40} = 0.125$. Based on these probabilities the yellow individual was picked twice for selection, the blue and purple one time each, while the red one was not picked at all, and therefore not represented in the next generation. This lead to a new generation of individuals with much higher fitness than the previous one, because of inherited properties from good parent solutions. \textcolor{red}{The colors don't make sense in black and white, need to give numbers to each individual in figure \ref{Representation} and  use them in the explanation, not colors.}
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"Tournament selection"}
+\caption{Roulette wheel selection. [Goldberg, 1989].}
+\label{Roulette wheel selection}
+\end{center}
+\end{figure}
+
 
 \paragraph{Mutation}
 In biology, mutation is defined as a permanent alteration in the DNA sequence that makes up a gene. Mutations vary in size, sometimes just a small base pair of the gene is altered, while other times the mutation can alter large parts of a chromosome. There are many different forms of mutations. Sometimes it can simply mean changing the value of a nucleotide to its complement (nucleotieds are the building blocks of DNA and consists of the values A, C, G and T), other times it can mean insertion of extra nucleotides into the DNA, deleting some of the nucleotides from the DNA, or invertion of nucleotides \textcolor{red}{[P. Compeau, 2014]}. \\
@@ -155,31 +198,6 @@ As in nature, we want individuals of the evolutionary search to inherit features
 
 
 
-\subsection{The Island Model}
-The island model is an extension of the general GA where the initial population of size $N_{total}$ is partitioned into $N_{island}$ such that each island holds a population of size $N_{total} / N_{island}$. The separated populations can then evolve on each island, exploring different solutions, until a migration takes place. A migration is when some individuals from one island migrate to another island. Figure \ref{Island Model} shows an island model consisting of four island where the arrows shows legal migration routes. The topology of the island network and migration routes can take many different forms. 
-
-The advantage of using the island model, as compared to the classical GA is that in the classical GA the population can converge to a non-optimal solution quite fast, because a few individuals can take over the entire population and guide it towards a sub-optimal solution. Using the island model the probability of converging to a sub-optimal solution will decrease because each island can investigate a different part of the solution space. 
-
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.5]{images/"Island Model"}
-\caption{Island Model}
-\end{center}
-\label{Island Model}
-\end{figure}
-
-
-\subsection{The Cellular Model}
-
-
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.5]{images/"Cellular Model"}
-\caption{Cellular Model}
-\end{center}
-\label{Cellular Model}
-\end{figure}
 
 
 \section{Wind Farm Layout Optimization using Genetic Algorithms}
