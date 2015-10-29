@@ -28,6 +28,9 @@
 % Single point crossover
 % Double point crossover
 
+% Questions
+% Tournament selection, tilbakelegg
+
 
 
 \section{Genetic Algorithms}
@@ -83,12 +86,29 @@ The sections above explain that the genetic algorithm uses selection of the fitt
 
 
 \paragraph{Selection}
+Selection is the process of selecting which individuals from a given population that will be the parents of the next generation. It can be done in a number of ways, and some of the most popular strategies will be presented here. \\
 
-% Elitist selection
-% Controlled elitist
+\noindent The simplest form of selection is called \textit{elitist selection}, meaning that the \textit{n} best individuals from the population are selected as parents for the next generation. This strategy is extremely simple, but unfortunately not very good because choosing only the best individuals each generation often leads to fast convergence of an non-optimal solution. It is important to prioritize exploration, at least in the beginning of the search, otherwise, parts of the search space that could have lead to the optimal solution is cut off too soon. To maintain diversity in the group long enough to find high-fitness solutions \textit{controlled elitist selection} is preferred.\\
+
+\noindent A very popular controlled elitist selection strategy is \textit{tournament selection} \textcolor{red}{[Razali et al., 2011]}. In tournament selection, groups of \textit{n} individuals are randomly drawn from the population and the best (fittest) individual from the group is chosen as the tournament winner, and is therefore selected. Figure \ref{Tournament selection} illustrates how tournament selection works. In the example, \textit{n} is equal to 3, therefore the three individuals with fitness 9, 4 and 6 are randomly drawn from the population. The individual with fitness 9 wins the tournament and is chosen for reproduction.\\
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"Tournament selection"}
+\caption{Tournament selection. A group of three individuals are randomly drawn from the pool of all individuals. The best individual  in the group, the one with fitness 9, is selected for reproduction.\textcolor{red}{[Razali et al., 2011]}}
+\label{Tournament selection}
+\end{center}
+\end{figure}
+
+
+\noindent By varying the value of \textit{n} you can control how much exploration your algorithm should do. If \textit{n} is equal to the population size, this is elitist selection, if \textit{n} is equal to 1 however the search is completely random. This means that low values of \textit{n} leads to more exploration of the search space, and higher values of \textit{n} leads to faster convergence. These properties makes it desirable to vary the value of \textit{n} during the genetic search so that exploration is prioritized at the beginning of the search, while exploitation is prioritized at the end.\\
+
+\noindent Goldberg presents another popular selection process, \textit{roulette wheel selection}. This form os 
+
+
 % Roulette wheel selection
 % Modified roulette wheel
-% Tournament selection
 
 \paragraph{Mutation}
 In biology, mutation is defined as a permanent alteration in the DNA sequence that makes up a gene. Mutations vary in size, sometimes just a small base pair of the gene is altered, while other times the mutation can alter large parts of a chromosome. There are many different forms of mutations. Sometimes it can simply mean changing the value of a nucleotide to its complement (nucleotieds are the building blocks of DNA and consists of the values A, C, G and T), other times it can mean insertion of extra nucleotides into the DNA, deleting some of the nucleotides from the DNA, or invertion of nucleotides \textcolor{red}{[P. Compeau, 2014]}. \\
