@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  29 OCT 2015 18:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  29 OCT 2015 19:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -510,17 +510,17 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 <images/"GA".png, id=1, 577.15625pt x 387.4475pt>
 File: images/"GA".png Graphic file (type png)
  <use images/"GA".png>
-Package pdftex.def Info: images/"GA".png used on input line 52.
+Package pdftex.def Info: images/"GA".png used on input line 55.
 (pdftex.def)             Requested size: 288.57741pt x 193.72327pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
@@ -528,20 +528,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
 s/GA.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 69.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
@@ -549,20 +549,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 File: images/"Representation".png Graphic file (type png)
 
 <use images/"Representation".png>
-Package pdftex.def Info: images/"Representation".png used on input line 71.
+Package pdftex.def Info: images/"Representation".png used on input line 74.
 (pdftex.def)             Requested size: 258.15993pt x 146.1434pt.
  [2 <./images/Representation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
@@ -571,10 +571,22 @@ File: images/"Tournament selection".png Graphic file (type png)
 
 <use images/"Tournament selection".png>
 Package pdftex.def Info: images/"Tournament selection".png used on input line 9
-5.
+8.
 (pdftex.def)             Requested size: 210.18153pt x 81.7038pt.
- [3 <./images/Tournament selection.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+[3 <./images/Tournament selection.png>]
+File: images/"Tournament selection".png Graphic file (type png)
+
+<use images/"Tournament selection".png>
+Package pdftex.def Info: images/"Tournament selection".png used on input line 1
+11.
+(pdftex.def)             Requested size: 210.18153pt x 81.7038pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
@@ -582,61 +594,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 File: images/"Mutation".png Graphic file (type png)
 
 <use images/"Mutation".png>
-Package pdftex.def Info: images/"Mutation".png used on input line 120.
+Package pdftex.def Info: images/"Mutation".png used on input line 127.
 (pdftex.def)             Requested size: 97.56276pt x 51.59183pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
 
  []
 
-[4 <./images/Mutation.png>]
-<images/"Single point crossover".png, id=31, 487.8225pt x 468.75125pt>
+[4] <images/"Single point crossover".png, id=30, 487.8225pt x 468.75125pt>
 File: images/"Single point crossover".png Graphic file (type png)
 
 <use images/"Single point crossover".png>
 Package pdftex.def Info: images/"Single point crossover".png used on input line
- 139.
+ 146.
 (pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
 
-<images/"Double point crossover".png, id=32, 487.8225pt x 468.75125pt>
+<images/"Double point crossover".png, id=31, 487.8225pt x 468.75125pt>
 File: images/"Double point crossover".png Graphic file (type png)
 
 <use images/"Double point crossover".png>
 Package pdftex.def Info: images/"Double point crossover".png used on input line
- 151.
+ 158.
 (pdftex.def)             Requested size: 97.56276pt x 93.74858pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
+ [5 <./images/Mutation.png> <./images/Single point crossover.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 161.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 168.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
- [5 <./images/Single point crossover.png> <./images/Double point crossover.png>
-] [6]
-(./Genetic Algorithm.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 168.
+ [6 <./images/Double point crossover.png>] (./Genetic Algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 4029 strings out of 493117
- 60618 string characters out of 6135434
- 131418 words of memory out of 5000000
- 7433 multiletter control sequences out of 15000+600000
+ 4030 strings out of 493117
+ 60644 string characters out of 6135434
+ 131426 words of memory out of 5000000
+ 7434 multiletter control sequences out of 15000+600000
  7203 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,38p,1163b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti10.pfb>
-Output written on "Genetic Algorithm.pdf" (6 pages, 270428 bytes).
+ 38i,7n,38p,1300b,335s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "Genetic Algorithm.pdf" (6 pages, 273162 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream

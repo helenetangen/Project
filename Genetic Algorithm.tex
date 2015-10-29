@@ -104,11 +104,16 @@ Selection is the process of selecting which individuals from a given population 
 
 \noindent By varying the value of \textit{n} you can control how much exploration your algorithm should do. If \textit{n} is equal to the population size, this is elitist selection, if \textit{n} is equal to 1 however the search is completely random. This means that low values of \textit{n} leads to more exploration of the search space, and higher values of \textit{n} leads to faster convergence. These properties makes it desirable to vary the value of \textit{n} during the genetic search so that exploration is prioritized at the beginning of the search, while exploitation is prioritized at the end.\\
 
-\noindent Goldberg presents another popular selection process, \textit{roulette wheel selection}. This form os 
+\noindent Goldberg presents another popular selection process, \textit{roulette wheel selection}. This form of selection uses a roulette wheel where each individual has a slot with size proportional to its fitness. This way, all individuals has a chance of being picked for selection, but the fittest individuals are more likely to be picked. Figure \ref{Roulette wheel selection} presents the roulette wheel for the individuals in figure \ref{Representation}. The yellow individual has a fitness of 18 and therefore a probability of $\frac{18}{40} = 0.45$ of being picked, the blue has the probability of $\frac{11}{40} = 0.275$, the purple $\frac{6}{40} = 0.15$ and the red $\frac{5}{40} = 0.125$. Based on these probabilities the yellow individual was picked twice for selection, the blue and purple one time each, while the red one was not picked at all, and therefore not represented in the next generation. This lead to a new generation of individuals with much higher fitness than the previous one, because of inherited properties from good parent solutions. \textcolor{red}{The colors don't make sense in black and white, need to give numbers to each individual in figure \ref{Representation} and  use them in the explanation, not colors.}
 
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"Tournament selection"}
+\caption{Roulette wheel selection. [Goldberg, 1989].}
+\label{Roulette wheel selection}
+\end{center}
+\end{figure}
 
-% Roulette wheel selection
-% Modified roulette wheel
 
 \paragraph{Mutation}
 In biology, mutation is defined as a permanent alteration in the DNA sequence that makes up a gene. Mutations vary in size, sometimes just a small base pair of the gene is altered, while other times the mutation can alter large parts of a chromosome. There are many different forms of mutations. Sometimes it can simply mean changing the value of a nucleotide to its complement (nucleotieds are the building blocks of DNA and consists of the values A, C, G and T), other times it can mean insertion of extra nucleotides into the DNA, deleting some of the nucleotides from the DNA, or invertion of nucleotides \textcolor{red}{[P. Compeau, 2014]}. \\
