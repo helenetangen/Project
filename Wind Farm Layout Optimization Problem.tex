@@ -11,12 +11,14 @@
 
 \begin{document}
 
+% The introduction is too simple. It's like its written by a five-year-old.
+% Explain wake effect by ij, as Samorani.
+
 
 \section{The wind farm layout optimization problem}
 
 
 This section defines the wind farm layout optimization problem and explains the key factors that makes the problem so complex. 
-%Brief sentece about why this section is included.
 
 
 \subsection{The wind farm layout optimization problem}
@@ -28,6 +30,9 @@ An overview of the wind farm layout optimization problem is presented by Samoran
 \begin{quote}
 \textit{''The wind farm layout optimization problem consists of finding the turbine positioning (wind farm layout) that maximizes the expected power production.''}
 \end{quote}
+
+
+\noindent Samorani's definition can be extended to include a cost constraint and a search for the optimal number of turbines. The extended formulation would then be "...finding the number of turbines and turbine positioning (wind farm) that maximizes the expected power production within a given budget."
 
 
 \subsection{The wake effect}
@@ -48,7 +53,7 @@ Different mathematical models, that vary in both complexity and quality, exists 
 \end{figure}
 
 
-In figure \ref{Wake effect} the small black rectangle represents a wind turbine, and the blue area behind it illustrates the area that is affected by the wake created by the wind turbine. In the figure, the wind is blowing from left to right with uniform wind speed of $U_0$. As the wind hits the wind turbine it creates a wake of turbulence behind it so that the wind speed at distance $x$ behind the wind turbine is $U < U_0$. The area behind the wind turbine that is affected by the wake at distance $x$ has the radius $r_1$ where $r_r$ is the rotor radius and $\alpha$ is the entrainment constant constant which decides how fast the wake expands
+In figure \ref{Wake effect} the small black rectangle represents a wind turbine, and the blue area behind it illustrates the area that is affected by the wake created by the wind turbine. In the figure, the wind is blowing from left to right with uniform wind speed of $U_0$. As the wind hits the wind turbine it creates a wake of turbulence behind it so that the wind speed at distance $x$ behind the wind turbine is $U < U_0$. The area behind the wind turbine that is affected by the wake at distance $x$ has the radius $r_1 = \alpha x + r_r$ where $r_r$ is the rotor radius and $\alpha$ is the entrainment constant constant which decides how fast the wake expands
 
 
 \begin{equation}
@@ -65,7 +70,7 @@ U = U_0\left(1 - \frac{2a}{1 + \alpha\left(\frac{x}{r_1}\right)}\right)
 \end{equation}
 
 
-where $a$ is called the axial induction factor, and $C_T$ thrust coefficient.
+where $a$ is called the axial induction factor that determines how quickly the wake expands, and $C_T$ is the thrust coefficient, a measure of the proportion of wind captured when the wind hits the wind turbine.
 
 
 \begin{equation}
