@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  30 OCT 2015 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  4 NOV 2015 19:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -499,18 +499,18 @@ Package caption Info: End \AtBeginDocument code.
 File: project/images/"Wake Effect".png Graphic file (type png)
 
 <use project/images/"Wake Effect".png>
-Package pdftex.def Info: project/images/"Wake Effect".png used on input line 47
+Package pdftex.def Info: project/images/"Wake Effect".png used on input line 50
 .
 (pdftex.def)             Requested size: 251.43875pt x 193.72327pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
