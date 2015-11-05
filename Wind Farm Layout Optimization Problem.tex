@@ -12,71 +12,107 @@
 \begin{document}
 
 
-% The introduction is too simple. It's like its written by a five-year-old.
-% Explain wake effect by ij, as Samorani.
-
-
 \section{The wind farm layout optimization problem}
+The goal of this section is to give the reader an understanding of the wind farm layout optimization problem, and explain the key factors that makes the problem so complex.
 
 
-This section defines the wind farm layout optimization problem and explains the key factors that makes the problem so complex. 
-
-
-\subsection{The wind farm layout optimization problem}
-
-
-An overview of the wind farm layout optimization problem is presented by Samorani \textcolor{red}{[Samorani, 2013]}. Grouping of wind turbines in a wind farm decreases installation and maintenance cost. However, positioning of wind turbines in a farm also introduces new challenges. The power produced by wind turbines is largely dependent on the wind speed, therefore it is important that the wind speed that hits a wind turbine is as large as possible. The main challenge for wind farms is that a wind turbine positioned in front of another wind turbine will cause a wake of turbulence, meaning that the wind speed that hits the second wind turbine will be decreased. This effect is called "wake effect", and will be explained in more detail later. Since the goal is to produce as much power as possible it is very important to position the wind turbines so that the wake effect is minimal. Samorani states the wind farm layout optimization problem like this
+\subsection{Definition of the wind farm layout optimization problem}
+An overview of the wind farm layout optimization problem is presented by Samorani \textcolor{red}{[Samorani, 2013]}. Grouping of wind turbines in a wind farm decreases installation and maintenance cost. However, positioning of wind turbines in a farm also introduces new challenges. The power produced by wind turbines is largely dependent on wind speed, therefore it is important that the wind speed that hits a wind turbine is as large as possible. The main challenge for wind farms is that a wind turbine positioned in front of another wind turbine will cause a wake of turbulence, meaning that the wind speed that hits the second wind turbine will be decreased. This effect is called "wake effect", and will be explained later. Since the goal is to produce as much power as possible it is very important to position the wind turbines so that the wake effect is minimal. Samorani states the wind farm layout optimization problem like this ''The wind farm layout optimization problem consists of finding the turbine positioning (wind farm layout) that maximizes the expected power production". However, in this thesis, the problem formulation will be extended to include cost constraints and also the problem of deciding the number of wind turbines, not just their positions. A formal definition is given below
 
 
 \begin{quote}
-\textit{''The wind farm layout optimization problem consists of finding the turbine positioning (wind farm layout) that maximizes the expected power production.''}
+\textit{''The wind farm layout optimization problem consists of finding the number of turbines and turbine positioning (wind farm) that maximizes the expected power production within a given budget.''}
 \end{quote}
 
 
-\noindent Samorani's definition can be extended to include a cost constraint and a search for the optimal number of turbines. The extended formulation would then be "...finding the number of turbines and turbine positioning (wind farm) that maximizes the expected power production within a given budget."
+\subsection{Challenges of wind farm construction}
+Samorani gives an overview of the main challenges of wind farm construction. First, a suitable site has to be found, meaning a site with good wind conditions. Sites are classified in 7 different wind power classes, where sites with power class 4 or higher are suitable for hosting a wind farm with today's turbine technology. But, even though the wind farm has the required wind conditions, it might not be suitable for hosting a find farm after all, because it might be far from the electronic grid, so that connecting it to it would be to costly, or it could require costly road work because current roads cannot handle the transportation trucks.\\
+
+\noindent
 
 
-\subsection{The wake effect}
 
 
-Different mathematical models, that vary in both complexity and quality, exists to models to the wake effect. However, most research within the field of wind farm layout optimization use the Jensen model \textcolor{red}{[Jensen, 1983]}. The Jensen model is preferred both for its proven ability to accurately model the wind speed reduction caused by the wake effect, but also because of its simplicity. The Jensen model is explained below.
+% Nr of turbines
+% Position why hard /wake effect
+% Cost
+% Obsticles
+% Wind model
+% Maintenance why it is hard
 
 
-\subsubsection{The Jensen model}
+% What is the wind farm layout optimization problem?
+% Define the problem presisely
+% Why is it so complex? 
 
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.5]{project/images/"Wake Effect"}
-\caption{The wake effect \textcolor{red}{[Samorani, 2013]}}
-\label{Wake effect}
-\end{center}
-\end{figure}
+%Old version
 
-
-In figure \ref{Wake effect} the small black rectangle represents a wind turbine, and the blue area behind it illustrates the area that is affected by the wake created by the wind turbine. In the figure, the wind is blowing from left to right with uniform wind speed of $U_0$. As the wind hits the wind turbine it creates a wake of turbulence behind it so that the wind speed at distance $x$ behind the wind turbine is $U < U_0$. The area behind the wind turbine that is affected by the wake at distance $x$ has the radius $r_1 = \alpha x + r_r$ where $r_r$ is the rotor radius and $\alpha$ is the entrainment constant constant which decides how fast the wake expands
-
-
-\begin{equation}
-\alpha = \frac{0.5}{ln\frac{z}{z_0}}
-\label{Alpha}
-\end{equation}
-
-where $z$ is the hub height of the wind turbine and $z_0$ is a surface roughness constant. The wind speed $U$ is therefore \textcolor{red}{Jean help!}
-
-
-\begin{equation}
-U = U_0\left(1 - \frac{2a}{1 + \alpha\left(\frac{x}{r_1}\right)}\right)
-\label{Alpha}
-\end{equation}
-
-
-where $a$ is called the axial induction factor that determines how quickly the wake expands, and $C_T$ is the thrust coefficient, a measure of the proportion of wind captured when the wind hits the wind turbine.
-
-
-\begin{equation}
-a = 0.5 \left(1 - \sqrt{1 - C_T}\right)
-\end{equation}
+% The introduction is too simple. It's like its written by a five-year-old.
+% Explain wake effect by ij, as Samorani.
+%
+%
+%\section{The wind farm layout optimization problem}
+%
+%
+%This section defines the wind farm layout optimization problem and explains the key factors that makes the problem so complex. 
+%
+%
+%\subsection{The wind farm layout optimization problem}
+%
+%
+%An overview of the wind farm layout optimization problem is presented by Samorani \textcolor{red}{[Samorani, 2013]}. Grouping of wind turbines in a wind farm decreases installation and maintenance cost. However, positioning of wind turbines in a farm also introduces new challenges. The power produced by wind turbines is largely dependent on the wind speed, therefore it is important that the wind speed that hits a wind turbine is as large as possible. The main challenge for wind farms is that a wind turbine positioned in front of another wind turbine will cause a wake of turbulence, meaning that the wind speed that hits the second wind turbine will be decreased. This effect is called "wake effect", and will be explained in more detail later. Since the goal is to produce as much power as possible it is very important to position the wind turbines so that the wake effect is minimal. Samorani states the wind farm layout optimization problem like this
+%
+%
+%\begin{quote}
+%\textit{''The wind farm layout optimization problem consists of finding the turbine positioning (wind farm layout) that maximizes the expected power production.''}
+%\end{quote}
+%
+%
+%\noindent Samorani's definition can be extended to include a cost constraint and a search for the optimal number of turbines. The extended formulation would then be "...finding the number of turbines and turbine positioning (wind farm) that maximizes the expected power production within a given budget."
+%
+%
+%\subsection{The wake effect}
+%
+%
+%Different mathematical models, that vary in both complexity and quality, exists to models to the wake effect. However, most research within the field of wind farm layout optimization use the Jensen model \textcolor{red}{[Jensen, 1983]}. The Jensen model is preferred both for its proven ability to accurately model the wind speed reduction caused by the wake effect, but also because of its simplicity. The Jensen model is explained below.
+%
+%
+%\subsubsection{The Jensen model}
+%
+%
+%\begin{figure}[h!]
+%\begin{center}
+%\includegraphics[scale=0.5]{project/images/"Wake Effect"}
+%\caption{The wake effect \textcolor{red}{[Samorani, 2013]}}
+%\label{Wake effect}
+%\end{center}
+%\end{figure}
+%
+%
+%In figure \ref{Wake effect} the small black rectangle represents a wind turbine, and the blue area behind it illustrates the area that is affected by the wake created by the wind turbine. In the figure, the wind is blowing from left to right with uniform wind speed of $U_0$. As the wind hits the wind turbine it creates a wake of turbulence behind it so that the wind speed at distance $x$ behind the wind turbine is $U < U_0$. The area behind the wind turbine that is affected by the wake at distance $x$ has the radius $r_1 = \alpha x + r_r$ where $r_r$ is the rotor radius and $\alpha$ is the entrainment constant constant which decides how fast the wake expands
+%
+%
+%\begin{equation}
+%\alpha = \frac{0.5}{ln\frac{z}{z_0}}
+%\label{Alpha}
+%\end{equation}
+%
+%where $z$ is the hub height of the wind turbine and $z_0$ is a surface roughness constant. The wind speed $U$ is therefore \textcolor{red}{Jean help!}
+%
+%
+%\begin{equation}
+%U = U_0\left(1 - \frac{2a}{1 + \alpha\left(\frac{x}{r_1}\right)}\right)
+%\label{Alpha}
+%\end{equation}
+%
+%
+%where $a$ is called the axial induction factor that determines how quickly the wake expands, and $C_T$ is the thrust coefficient, a measure of the proportion of wind captured when the wind hits the wind turbine.
+%
+%
+%\begin{equation}
+%a = 0.5 \left(1 - \sqrt{1 - C_T}\right)
+%\end{equation}
 
 
 \end{document}
