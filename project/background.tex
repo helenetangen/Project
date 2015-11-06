@@ -171,7 +171,21 @@ As in nature, we want individuals of the evolutionary search to inherit features
 \noindent Goldberg performs a very interesting analysis of the crossover operation by studying the probability of surviving a crossover operation for different schemata. A schema is a string taken from the library \{0, 1, *\}.  A shema of size 8 could therefore for example look like this \textit{0011****}, where \textit{0} and \textit{1} represents letters with values 0 and 1, while \textit{*} represents letters that we don't care about. This means that both strings \textit{00110000} and \textit{00111111} are covered by the given schema. If desirable features are represented by schemata it is easy to see that some features are much more likely to survive a single point crossover operation than others. Lets study the shemata $s_1 = 11******$ and $s_2  = 1******1$. Both has size 8, meaning that there are 7 possible crossover positions. However, only one of the crossover positions will destroy $s_1$ while all 7 positions will break up $s_2$. This means that the genetic search would converge faster if $s_1$ was the desirable feature, then if $s_2$ was.
 
 
+\subsection{Distributed Genetic Algorithms}
+On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population do not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that does not look that good at first, and consequently get the opportunity to find better, more sophisticated solutions. This section introduces two distributed methods that will be explored in this project; the island model, and the cellular model. If not otherwise stated, everything in this section is taken from \textcolor{red}{[Gong, 2014]}.
 
+
+\subsubsection{The Island Model}
+In the island model, the population is divided into sub populations that are distributed onto different islands. By letting each population evolve separately different islands can explore different solutions. Figure \ref{Island model} displays a population divided into four sub populations. 
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.3]{images/"Island Model"}
+\caption{\textcolor{red}{Add caption!}}
+\label{Island model}
+\end{center}
+\end{figure}
 
 
 \section{Wind Farm Layout Optimization using Genetic Algorithms}
