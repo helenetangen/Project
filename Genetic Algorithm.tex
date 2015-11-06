@@ -162,7 +162,7 @@ On of the main challenges of simple genetic algorithms is keeping diversity in t
 
 
 \subsubsection{The Island Model}
-In the island model, the population is divided into sub populations that are distributed onto different islands. By letting each population evolve separately different islands can explore different solutions. Figure \ref{Island model} displays a population divided into four sub populations. \\ %something about migration...
+In the island model, the population is divided into sub populations that are distributed onto different islands. By letting each population evolve separately different islands can explore different solutions. Figure \ref{Island model} displays a population divided into four sub populations. \\ %something about migration... Something about parallellism and that you dont have to use it.
 
 
 \begin{figure}[h!]
@@ -174,7 +174,12 @@ In the island model, the population is divided into sub populations that are dis
 \end{figure}
 
 
-According to \textcolor{red}{[Huang, ????]}, six parameters needs to be specified when using the island model. First of all, the deme size needs to be specified; the number of individuals on each island (deme). Second, one need to decide on the number of demes. In figure \ref{Island model} the deme size is five and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows are the legal migration routes, since the topology forms a circle it is called a ring topology.
+According to \textcolor{red}{[Huang, 2007]}, six parameters needs to be specified when using the island model. First of all, the deme size needs to be specified; the number of individuals on each island (deme). Second, one needs to decide on the number of demes. In figure \ref{Island model} the deme size is five and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows are the legal migration routes, since the topology forms a circle it is called a ring topology. The forth and firth parameters listed by Huang are migration rate and migration interval, meaning the number of individuals that migrate from one population to another and the number of generations between each migration respectively. These parameters are very important since they largely affect the time the population gets to explore different solutions before the best solutions from some of the demes takes over the population. Sixth, the policy of selection emigrants and how to replace existing individuals with new migrants. \\
+
+
+\noindent The above parameters must be given careful thought when implementing the island model, but as Gong explains, they are not the only ones. If the island model is implement in parallel one also have to decide if the migration is synchronous or asynchronous. Synchronous migration means that all migration is performed at the same time; at a specific generation, while as asynchronous migration is used migration can be performed whenever one of the parallel processes is ready. Additionally, it has to be decided if the island model is homogeneous or heterogeneous. By a homogeneous island model, Gong means an island model where each sub population use the same selection strategy, genetic operations and fitness function, while as an heterogeneous island model can implement different settings for different sub populations.
+
+% Rep-up pros and cons.
 
 
 \end{document}
