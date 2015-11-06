@@ -5,8 +5,12 @@
 \graphicspath{{images/}}
 \usepackage{subcaption}
 \usepackage{titlesec}
-\setcounter{secnumdepth}{4}
+\usepackage[square, authoryear, comma, sort&compress,numbers]{natbib}
 
+\setcounter{secnumdepth}{4}
+% Biblography
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{apalike}
 
 % Makes subsubsub section
 \titleformat{\paragraph}
@@ -19,6 +23,9 @@
 
 
 \input{background}
+
+
+\bibliography{mybib}
 
 
 \end{document}
