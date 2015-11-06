@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  5 NOV 2015 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  6 NOV 2015 09:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5874,7 +5874,7 @@ Missing character: There is no ' in font nullfont!
 Missing character: There is no ' in font nullfont!
 ! Undefined control sequence.
 l.42 ...mization and machine learning'' \textcolor
-                                                  {red}{[J. Holland, 1975]} ...
+                                                  {red}{[Holland, 1975]} \te...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5885,8 +5885,6 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no [ in font nullfont!
-Missing character: There is no J in font nullfont!
-Missing character: There is no . in font nullfont!
 Missing character: There is no H in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -5901,8 +5899,8 @@ Missing character: There is no 7 in font nullfont!
 Missing character: There is no 5 in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
-l.42 ...tcolor{red}{[J. Holland, 1975]} \textcolor
-                                                  {red}{[D. Goldberg 1989]}.
+l.42 ...textcolor{red}{[Holland, 1975]} \textcolor
+                                                  {red}{[Goldberg 1989]}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5913,8 +5911,6 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no [ in font nullfont!
-Missing character: There is no D in font nullfont!
-Missing character: There is no . in font nullfont!
 Missing character: There is no G in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -13464,7 +13460,7 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 ! Undefined control sequence.
 l.122 ...A, or invertion of nucleotides \textcolor
-                                                  {red}{[P. Compeau, 2014]}. \\
+                                                  {red}{[Compeau et al., 201...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -13475,8 +13471,6 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no [ in font nullfont!
-Missing character: There is no P in font nullfont!
-Missing character: There is no . in font nullfont!
 Missing character: There is no C in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no m in font nullfont!
@@ -13484,6 +13478,11 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no . in font nullfont!
 Missing character: There is no , in font nullfont!
 Missing character: There is no 2 in font nullfont!
 Missing character: There is no 0 in font nullfont!

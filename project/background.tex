@@ -39,7 +39,7 @@ In figure \ref{Wake effect} the small black rectangle represents a wind turbine,
 \section{Genetic Algorithms}
 
 
-The genetic algorithm (GA) was first introduced by John Henry Holland, even though he did not call it the genetic algorithm at the time. This section gives an overview of the workings and most important operations of the genetic algorithm. If not otherwise stated, everything in this section is based on Holland's book ''Adaptation in natural and artificial systems'' as well as Goldberg's book "Genetic algorithms in search, optimization and machine learning'' \textcolor{red}{[J. Holland, 1975]} \textcolor{red}{[D. Goldberg 1989]}.
+The genetic algorithm (GA) was first introduced by John Henry Holland, even though he did not call it the genetic algorithm at the time. This section gives an overview of the workings and most important operations of the genetic algorithm. If not otherwise stated, everything in this section is based on Holland's book ''Adaptation in natural and artificial systems'' as well as Goldberg's book "Genetic algorithms in search, optimization and machine learning'' \textcolor{red}{[Holland, 1975]} \textcolor{red}{[Goldberg 1989]}.
 
 
 % Introduction: What and Why
@@ -119,7 +119,7 @@ Selection is the process of selecting which individuals from a given population 
 
 
 \paragraph{Mutation}
-In biology, mutation is defined as a permanent alteration in the DNA sequence that makes up a gene. Mutations vary in size, sometimes just a small base pair of the gene is altered, while other times the mutation can alter large parts of a chromosome. There are many different forms of mutations. Sometimes it can simply mean changing the value of a nucleotide to its complement (nucleotieds are the building blocks of DNA and consists of the values A, C, G and T), other times it can mean insertion of extra nucleotides into the DNA, deleting some of the nucleotides from the DNA, or invertion of nucleotides \textcolor{red}{[P. Compeau, 2014]}. \\
+In biology, mutation is defined as a permanent alteration in the DNA sequence that makes up a gene. Mutations vary in size, sometimes just a small base pair of the gene is altered, while other times the mutation can alter large parts of a chromosome. There are many different forms of mutations. Sometimes it can simply mean changing the value of a nucleotide to its complement (nucleotieds are the building blocks of DNA and consists of the values A, C, G and T), other times it can mean insertion of extra nucleotides into the DNA, deleting some of the nucleotides from the DNA, or invertion of nucleotides \textcolor{red}{[Compeau et al., 2014]}. \\
 
 
 \noindent In genetic computation the mutation process is simplified. Since the search space only consist of strings of bits with constant size, a mutation in genetic computing simply consists of flipping of bits, this is called single point mutation. In Figure \ref{Mutation} we have a bit string of size 8, where the 6th element is mutated from the value 1 to the value 0. Mutation is usually implemented by having a given probability of each value in the genotype being flipped.
