@@ -179,9 +179,6 @@ According to \textcolor{red}{[Huang, 2007]}, six parameters needs to be specifie
 \noindent The above parameters must be given careful thought when implementing the island model, but as Gong explains, they are not the only ones. If the island model is implement in parallel one also have to decide if the migration is synchronous or asynchronous. Synchronous migration means that all migration is performed at the same time; at a specific generation, while as asynchronous migration is used migration can be performed whenever one of the parallel processes is ready. Additionally, it has to be decided if the island model is homogeneous or heterogeneous. By a homogeneous island model, Gong means an island model where each sub population use the same selection strategy, genetic operations and fitness function, while as an heterogeneous island model can implement different settings for different sub populations.
 
 
-\todo{Section summary (Pro's and con's)}
-
-
 \subsubsection{The Cellular Model}
 Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Gong, 2014]}. In the cellular model the population is distributed in a grid of cells where each cell holds one individual. Each individual only ''sees'' the individuals of its neighborhood (as decided by the given neighborhood topology) and can only be compared with and mate with individuals in its neighborhood. \\
 
@@ -189,7 +186,7 @@ Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Go
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{project/images/"Cellular Model"}
-\caption{\textcolor{red}{[Gong, 2014]}}
+\caption{Cellular model where the neighborhood topology consist of the cells to the left, right, over and under the given cell. \textcolor{red}{[Gong, 2014]}}
 \label{Cellular model}
 \end{center}
 \end{figure}
@@ -199,8 +196,6 @@ Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Go
 
 
 \noindent The cellular model can also be implemented in parallel, ideally with one processor for each cell. As in the island model, updating of the cells can be both synchronous and asynchronous. Synchronous updating means that all the cells are updated at the same time, while as asynchronous updating means that each cell is updated at a certain time following some updating scheme. 
-
-\todo{Add section summary}
 
 
 \end{document}
