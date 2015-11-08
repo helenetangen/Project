@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 NOV 2015 13:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 NOV 2015 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -979,6 +979,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--177
  []
 
 [6 <./images/Double point crossover.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
+
+ []
+
 <project/images/"Cellular Model".png, id=45, 455.7025pt x 395.4775pt>
 File: project/images/"Cellular Model".png Graphic file (type png)
 
@@ -991,41 +995,17 @@ Package pdftex.def Info: project/images/"Cellular Model".png used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (2.6668pt too wide) in paragraph at lines 200--200
-[][][][]\OT1/cmr/m/n/10 Homogeneous 
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
  []
-
-
-Overfull \hbox (2.6668pt too wide) in paragraph at lines 200--200
-[][][][]\OT1/cmr/m/n/10 Homogeneous 
- []
-
-
-Overfull \hbox (2.6668pt too wide) in paragraph at lines 200--200
-[][][][]\OT1/cmr/m/n/10 Homogeneous 
- []
-
-
-Overfull \hbox (2.6668pt too wide) in paragraph at lines 200--200
-[][][][]\OT1/cmr/m/n/10 Homogeneous 
- []
-
-
-LaTeX Warning: Marginpar on page 7 moved.
-
-
-LaTeX Warning: Marginpar on page 7 moved.
-
-
-LaTeX Warning: Marginpar on page 7 moved.
 
 [7 <./project/images/Island Model.png>] [8 <./project/images/Cellular Model.png
 >] (./Genetic Algorithm.aux) ) 
 Here is how much of TeX's memory you used:
- 14412 strings out of 493117
- 282212 string characters out of 6135434
- 339702 words of memory out of 5000000
- 17585 multiletter control sequences out of 15000+600000
+ 14406 strings out of 493117
+ 282044 string characters out of 6135434
+ 329091 words of memory out of 5000000
+ 17579 multiletter control sequences out of 15000+600000
  7203 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,76p,1300b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1037,7 +1017,7 @@ ic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti10.pfb>
-Output written on "Genetic Algorithm.pdf" (8 pages, 316225 bytes).
+Output written on "Genetic Algorithm.pdf" (8 pages, 316883 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream

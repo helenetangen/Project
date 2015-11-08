@@ -183,7 +183,7 @@ According to \textcolor{red}{[Huang, 2007]}, six parameters needs to be specifie
 
 
 \subsubsection{The Cellular Model}
-Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Gong, 2014]}. In the cellular model the population is distributed in a grid of cells where each cell holds one individual. Each individual only ''sees'' the individuals of its neighborhood (as decided by the given neighborhood topology) and can only be compared with and mate with individuals in its neighborhood. 
+Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Gong, 2014]}. In the cellular model the population is distributed in a grid of cells where each cell holds one individual. Each individual only ''sees'' the individuals of its neighborhood (as decided by the given neighborhood topology) and can only be compared with and mate with individuals in its neighborhood. \\
 
 
 \begin{figure}[h!]
@@ -195,9 +195,11 @@ Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Go
 \end{figure}
 
 
-\todo{Topology (keep diversity, takeover time)}
-\todo{Synchronous vs asynchronous}
-\todo{Homogeneous vs heterogeneous}
+\noindent The takeover time is defined as the time it takes for one individual to propagate to the whole population. The neighborhood topology largely affects the takeover time. In figure \ref{Cellular model} the neighborhood topology is defined as only the individuals left, right, over and under the given individual. Since the topology includes a small number of individuals the takeover time will be very long, meaning that exploration is prioritized. If the topology consist of a larger number of cells the takeover time will, off course, be mush shorter.\\
+
+
+\noindent The cellular model can also be implemented in parallel, ideally with one processor for each cell. As in the island model, updating of the cells can be both synchronous and asynchronous. Synchronous updating means that all the cells are updated at the same time, while as asynchronous updating means that each cell is updated at a certain time following some updating scheme. 
+
 \todo{Add section summary}
 
 
