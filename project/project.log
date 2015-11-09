@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 NOV 2015 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  9 NOV 2015 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,7 +726,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-ABD: EveryShipout initializing macros (./Introduction.tex
+ABD: EveryShipout initializing macros (./introduction.tex
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
@@ -754,6 +754,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
+ []
+
+
+Overfull \hbox (7.32024pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/12 solv-ing the wind farm lay-out op-ti-miza-tion prob-lem.[]\OT1
+/cmr/m/n/12 [Samorani, 2013][] 
  []
 
 
@@ -936,15 +942,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--175
 File: images/"Island Model".png Graphic file (type png)
 
 <use images/"Island Model".png>
-Package pdftex.def Info: images/"Island Model".png used on input line 182.
+Package pdftex.def Info: images/"Island Model".png used on input line 179.
 (pdftex.def)             Requested size: 145.74562pt x 122.55882pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
 [14 <./images/Island Model.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
@@ -952,19 +958,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
 File: images/"Cellular Model".png Graphic file (type png)
 
 <use images/"Cellular Model".png>
-Package pdftex.def Info: images/"Cellular Model".png used on input line 201.
+Package pdftex.def Info: images/"Cellular Model".png used on input line 198.
 (pdftex.def)             Requested size: 136.71179pt x 118.64417pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
 [15] [16 <./images/Cellular Model.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
@@ -972,47 +978,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--225
 File: images/"Ring Topology".png Graphic file (type png)
 
 <use images/"Ring Topology".png>
-Package pdftex.def Info: images/"Ring Topology".png used on input line 231.
+Package pdftex.def Info: images/"Ring Topology".png used on input line 228.
 (pdftex.def)             Requested size: 188.50569pt x 98.46863pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 [17 <./images/Ring Topology.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
 
  []
 
 ) (./project.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 253--1
+Underfull \hbox (badness 10000) in paragraph at lines 250--1
 
  []
 
 [18] [19]) [20
 
-] (./project.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./project.aux) ) 
 Here is how much of TeX's memory you used:
- 13903 strings out of 493117
- 274303 string characters out of 6135434
- 314356 words of memory out of 5000000
- 17087 multiletter control sequences out of 15000+600000
+ 13841 strings out of 493117
+ 272888 string characters out of 6135434
+ 311364 words of memory out of 5000000
+ 17025 multiletter control sequences out of 15000+600000
  8847 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,76p,1356b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (20 pages, 374080 bytes).
+ 62i,7n,75p,1356b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+2.pfb>
+Output written on project.pdf (20 pages, 374793 bytes).
 PDF statistics:
  125 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream

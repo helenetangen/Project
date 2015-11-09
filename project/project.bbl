@@ -1,8 +1,9 @@
 \begin{thebibliography}{}
 
-\bibitem[Holland, 1975]{Test}
-Holland, J.~H. (1975).
-\newblock Adaptation in natural and artificial systems.
-\newblock {\em Test}.
+\bibitem[Mosetti et~al., 1994]{Mosetti}
+Mosetti, G., Poloni, C., and Diviacco, B. (1994).
+\newblock Optimization of wind turbine positioning in large windfarms by means
+  of genetic algorithm.
+\newblock {\em Journal of Wind Engineering and Industrial Aerodynamics}.
 
 \end{thebibliography}

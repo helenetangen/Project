@@ -2,7 +2,7 @@
 
 
 \section{The wind farm layout optimization problem}
-The goal of this section is to give the reader an understanding of the wind farm layout optimization problem, and explain the key factors that makes the problem so complex. \textcolor{red}{\citep{Test}}
+The goal of this section is to give the reader an understanding of the wind farm layout optimization problem, and explain the key factors that makes the problem so complex.
 
 
 \subsection{Definition of the wind farm layout optimization problem}
@@ -174,9 +174,6 @@ On of the main challenges of simple genetic algorithms is keeping diversity in t
 In the island model, the population is divided into sub populations that are distributed onto different islands. By letting each population evolve separately different islands can explore different solutions. Figure \ref{Island model} displays a population divided into four sub populations. \\ 
 
 
-\todo{Write a little something on migration and parallelism (don't have to use it).}
-
-
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Island Model"}
@@ -186,7 +183,7 @@ In the island model, the population is divided into sub populations that are dis
 \end{figure}
 
 
-According to \textcolor{red}{[Huang, 2007]}, six parameters needs to be specified when using the island model. First of all, the deme size needs to be specified; the number of individuals on each island (deme). Second, one needs to decide on the number of demes. In figure \ref{Island model} the deme size is five and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows are the legal migration routes, since the topology forms a circle it is called a ring topology. The forth and firth parameters listed by Huang are migration rate and migration interval, meaning the number of individuals that migrate from one population to another and the number of generations between each migration respectively. These parameters are very important since they largely affect the time the population gets to explore different solutions before the best solutions from some of the demes takes over the population. Sixth, the policy of selection emigrants and how to replace existing individuals with new migrants. \\
+According to \textcolor{red}{[Huang, 2007]}, six parameters needs to be specified when using the island model. First of all, the deme size needs to be specified; the number of individuals on each island (deme). Second, one needs to decide on the number of demes. In figure \ref{Island model} the deme size is five and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows are the legal migration routes, since the topology forms a circle it is called a ring topology. The forth and fifth parameters listed by Huang are migration rate and migration interval, meaning the number of individuals that migrate from one population to another and the number of generations between each migration respectively. These parameters are very important since they largely affect the time the population gets to explore different solutions before the best solutions from some of the demes takes over the population. Sixth, the policy of selection emigrants and how to replace existing individuals with new migrants. \\
 
 
 \noindent The above parameters must be given careful thought when implementing the island model, but as Gong explains, they are not the only ones. If the island model is implement in parallel one also have to decide if the migration is synchronous or asynchronous. Synchronous migration means that all migration is performed at the same time; at a specific generation, while as asynchronous migration is used migration can be performed whenever one of the parallel processes is ready. Additionally, it has to be decided if the island model is homogeneous or heterogeneous. By a homogeneous island model, Gong means an island model where each sub population use the same selection strategy, genetic operations and fitness function, while as an heterogeneous island model can implement different settings for different sub populations.
@@ -214,7 +211,7 @@ Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Go
 \section{Wind Farm Layout Optimization using Genetic Algorithms}
 
 % Mosetti et al, 1994
-In 1994, Mosetti et al. successfully utilized the genetic algorithm on the wind farm layout optimization problem \textcolor{red}{[Mosetti et al., 1994]}. To model the wind decay Mosetti et al. used a model similar to the Jensen model \textcolor{red}{[Jensen, 1983]}. Mosetti et al. divided the wind farm terrain into a $10\times10$ quadratic grid so that a wind turbine could be installed in the middle of each cell. The optimization problem would then be to find which cells wind turbines should be installed in, in order to maximize power production and minimize cost. With this representation, an individual of the genetic search could be represented as a binary string of length 100, where each index represents a cell in the grid, so that a value of 1 means that an wind turbine is installed in the corresponding cell, and a value of zero means that there is no wind turbine in the corresponding cell. The genetic algorithm used was a simple, single-population genetic search where the fittest individuals where selected for reproduction using crossover and mutation. The crossover operation was performed at random locations with probability $0.6 < P_c < 0.9$ and mutation was performed with probability $0.01 < P_m < 0.1$. The fitness of the individuals was determined by the objective function
+In 1994, Mosetti et al. successfully utilized the genetic algorithm on the wind farm layout optimization problem {\citep{Mosetti}}. To model the wind decay Mosetti et al. used a model similar to the Jensen model \textcolor{red}{[Jensen, 1983]}. Mosetti et al. divided the wind farm terrain into a $10\times10$ quadratic grid so that a wind turbine could be installed in the middle of each cell. The optimization problem would then be to find which cells wind turbines should be installed in, in order to maximize power production and minimize cost. With this representation, an individual of the genetic search could be represented as a binary string of length 100, where each index represents a cell in the grid, so that a value of 1 means that an wind turbine is installed in the corresponding cell, and a value of zero means that there is no wind turbine in the corresponding cell. The genetic algorithm used was a simple, single-population genetic search where the fittest individuals where selected for reproduction using crossover and mutation. The crossover operation was performed at random locations with probability $0.6 < P_c < 0.9$ and mutation was performed with probability $0.01 < P_m < 0.1$. The fitness of the individuals was determined by the objective function
 
 \begin{equation}
 Objective = \frac{1}{P_{total}}w_1 + \frac{cost_{total}}{P_{total}}w_2
