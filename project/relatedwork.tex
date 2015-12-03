@@ -14,7 +14,7 @@ Objective = \frac{1}{P_{total}}w_1 + \frac{cost_{total}}{P_{total}}w_2
 
 where $P_{total}$ is the total energy produced in one year, $cost_{total}$ is a function of the number of wind turbines installed, and $w_1$ and $w_2$ are weights. In the current study, $w_1$ was kept small so that the focus would be on lowest cost per energy produced. \\
 
-\noindent The model was tested on a single type of turbines in three different scenarios (a) constant wind direction and intensity, (b) constant wind intensity, but from a 360$^{\circ}$ variable direction, and (c) a realistic wind scenario. \textcolor{red}{Feil!} For each scenario, the results was measured against random configurations of 50 turbines. In scenario one, the efficiency of the random configuration was 0.50, while the efficiency of the optimal solution was 0.95. In the second wind scenario, the efficiency was decreased from 0.35 in the random configuration to 0.88 in the optimized configuration. And, in the last scenario the efficiency was increased from 0.34 to 0.84. In each case, the genetic algorithm was able to increase the total energy produced \textcolor{red}{Feil!} and reduce the cost \textcolor{red}{Feil!}. For each scenario the number of wind turbines was decreased drastically in the optimized version. Table \ref{Results Mosetti et al.} summarizes the results obtained.
+\noindent The model was tested on a single type of turbines in three different scenarios (a) single wind direction, (b) multiple wind direction with constant intensity, and (c) multiple wind direction and intensity. For each scenario, the results was measured against random configurations of 50 turbines. In scenario one, the efficiency of the random configuration was 0.50, while the efficiency of the optimal solution was 0.95. In the second wind scenario, the efficiency was decreased from 0.35 in the random configuration to 0.88 in the optimized configuration. And, in the last scenario the efficiency was increased from 0.34 to 0.84. The genetic algorithm was able to reduce the total cost with approximately 50\% for each scenario, while the total energy production was decreased with 29\%. \textcolor{red}{Feil!} For each scenario the number of wind turbines was decreased drastically in the optimized version. Table \ref{Results Mosetti et al.} summarizes the results obtained.
 
 \begin{center}
 \begin{table}[h!]
@@ -35,4 +35,7 @@ Scenario & Configuration & Efficiency & $P_{tot}$(kWyear) & cost/kWyear & Number
 \end{center}
 
 
-This work laid the foundation for a number of studies of wind farm optimization using genetic algorithms. The genetic algorithms have been optimized, and they now run on much more realistic wind scenarios, cost-, and power models.\\
+As discussed in the paper, different simplifying assumptions are made in the model such as the wake effect model, the cost function, turbine type and layout model. The results are also only compared against random configurations, not configurations optimized by other optimization approaches, and no attempt is made to optimize the software. However, the purpose of this initial paper was to demonstrate the applicability of genetic algorithms on the wind farm layout optimization problem, and it laid the foundation for a number of studies of wind farm optimization using genetic algorithms. \\
+
+
+in blabla, grady and al picked up where mosetti left off...
