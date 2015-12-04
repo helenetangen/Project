@@ -86,8 +86,6 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 
 
 % Huang
-\noindent Huang improved the results of Mosetti et al. by using a distributed genetic algorithm \textcolor{red}{[Huang, 2007]}. Huang stated that using a distributed genetic algorithm will not only decrease the computation time by using parallelism, but also achieve higher fitness because more of the solution space will be explored. 
-
 \noindent Huang presented a study in 2007, showing that a distributed genetic algorithm performs better than a simple genetic algorithm \textcolor{red}{[Huang, 2007]}. Huang uses a more realistic objective function than the previous studies, taking into account the selling price of electric energy, as well as cost and energy production. The distributed genetic algorithm uses the Island model, with 600 individuals divided among 20 demes, using the ring-topology shown in figure \ref{Ring Topology}.
 
 \begin{figure}[h!]
@@ -100,6 +98,17 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 
 
 The simulation was run for 2500 generations with the migration strategy that 3.3\% of the individuals with highest fitness was selected as migrants, to replace the individuals with lowest fitness in the new population every 20th generation. The distributed algorithm was tested using the same three scenarios as Mosetti et al. and Grady et al., against a simple genetic algorithm. In case (a) the distributed genetic algorithm was able to come up with the optimal solution (presented by Grady et al.), while as the simple genetic algorithm was not. For each of the three scenarios the distributed algorithm ended up with higher fitness value, more power produced, lower CPU time and fewer generations. In case (a) the turbine count was equal resulting in higher efficiency for the distributed algorithm, while in scenario (b) and (c) the distributed algorithm produced solutions with one more turbine than the simple algorithm, resulting in slightly lower efficiency. Huang also briefly gives a thin explanation that the results obtained are slightly better than those of Grady et al., but acknowledges that the results are hard to compare because of different objective functions.\\
+
+
+% Sisbot et al.
+\noindent \c{S}i\c{s}bot et al. published a case study of wind turbine placement on a wind farm at the Island G{\"o}k\c{c}eada, at the north east of the Aegean Sea \textcolor{red}{[\c{S}i\c{s}bot et al., 2010]}. A distributed genetic algorithm was used, but, unlike Huang, the individuals were evaluated based on multiple objective functions; one that measures the total cost (installation and operational), and one that measure total power production. \c{S}i\c{s}bot et al. argue that in an environment with changing demands, the use of a multi-objective function gives the decision-makers the opportunity to evaluate the different designs based on cost and power production separately, without ill-informed, randomly generated weights. The selection process used is a controlled, elitist process, meaning that not only the fittest, but also some individuals that can spread diversity to the population are selected for reproduction. The genetic algorithm returns a set of Pareto optimal solutions; a set of solutions that are not dominated by any other solution in the set. Stated more formally, solutions \textbf{y} is said to dominate solution \textbf{x} if
+
+\begin{equation}
+\forall i: f_i(\textbf{x}) \leq f_i(\textbf{y}) \hspace{1mm} and \hspace{1mm} \exists j: f_j(\textbf{x}) < f_j(\textbf{y}) 
+\label{Dominated solutions}
+\end{equation}
+
+where $f_i$ is objective function \textcolor{red}{[Murata et al., 2001]}. Other interesting features of this study is the introductions of constraints on wind turbine positions and constraints on the cost, meaning that individuals with wind turbines outside the area of the island, and individuals with costs larger than the budget are removed from the population. Even thought constraints on individuals are not in accordance with the nature genetic algorithms, they can be necessary when the algorithm is applied to a real problem. Another feature introduced in this paper is rectangular cells. The argument behind this decision is that the safe distance between wind turbines is dependent of the direction of the turbine. The minimum distance between turbines in prevailing wind is 8D, while the minimum distance between turbines in the crosswind is 2D. In spite of this attempt to make the wind scenario more realistic, it is critiqued because it operates with a constant wind direction and constant speed, using the average wind direction and speed measured at the Island \textcolor{red}{[Samorani, 2013]}. Results are not compared against previous studies, and the argument behind this decision is that it is hard to compare a Pareto-optimal set of solution to one of the previous solutions. \\
 
 
 % Gonzalez et al. 2010.
@@ -116,26 +125,11 @@ The simulation was run for 2500 generations with the migration strategy that 3.3
 \noindent Results was compared against Grady et al., and the proposed algorithm was also able to find the optimal solution for wind scenario (a). For wind scenario (b), and (c), the proposed solution produced slightly more energy than that of Grady et al., and it needed a lot fewer generations to do so - which one would expect when local search is used.\\
 
 
-\textcolor{red}{------------------------------------------------------------------------------}
-
-
-
-
 % Gao et al.
 \noindent In 2015, Gao et al. used a distributed genetic algorithm to solve the wind farm optimization problem \textcolor{red}{[Gao et al., 2015]}. Unfortunately, they have kept most the implementation details of the distributed genetic algorithm to themselves, but they introduce an interesting hypothetical case study of wind turbine placement on an offshore farm located in the Hong Kong southeastern water. By using real wind data, collected over 19 years, they demonstrates that the distributed genetic algorithm can be applied to a real-world wind farm layout optimization problem. It should also be noted that Gao et al. do not use the constraint that the turbines have to be positioned in the middle of a cell. This property is made possible by inspecting the positions of the turbines relative to each other, and reassign the turbines that are too close to other positions \textcolor{red}{They borrowed this method from Wan et al., 2009}.\\
 
 
-% Sisbot et al.
-\noindent \c{S}i\c{s}bot et al. published a case study of wind turbine placement on a wind farm at the Island G{\"o}k\c{c}eada, at the north east of the Aegean Sea \textcolor{red}{[\c{S}i\c{s}bot et al., 2010]}. A distributed genetic algorithm was used, but, unlike Huang, the individuals were evaluated based on multiple objective functions; one that measures the total cost (installation and operational), and one that measure total power production. \c{S}i\c{s}bot et al. argue that in an environment with changing demands, the use of a multi-objective function gives the decision-makers the opportunity to evaluate the different designs based on cost and power production separately, without ill-informed, randomly generated weights.
 
-The selection process used is a controlled, elitist process, meaning that not only the fittest, but also some individuals that can spread diversity to the population are selected for reproduction. The genetic algorithm returns a set of Pareto optimal solutions; a set of solutions that are not dominated by any other solution in the set. Stated more formally, solutions \textbf{y} is said to dominate solution \textbf{x} if
-
-\begin{equation}
-\forall i: f_i(\textbf{x}) \leq f_i(\textbf{y}) \hspace{1mm} and \hspace{1mm} \exists j: f_j(\textbf{x}) < f_j(\textbf{y}) 
-\label{Dominated solutions}
-\end{equation}
-
-where $f_i$ is objective function \textcolor{red}{[Murata et al., 2001]}. Other interesting features of this study is the introductions of constraints on wind turbine positions and constraints on the cost, meaning that individuals with wind turbines outside the area of the island, and individuals with costs larger than the budget are removed from the population. Even thought constraints on individuals are not in accordance with the nature genetic algorithms, they can be necessary when the algorithm is applied to a real problem. Another feature introduced in this paper is rectangular cells. The argument behind this decision is that the safe distance between wind turbines is dependent of the direction of the turbine. The minimum distance between turbines in prevailing wind is 8D, while the minimum distance between turbines in the crosswind is 2D. In spite of this attempt to make the wind scenario more realistic, it is critiqued because it operates with a constant wind direction and constant speed, using the average wind direction and speed measured at the Island \textcolor{red}{[Samorani, 2013]}. \\
 
 
 
