@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  4 DEC 2015 15:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  6 DEC 2015 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1019,7 +1019,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-) (./project.bbl [23]) [24
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+
+ []
+
+[23]) (./project.bbl [24]) [25
 
 ] (./project.aux) ) 
 Here is how much of TeX's memory you used:
@@ -1029,7 +1034,7 @@ Here is how much of TeX's memory you used:
  17028 multiletter control sequences out of 15000+600000
  8847 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,75p,1761b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,75p,2392b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
@@ -1039,10 +1044,10 @@ cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
 sy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb>
-Output written on project.pdf (24 pages, 384892 bytes).
+Output written on project.pdf (25 pages, 387287 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 82 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
