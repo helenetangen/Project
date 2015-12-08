@@ -19,6 +19,10 @@ A class diagram of the provided API is displayed in figure \ref{Class Diagram}. 
 \end{figure}
 
 
+\subsection{Genetic Algorithm}
+\textcolor{red}{A short description of special features of the genetic algorithm.}
+
+
 \subsection{Evaluation}
 
 
@@ -87,15 +91,16 @@ As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the 
 \end{table}
 
 
+\subsection{Test Simulation}
+
+
+\textcolor{red}{Change title. Include results here.}
+
+
 \subsection{Future Work}
 
 
 In order to investigate the goal statement and answer the research questions the provided genetic algorithm needs to be extended as shown in figure \ref{Class Diagram DGA}. The provided genetic algorithm will be used as a super class, which will be extended by different distributed genetic algorithms, such as the master slave model, the island model, the cellular model and a few hybrid models as well. For details of the distributed models that will be implemented see section \textcolor{red}{Reference background.}\\
-
-
-% Implement different distributed genetic algorithms.
-% Run simulations to figure out which one is the best, get answer to research questions.
-% Might also do some changes to the genetic algorithm.
 
 
 \begin{figure}[h!]
@@ -110,10 +115,4 @@ In order to investigate the goal statement and answer the research questions the
 \noindent In addition to implementing the distributed genetic algorithms listed above, there might be a few changes done to the class GA.java depending on the ''goodness'' of the results, such as changes to the selection-, mutation and/or crossover methods. Other extensions might also be included if needed, such as seeding the genetic algorithm in order to get as good results as possible for the competition.\\
 
 \noindent After the different distributed models are implemented, extensive simulations will be run for all the models, and results will be presented and discussed thoroughly. 
-
-
-% Explain the classes in more detail. Implementation details. Espesially, representation, evaluation and scenarios. Here could be a good place to include the objective function. 
-% Include the objective function to be optimized.
-% Include results.
-% Future work. Include class diagram of how it will look like later.
 
