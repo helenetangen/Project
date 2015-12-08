@@ -52,7 +52,6 @@ to minimize the cost per unit of produced energy, losing the weight from Mosetti
 
 \noindent The same three scenarios as Mosetti et al. was considered. However, the number of individuals was increased from 200 to 600, and run for 3000 generations instead of 400. Grady et al. also implemented a distributed genetic algorithm where the individuals was divided into 20 sub-populations, sadly not sharing any more implementations details. On the first scenario, Grady et al. recognized that with uniform wind distribution the optimal solution could be obtained by optimizing on single row of the layout, and copy it to the rest. As opposed to Mosetti et al., their results are identical to the optimal solution. In scenario (b) and (c) however, the optimal solution can not be obtained empirical, and therefore the results are just compared against those of Mosetti et al. The results for each scenario is displayed in table \ref{Results Grady et al.}. 
 
-
 Table \ref{Results Grady et al.} compare the solutions of the two studies. The first thing to notice is the difference in number of turbines, where Grady et al. ends up with more turbines in each case, approximately doubling the number of turbines in scenario (b) and (c). The explanation behind this observation is the objective functions. Objective function \ref{Objective function Mosetti et al.} prioritizes low cost and hence prioritizes a lower turbine count. \textcolor{red}{Fact check!} The number of turbines for each case explains the largely explains the results. For each scenario the fitness of Mosetti et al. is higher than the fitness obtained in Grady et al. With exception of the first scenario, the efficiency is also larger in Mosetti et al., which makes sense since fewer turbines leads to less wake effect to decrease efficiency \textcolor{red}{Fact check!}. However, in each case, the total power production is largely increased in the current study, which also makes sense based on the turbine count \textcolor{red}{Fact check!}. 
 
 
@@ -86,7 +85,7 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 
 
 % Huang, 2007
-\noindent Huang presented a study in 2007, showing that a distributed genetic algorithm performs better than a simple genetic algorithm \textcolor{red}{[Huang, 2007]}. Huang uses a more realistic objective function than the previous studies, taking into account the selling price of electric energy, as well as cost and energy production. The distributed genetic algorithm uses the Island model, with 600 individuals divided among 20 demes, using the ring-topology shown in figure \ref{Ring Topology}.
+\noindent Huang presented a study in 2007, showing that a distributed genetic algorithm performs better than a simple genetic algorithm \textcolor{red}{[Huang, 2007]}. Huang uses a more realistic objective function than the previous studies, taking into account the selling price of electric energy, as well as cost and energy production. The distributed genetic algorithm uses the Island model, with 600 individuals divided among 20 demes, using the ring-topology shown in figure \ref{Ring Topology}.\\
 
 \begin{figure}[h!]
 \begin{center}
@@ -97,7 +96,7 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 \end{figure}
 
 
-The simulation was run for 2500 generations with the migration strategy that 3.3\% of the individuals with highest fitness was selected as migrants, to replace the individuals with lowest fitness in the new population every 20th generation. The distributed algorithm was tested using the same three scenarios as Mosetti et al. and Grady et al., against a simple genetic algorithm. In case (a) the distributed genetic algorithm was able to come up with the optimal solution (presented by Grady et al.), while as the simple genetic algorithm was not. For each of the three scenarios the distributed algorithm ended up with higher fitness value, more power produced, lower CPU time and fewer generations. In case (a) the turbine count was equal resulting in higher efficiency for the distributed algorithm, while in scenario (b) and (c) the distributed algorithm produced solutions with one more turbine than the simple algorithm, resulting in slightly lower efficiency. Huang also briefly gives a thin explanation that the results obtained are slightly better than those of Grady et al., but acknowledges that the results are hard to compare because of different objective functions.\\
+\noindent The simulation was run for 2500 generations with the migration strategy that 3.3\% of the individuals with highest fitness was selected as migrants, to replace the individuals with lowest fitness in the new population every 20th generation. The distributed algorithm was tested using the same three scenarios as Mosetti et al. and Grady et al., against a simple genetic algorithm. In case (a) the distributed genetic algorithm was able to come up with the optimal solution (presented by Grady et al.), while as the simple genetic algorithm was not. For each of the three scenarios the distributed algorithm ended up with higher fitness value, more power produced, lower CPU time and fewer generations. In case (a) the turbine count was equal resulting in higher efficiency for the distributed algorithm, while in scenario (b) and (c) the distributed algorithm produced solutions with one more turbine than the simple algorithm, resulting in slightly lower efficiency. Huang also briefly gives a thin explanation that the results obtained are slightly better than those of Grady et al., but acknowledges that the results are hard to compare because of different objective functions.\\
 
 
 % Sisbot et al. 2010
@@ -124,13 +123,14 @@ where $f_i$ is objective function \textcolor{red}{[Murata et al., 2001]}. Other 
 
 
 % Kusiak et al., 2009
-\noindent One of the most complete studies of the wind farm layout optimization problem was done by Kusiak et al. (2009). \textcolor{red}{Should I write et al. when only two authors?} The study is based on six assumptions, which according to the authors are realistic and industrial-accepted. The study assume a fixed, predetermined turbine count, small variations of surface roughness, turbines with equal power curves, wind speed is following the Weibull distribution, that wind speed at different locations with same direction share the same Weibull distribution, and last, it assumes that any two turbines are separated with at least four rotor diameters. A multi-objective function was used to calculate the fitness of the solutions, which consisted of one objective function to maximize expected energy produced, and one to minimize the constraint violations. \\
-
-% Different from Mosetti and Grady (page 1, orange): Thier wind energy calculation is not based on the power curve function, and wind direction was not fully discussed in their optimization models.
-
-% Assumptions: 6 of them. Maybe this text should be a page or two, this model is important. Rewrite them! Did not understand them when i wrote them.
+\noindent One of the most complete studies of the wind farm layout optimization problem was done by Kusiak et al. (2009). \textcolor{red}{Should I write et al. when only two authors?} The study is based on six assumptions, which according to the authors are realistic and industrial-accepted. The study assume a fixed, predetermined turbine count, small variations of surface roughness, turbines with equal power curves, wind speed following the Weibull distribution, that wind speed at different locations with same direction share the same Weibull distribution, and last, it assumes that any two turbines are separated with at least four rotor diameters. A multi-objective function was used to calculate the fitness of the solutions. It consisted of one objective function to maximize expected energy produced, and one to minimize the constraint violations. Kusiak et al. critiques Mosetti et al. and Grady et al. for not basing their wind energy calculation on the power curve function and not thoroughly discussing wind direction. Their work include an extensive model of wind energy based on a discretization of the expected power production for each wind direction. \\
 
 
+% Representation
+% Weibull distribution
+% Power curve
+% Wind scenarios
+% Results
 
 
 % Saavedra-Moreno et al., 2010
