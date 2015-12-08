@@ -55,13 +55,14 @@ $m$ & Farm energy output &  \\
 \end{table}
 
 
-\noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator is the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \textcolor{red}{Not finished with this section. Don't know if wake, power curve and stuff should be here. Explain how power is calculated, since it is needed to calculate fitness.}\\
+\noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator is the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \textcolor{red}{Not finished with this section. Don't know if wake, power curve and stuff should be here. Explain how power is calculated, since it is needed to calculate fitness.} \textcolor{red}{Explain how every term in the objective function is calculated, then this is done.}\\
+
 
 
 \subsection{Wind Scenarios}
 
 
-As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the first 10 out of 24 rows of wind scenario 1 is provided in table \ref{Wind scenario 1}.
+As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the first 10 out of 24 rows of wind scenario 1 is provided in table \ref{Wind scenario 1}.\textcolor{red}{Not done.}
 
 
 \begin{table}[h!]
@@ -84,6 +85,31 @@ As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the 
 \end{tabular} 
 \end{center}
 \end{table}
+
+
+\subsection{Future Work}
+
+
+In order to investigate the goal statement and answer the research questions the provided genetic algorithm needs to be extended as shown in figure \ref{Class Diagram DGA}. The provided genetic algorithm will be used as a super class, which will be extended by different distributed genetic algorithms, such as the master slave model, the island model, the cellular model and a few hybrid models as well. For details of the distributed models that will be implemented see section \textcolor{red}{Reference background.}\\
+
+
+% Implement different distributed genetic algorithms.
+% Run simulations to figure out which one is the best, get answer to research questions.
+% Might also do some changes to the genetic algorithm.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"Class Diagram DGA"}
+\caption{Simplified version of class diagram from figure \ref{Class Diagram} extended with different distributed genetic algorithms (green).}
+\label{Class Diagram DGA}
+\end{center}
+\end{figure}
+
+
+\noindent In addition to implementing the distributed genetic algorithms listed above, there might be a few changes done to the class GA.java depending on the ''goodness'' of the results, such as changes to the selection-, mutation and/or crossover methods. Other extensions might also be included if needed, such as seeding the genetic algorithm in order to get as good results as possible for the competition.\\
+
+\noindent After the different distributed models are implemented, extensive simulations will be run for all the models, and results will be presented and discussed thoroughly. 
 
 
 % Explain the classes in more detail. Implementation details. Espesially, representation, evaluation and scenarios. Here could be a good place to include the objective function. 

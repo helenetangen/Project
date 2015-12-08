@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 DEC 2015 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  8 DEC 2015 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,7 +803,15 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-ABD: EveryShipout initializing macros (./introduction.tex
+ABD: EveryShipout initializing macros (./project.toc)
+\tf@toc=\write4
+\openout4 = `project.toc'.
+
+ (./introduction.tex
+[1
+
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
@@ -825,10 +833,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[1
+[2
 
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+]
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
@@ -844,9 +851,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-) (./background.tex [2]
+) (./background.tex [3]
 Chapter 2.
-[3
+[4
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
@@ -863,7 +870,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[4] <images/"Wake Effect".png, id=21, 502.87875pt x 387.4475pt>
+[5] <images/"Wake Effect".png, id=24, 502.87875pt x 387.4475pt>
 File: images/"Wake Effect".png Graphic file (type png)
 
 <use images/"Wake Effect".png>
@@ -874,12 +881,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
-[5 <./images/Wake Effect.png>]
+[6 <./images/Wake Effect.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-<images/"GA".png, id=27, 577.15625pt x 387.4475pt>
+<images/"GA".png, id=30, 577.15625pt x 387.4475pt>
 File: images/"GA".png Graphic file (type png)
  <use images/"GA".png>
 Package pdftex.def Info: images/"GA".png used on input line 50.
@@ -893,23 +900,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 
  []
 
-[6]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-[7 <./images/GA.png>]
+[8 <./images/GA.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
-<images/"Representation".png, id=39, 1290.8225pt x 730.73pt>
+<images/"Representation".png, id=42, 1290.8225pt x 730.73pt>
 File: images/"Representation".png Graphic file (type png)
 
 <use images/"Representation".png>
 Package pdftex.def Info: images/"Representation".png used on input line 69.
 (pdftex.def)             Requested size: 258.15993pt x 146.1434pt.
- [8 <./images/Representation.png>]
+ [9 <./images/Representation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
@@ -924,7 +931,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
-<images/"Tournament selection".png, id=45, 1050.92625pt x 408.52625pt>
+<images/"Tournament selection".png, id=48, 1050.92625pt x 408.52625pt>
 File: images/"Tournament selection".png Graphic file (type png)
 
 <use images/"Tournament selection".png>
@@ -940,7 +947,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-[9]
+[10]
 File: images/"Tournament selection".png Graphic file (type png)
  <use images/"Tournament selection".png>
 Package pdftex.def Info: images/"Tournament selection".png used on input line 1
@@ -955,8 +962,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-[10 <./images/Tournament selection.png>]
-<images/"Mutation".png, id=53, 487.8225pt x 257.96375pt>
+[11 <./images/Tournament selection.png>]
+<images/"Mutation".png, id=56, 487.8225pt x 257.96375pt>
 File: images/"Mutation".png Graphic file (type png)
 
 <use images/"Mutation".png>
@@ -967,8 +974,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
-[11 <./images/Mutation.png>]
-<images/"Single point crossover".png, id=58, 487.8225pt x 468.75125pt>
+[12 <./images/Mutation.png>]
+<images/"Single point crossover".png, id=61, 487.8225pt x 468.75125pt>
 File: images/"Single point crossover".png Graphic file (type png)
 
 <use images/"Single point crossover".png>
@@ -979,7 +986,7 @@ Package pdftex.def Info: images/"Single point crossover".png used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/"Double point crossover".png, id=59, 487.8225pt x 468.75125pt>
+<images/"Double point crossover".png, id=62, 487.8225pt x 468.75125pt>
 File: images/"Double point crossover".png Graphic file (type png)
 
 <use images/"Double point crossover".png>
@@ -995,7 +1002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
-[12]
+[13]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
@@ -1003,13 +1010,13 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
- [13 <./images/Single point crossover.png> <./images/Double point crossover.png
+ [14 <./images/Single point crossover.png> <./images/Double point crossover.png
 >]
 Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-<images/"Island Model".png, id=69, 485.815pt x 408.52625pt>
+<images/"Island Model".png, id=72, 485.815pt x 408.52625pt>
 File: images/"Island Model".png Graphic file (type png)
 
 <use images/"Island Model".png>
@@ -1020,12 +1027,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
  []
 
-[14 <./images/Island Model.png>]
+[15 <./images/Island Model.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-<images/"Cellular Model".png, id=74, 455.7025pt x 395.4775pt>
+<images/"Cellular Model".png, id=77, 455.7025pt x 395.4775pt>
 File: images/"Cellular Model".png Graphic file (type png)
 
 <use images/"Cellular Model".png>
@@ -1040,14 +1047,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
-[15]) (./relatedwork.tex [16 <./images/Cellular Model.png>]
+[16]) (./relatedwork.tex [17 <./images/Cellular Model.png>]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-[17
+[18
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
@@ -1059,33 +1066,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[18]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-[19]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
-<images/"Ring Topology".png, id=93, 628.3475pt x 328.22626pt>
+<images/"Ring Topology".png, id=96, 628.3475pt x 328.22626pt>
 File: images/"Ring Topology".png Graphic file (type png)
 
 <use images/"Ring Topology".png>
 Package pdftex.def Info: images/"Ring Topology".png used on input line 93.
 (pdftex.def)             Requested size: 188.50569pt x 98.46863pt.
- [20]
+ [21]
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[21 <./images/Ring Topology.png>]
+[22 <./images/Ring Topology.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[22]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
@@ -1100,9 +1107,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[23] [24]) (./tools.tex [25]
+[24] [25]) (./tools.tex [26]
 Chapter 4.
-<images/"Class Diagram".png, id=114, 1320.935pt x 1081.03876pt>
+<images/"Class Diagram".png, id=117, 1320.935pt x 1081.03876pt>
 File: images/"Class Diagram".png Graphic file (type png)
 
 <use images/"Class Diagram".png>
@@ -1121,47 +1128,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[26
+[27
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[27 <./images/Class Diagram.png>]
+[28 <./images/Class Diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-[28]) (./project.bbl [29]) [30
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
-] (./project.aux) ) 
+ []
+
+<images/"Class Diagram DGA".png, id=134, 1946.27126pt x 610.28pt>
+File: images/"Class Diagram DGA".png Graphic file (type png)
+
+<use images/"Class Diagram DGA".png>
+Package pdftex.def Info: images/"Class Diagram DGA".png used on input line 103.
+
+(pdftex.def)             Requested size: 389.24736pt x 122.05383pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+[30]) (./project.bbl [31 <./images/Class Diagram DGA.png>]) [32
+
+] (./project.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14945 strings out of 493117
- 288719 string characters out of 6135434
- 337070 words of memory out of 5000000
- 18095 multiletter control sequences out of 15000+600000
+ 14954 strings out of 493117
+ 288928 string characters out of 6135434
+ 336081 words of memory out of 5000000
+ 18100 multiletter control sequences out of 15000+600000
  11282 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,75p,2392b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
-pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (30 pages, 670762 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on project.pdf (32 pages, 725989 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
+ 192 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
