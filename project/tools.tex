@@ -40,7 +40,7 @@ fitness =  \frac{ \left( c_t \cdot n + c_s \cdot \floor*{\frac{n}{m}} \right) \l
 \caption{Description and value of each parameter used in the objective function provided by GECCO 2015.}
 \label{Parameters}
 \begin{tabular}{l|l|l}
-Parameter & Description & Value \\ 
+\textbf{Parameter} & \textbf{Description} & \textbf{Value} \\ 
 \hline 
 $c_t$ & Turbine cost (usd) & 750 000 \\ 
 $c_s$ & Substation cost (usd) & 8 000 000 \\ 
@@ -61,13 +61,27 @@ $m$ & Farm energy output &  \\
 \subsection{Wind Scenarios}
 
 
-As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the wind scenario 1 is provided in table \ref{Wind scenario 1}.
+As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the first 10 out of 24 rows of wind scenario 1 is provided in table \ref{Wind scenario 1}.
 
 
-\begin{table}
+\begin{table}[h!]
 \begin{center}
 \caption{Wind scenario 1 provided by GECCO 2015.}
 \label{Wind scenario 1}
+\begin{tabular}{l|l|l|l|l}
+\textbf{Index} & \textbf{c} & \textbf{k} & \textbf{$omega$} & \textbf{$\theta$} \\ 
+\hline
+0 & 7.0 & 2.0 & 0.0002 & 0 \\  
+1 & 5.0 & 2.0 & 0.0080 & 15 \\ 
+2 & 5.0 & 2.0 & 0.0227 & 30 \\ 
+3 & 5.0 & 2.0 & 0.0242 & 45 \\ 
+4 & 5.0 & 2.0 & 0.0225 & 60 \\ 
+5 & 4.0 & 2.0 & 0.0339 & 75 \\ 
+6 & 5.0 & 2.0 & 0.0423 & 90 \\ 
+7 & 6.0 & 2.0 & 0.0290 & 105 \\ 
+8 & 7.0 & 2.0 & 0.0617 & 120 \\ 
+9 & 7.0 & 2.0 & 0.0813 & 135 \\ 
+\end{tabular} 
 \end{center}
 \end{table}
 
