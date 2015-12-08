@@ -7,15 +7,23 @@ Since this thesis is part of the Genetic and Evolutionary Computation Conference
 \section{API}
 
 
-A class diagram of the provided API is displayed in figure \ref{Class Diagram}.
+A class diagram of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \textcolor{red}{Want to reference the first figure of the genetic algorithm process.} Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the ten wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
 
 
-\begin{figure}
+\begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.5]{images/Class Diagram}
+\includegraphics[scale=0.3]{images/"Class Diagram"}
 \caption{Class diagram of the API provided på GECCO 2015.}
 \label{Class Diagram}
 \end{center}
 \end{figure}
 
+
+\subsection{Evaluation}
+
+
+% Explain the classes in more detail. Implementation details. Espesially, representation, evaluation and scenarios. Here could be a good place to include the objective function. 
+% Include the objective function to be optimized.
+% Include results.
+% Future work. Include class diagram of how it will look like later.
 
