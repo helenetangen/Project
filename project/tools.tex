@@ -22,6 +22,56 @@ A class diagram of the provided API is displayed in figure \ref{Class Diagram}. 
 \subsection{Evaluation}
 
 
+The main task of the evaluation classes are to calculate the fitness of each individual based on the objective function.  The objective function to be optimize is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
+
+\begin{small}
+\begin{equation}
+fitness =  \frac{ \left( c_t \cdot n + c_s \cdot \floor*{\frac{n}{m}} \right) \left( \frac{2}{3} + \frac{1}{3} \cdot e^{-0.00174n^2} \right) + c_{OM} \cdot n}{\left( \frac{1 - (1 + r)^{-y}}{r} \right) } \cdot \frac{1}{8760 \cdot P} + \frac{0.1}{n}
+\label{Objective function} 
+\end{equation}
+\end{small}
+
+
+\noindent Description and value of all parameters given in equation \ref{Objective function} are displayed in table \ref{Parameters}. As can be seen in this table, the values of $n$, the number of turbines, and $P$, farm energy output, are not given. This is because the number of turbines, together with the turbine positions, are the parameters to be optimized by the genetic algorithm. Farm energy output is the indirect parameter that we are trying to optimize, it is dependent on turbines count, position, wind scenario and so on, and is of course therefore not provided in table \ref{Parameters} either.\\
+
+
+\begin{table}[h!]
+\begin{center}
+\caption{Description and value of each parameter used in the objective function provided by GECCO 2015.}
+\label{Parameters}
+\begin{tabular}{l|l|l}
+Parameter & Description & Value \\ 
+\hline 
+$c_t$ & Turbine cost (usd) & 750 000 \\ 
+$c_s$ & Substation cost (usd) & 8 000 000 \\ 
+$m$ & Turbines per substation & 30 \\ 
+$r$ & Interest rate & 0.03 \\ 
+$y$ & Farm lifetime (years) & 20 \\ 
+$c_{OM}$ & Yearly operating costs per turbine & 20 000 \\ 
+$n$ & Number of turbines &  \\ 
+$m$ & Farm energy output &  \\  
+\end{tabular} 
+\end{center}
+\end{table}
+
+
+\noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator is the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \textcolor{red}{Not finished with this section. Don't know if wake, power curve and stuff should be here. Explain how power is calculated, since it is needed to calculate fitness.}\\
+
+
+\subsection{Wind Scenarios}
+
+
+As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the wind scenario 1 is provided in table \ref{Wind scenario 1}.
+
+
+\begin{table}
+\begin{center}
+\caption{Wind scenario 1 provided by GECCO 2015.}
+\label{Wind scenario 1}
+\end{center}
+\end{table}
+
+
 % Explain the classes in more detail. Implementation details. Espesially, representation, evaluation and scenarios. Here could be a good place to include the objective function. 
 % Include the objective function to be optimized.
 % Include results.
