@@ -1,0 +1,118 @@
+\chapter{Technical Description}
+
+
+Since this thesis is part of the Genetic and Evolutionary Computation Conference 2015, the conference has provided all the contestants with an API available on a GitHub. API's for different programming languages are provided, but the Java API will be used in this thesis. The API includes an implementation of a simple genetic algorithm, an evaluation method and ten different wind scenarios. This section will give an explanation of the provided API, display the results from a few test simulations (which will not be included in the final thesis), and discuss future work.
+
+
+\section{API}
+
+
+A class diagram of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \textcolor{red}{Want to reference the first figure of the genetic algorithm process.} Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the ten wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.3]{images/"Class Diagram"}
+\caption{Class diagram of the API provided på GECCO 2015.}
+\label{Class Diagram}
+\end{center}
+\end{figure}
+
+
+\subsection{Genetic Algorithm}
+\textcolor{red}{A short description of special features of the genetic algorithm.}
+
+
+\subsection{Evaluation}
+
+
+The main task of the evaluation classes are to calculate the fitness of each individual based on the objective function.  The objective function to be optimize is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
+
+\begin{small}
+\begin{equation}
+fitness =  \frac{ \left( c_t \cdot n + c_s \cdot \floor*{\frac{n}{m}} \right) \left( \frac{2}{3} + \frac{1}{3} \cdot e^{-0.00174n^2} \right) + c_{OM} \cdot n}{\left( \frac{1 - (1 + r)^{-y}}{r} \right) } \cdot \frac{1}{8760 \cdot P} + \frac{0.1}{n}
+\label{Objective function} 
+\end{equation}
+\end{small}
+
+
+\noindent Description and value of all parameters given in equation \ref{Objective function} are displayed in table \ref{Parameters}. As can be seen in this table, the values of $n$, the number of turbines, and $P$, farm energy output, are not given. This is because the number of turbines, together with the turbine positions, are the parameters to be optimized by the genetic algorithm. Farm energy output is the indirect parameter that we are trying to optimize, it is dependent on turbines count, position, wind scenario and so on, and is of course therefore not provided in table \ref{Parameters} either.\\
+
+
+\begin{table}[h!]
+\begin{center}
+\caption{Description and value of each parameter used in the objective function provided by GECCO 2015.}
+\label{Parameters}
+\begin{tabular}{l|l|l}
+\textbf{Parameter} & \textbf{Description} & \textbf{Value} \\ 
+\hline 
+$c_t$ & Turbine cost (usd) & 750 000 \\ 
+$c_s$ & Substation cost (usd) & 8 000 000 \\ 
+$m$ & Turbines per substation & 30 \\ 
+$r$ & Interest rate & 0.03 \\ 
+$y$ & Farm lifetime (years) & 20 \\ 
+$c_{OM}$ & Yearly operating costs per turbine & 20 000 \\ 
+$n$ & Number of turbines &  \\ 
+$m$ & Farm energy output &  \\  
+\end{tabular} 
+\end{center}
+\end{table}
+
+
+\noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator is the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \textcolor{red}{Not finished with this section. Don't know if wake, power curve and stuff should be here. Explain how power is calculated, since it is needed to calculate fitness.} \textcolor{red}{Explain how every term in the objective function is calculated, then this is done.}\\
+
+
+
+\subsection{Wind Scenarios}
+
+
+As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the first 10 out of 24 rows of wind scenario 1 is provided in table \ref{Wind scenario 1}.\textcolor{red}{Not done.}
+
+
+\begin{table}[h!]
+\begin{center}
+\caption{Wind scenario 1 provided by GECCO 2015.}
+\label{Wind scenario 1}
+\begin{tabular}{l|l|l|l|l}
+\textbf{Index} & \textbf{c} & \textbf{k} & \textbf{$omega$} & \textbf{$\theta$} \\ 
+\hline
+0 & 7.0 & 2.0 & 0.0002 & 0 \\  
+1 & 5.0 & 2.0 & 0.0080 & 15 \\ 
+2 & 5.0 & 2.0 & 0.0227 & 30 \\ 
+3 & 5.0 & 2.0 & 0.0242 & 45 \\ 
+4 & 5.0 & 2.0 & 0.0225 & 60 \\ 
+5 & 4.0 & 2.0 & 0.0339 & 75 \\ 
+6 & 5.0 & 2.0 & 0.0423 & 90 \\ 
+7 & 6.0 & 2.0 & 0.0290 & 105 \\ 
+8 & 7.0 & 2.0 & 0.0617 & 120 \\ 
+9 & 7.0 & 2.0 & 0.0813 & 135 \\ 
+\end{tabular} 
+\end{center}
+\end{table}
+
+
+\subsection{Test Simulation}
+
+
+\textcolor{red}{Change title. Include results here.}
+
+
+\subsection{Future Work}
+
+
+In order to investigate the goal statement and answer the research questions the provided genetic algorithm needs to be extended as shown in figure \ref{Class Diagram DGA}. The provided genetic algorithm will be used as a super class, which will be extended by different distributed genetic algorithms, such as the master slave model, the island model, the cellular model and a few hybrid models as well. For details of the distributed models that will be implemented see section \textcolor{red}{Reference background.}\\
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.2]{images/"Class Diagram DGA"}
+\caption{Simplified version of class diagram from figure \ref{Class Diagram} extended with different distributed genetic algorithms (green).}
+\label{Class Diagram DGA}
+\end{center}
+\end{figure}
+
+
+\noindent In addition to implementing the distributed genetic algorithms listed above, there might be a few changes done to the class GA.java depending on the ''goodness'' of the results, such as changes to the selection-, mutation and/or crossover methods. Other extensions might also be included if needed, such as seeding the genetic algorithm in order to get as good results as possible for the competition.\\
+
+\noindent After the different distributed models are implemented, extensive simulations will be run for all the models, and results will be presented and discussed thoroughly. 
+
