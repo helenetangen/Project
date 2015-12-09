@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  9 DEC 2015 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  9 DEC 2015 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1059,79 +1059,100 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
 [18
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
+<images/"Wind Farm Representation".png, id=92, 547.04375pt x 504.88625pt>
+File: images/"Wind Farm Representation".png Graphic file (type png)
+
+<use images/"Wind Farm Representation".png>
+Package pdftex.def Info: images/"Wind Farm Representation".png used on input li
+ne 42.
+(pdftex.def)             Requested size: 164.11438pt x 151.46703pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--71
+
+ []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+[20 <./images/Wind Farm Representation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 83--84
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
-
- []
-
-[20]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
-
- []
-
-[21] <images/"Ring Topology".png, id=102, 628.3475pt x 328.22626pt>
+<images/"Ring Topology".png, id=104, 628.3475pt x 328.22626pt>
 File: images/"Ring Topology".png Graphic file (type png)
 
 <use images/"Ring Topology".png>
-Package pdftex.def Info: images/"Ring Topology".png used on input line 114.
+Package pdftex.def Info: images/"Ring Topology".png used on input line 124.
 (pdftex.def)             Requested size: 188.50569pt x 98.46863pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
-[22 <./images/Ring Topology.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 148--149
+[22] [23 <./images/Ring Topology.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
-[25]) (./tools.tex [26]
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+[25] [26]) (./tools.tex [27]
 Chapter 4.
-<images/"Class Diagram".png, id=120, 1320.935pt x 1081.03876pt>
+<images/"Class Diagram".png, id=125, 1320.935pt x 1081.03876pt>
 File: images/"Class Diagram".png Graphic file (type png)
 
 <use images/"Class Diagram".png>
@@ -1145,14 +1166,14 @@ Overfull \hbox (6.28355pt too wide) in paragraph at lines 15--16
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[27
+[28
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[28 <./images/Class Diagram.png>]
+[29 <./images/Class Diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
@@ -1162,12 +1183,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-[29]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<images/"Class Diagram DGA".png, id=134, 1946.27126pt x 610.28pt>
+<images/"Class Diagram DGA".png, id=139, 1946.27126pt x 610.28pt>
 File: images/"Class Diagram DGA".png Graphic file (type png)
 
 <use images/"Class Diagram DGA".png>
@@ -1183,39 +1204,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-[30]) (./project.bbl [31 <./images/Class Diagram DGA.png>]) [32
+[31]) (./project.bbl [32 <./images/Class Diagram DGA.png>]) [33
 
-] (./project.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./project.aux) ) 
 Here is how much of TeX's memory you used:
- 14956 strings out of 493117
- 288971 string characters out of 6135434
- 337103 words of memory out of 5000000
- 18102 multiletter control sequences out of 15000+600000
+ 14962 strings out of 493117
+ 289194 string characters out of 6135434
+ 337114 words of memory out of 5000000
+ 18107 multiletter control sequences out of 15000+600000
  11282 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,75p,2392b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (32 pages, 729447 bytes).
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on project.pdf (33 pages, 740259 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 197 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
