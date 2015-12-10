@@ -151,7 +151,7 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 
 
 % Mora
-All studies presented above have used binary encoding in their wind farm representation, but in 2007 Mora et al. presented a study where the binary encoding was replaced by an integer encoding. In their approach, an individual was represented with the $(x, y)$ coordinates of a given turbine. In addition to optimize turbine position, Mora et al. also wanted to optimize both turbine type and height. In order to do this, their individuals was represented by a matrix where the first row contained the x-coordinates of the turbines, the second row the y-coordinates, the third row turbine type and the forth row turbine height as shown in figure \ref{Individual Representation (Mora)}. Note that with this type of encoding, different individuals can have different lengths, depending on the number of turbines in each solution. \\
+All studies presented above have used binary encoding in their wind farm representation, but in 2007 Mora et al. presented a study where the binary encoding was replaced by an integer encoding. In their approach, an individual was represented with the $(x, y)$ coordinates of a given turbine. In addition to optimize turbine position, Mora et al. also wanted to optimize both turbine type and height. In order to do this, their individuals was represented by a matrix where the first row contained the x-coordinates of the turbines, the second row the y-coordinates, the third row turbine type and the forth row turbine height as shown in figure \ref{Individual Representation (Mora)}. Note that with this type of encoding, different individuals can have different lengths, depending on the number of turbines in each solution. Whether it is reasonable to allow different turbine types is another discussion, which will not be taken here, but previous authors have mentioned that when the same turbine type is used one can expect the price of a turbine to decrease with the number of turbines purchased \textcolor{red}{Reference Mosetti and the others, but double check first}. \\
 
 
 \begin{figure}[h!]
@@ -163,7 +163,7 @@ All studies presented above have used binary encoding in their wind farm represe
 \end{figure}
 
 
-\noindent Continue... \\
+\noindent Five crossover methods, and a masked mutation method were presented for the new type of encoding, see \textcolor{red}{Mora et al., 2007} for implementation details. To model the wind speed, the Weibull distribution was used, a more realistic wind speed model than the one used in the previous studies. The Weibull distribution will be explained in more detail later, since it is also used in the simulator for this thesis. Three different case studies are performed, the first one searches for an optimal solution when the number of turbines are decided beforehand. The second searches for an optimal positioning, type and height of turbines within a given budget. And the third one where there are no such constraints. Even thought the results are only briefly discussed, and presented by the authors as optimal with no explanation, this paper marks the switch from binary encoding to integer encoding, and from simple wind models to the Weibull distribution.\\
 
 
 % Sisbot et al. 2010
