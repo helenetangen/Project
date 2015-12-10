@@ -150,6 +150,22 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 \noindent The simulation was run for 2500 generations with the migration strategy that 3.3\% of the individuals with highest fitness was selected as migrants, to replace the individuals with lowest fitness in the new population every 20th generation. The distributed algorithm was tested using the same three scenarios as Mosetti et al. and Grady et al., against a simple genetic algorithm. In case (a) the distributed genetic algorithm was able to come up with the optimal solution (presented by Grady et al.), while as the simple genetic algorithm was not. For each of the three scenarios the distributed algorithm ended up with higher fitness value, more power produced, lower CPU time and fewer generations. In case (a) the turbine count was equal resulting in higher efficiency for the distributed algorithm, while in scenario (b) and (c) the distributed algorithm produced solutions with one more turbine than the simple algorithm, resulting in slightly lower efficiency. Huang also briefly gives a thin explanation that the results obtained are slightly better than those of Grady et al., but acknowledges that the results are hard to compare because of different objective functions.\\
 
 
+% Mora
+All studies presented above have used binary encoding in their wind farm representation, but in 2007 Mora et al. presented a study where the binary encoding was replaced by an integer encoding. In their approach, an individual was represented with the $(x, y)$ coordinates of a given turbine. In addition to optimize turbine position, Mora et al. also wanted to optimize both turbine type and height. In order to do this, their individuals was represented by a matrix where the first row contained the x-coordinates of the turbines, the second row the y-coordinates, the third row turbine type and the forth row turbine height as shown in figure \ref{Individual Representation (Mora)}. Note that with this type of encoding, different individuals can have different lengths, depending on the number of turbines in each solution. \\
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.3]{images/"Individual Representation (Mora)"}
+\caption{Representation of an individual where the first row represents x-coordinates of the turbines, the second row y-coordinates, the third row turbine type, and the forth row turbine height. \textcolor{red}{[Mora et al., 2007]}.}
+\label{Individual Representation (Mora)}
+\end{center}
+\end{figure}
+
+
+\noindent 
+
+
 % Sisbot et al. 2010
 \noindent \c{S}i\c{s}bot et al. published a case study of wind turbine placement on a wind farm at the Island G{\"o}k\c{c}eada, at the north east of the Aegean Sea \textcolor{red}{[\c{S}i\c{s}bot et al., 2010]}. A distributed genetic algorithm was used, but, unlike Huang, the individuals were evaluated based on multiple objective functions; one that measures the total cost (installation and operational), and one that measure total power production. \c{S}i\c{s}bot et al. argue that in an environment with changing demands, the use of a multi-objective function gives the decision-makers the opportunity to evaluate the different designs based on cost and power production separately, without ill-informed, randomly generated weights. The selection process used is a controlled, elitist process, meaning that not only the fittest, but also some individuals that can spread diversity to the population are selected for reproduction. The genetic algorithm returns a set of Pareto optimal solutions; a set of solutions that are not dominated by any other solution in the set. Stated more formally, solutions \textbf{y} is said to dominate solution \textbf{x} if
 
