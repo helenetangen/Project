@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  10 DEC 2015 17:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  10 DEC 2015 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1062,17 +1062,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 [18
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
+Overfull \hbox (0.51633pt too wide) in paragraph at lines 39--39
+[][][][]\OT1/cmr/m/n/12 Should 
+ []
+
+
+Overfull \hbox (0.51633pt too wide) in paragraph at lines 39--39
+[][][][]\OT1/cmr/m/n/12 Should 
+ []
+
+
+Overfull \hbox (0.51633pt too wide) in paragraph at lines 39--39
+[][][][]\OT1/cmr/m/n/12 Should 
+ []
+
+
+Overfull \hbox (0.51633pt too wide) in paragraph at lines 39--39
+[][][][]\OT1/cmr/m/n/12 Should 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
@@ -1081,10 +1101,10 @@ File: images/"Wind Farm Representation".png Graphic file (type png)
 
 <use images/"Wind Farm Representation".png>
 Package pdftex.def Info: images/"Wind Farm Representation".png used on input li
-ne 43.
+ne 45.
 (pdftex.def)             Requested size: 399.29483pt x 286.97433pt.
 
-Overfull \hbox (9.29483pt too wide) in paragraph at lines 43--44
+Overfull \hbox (9.29483pt too wide) in paragraph at lines 45--46
  [] 
  []
 
@@ -1096,17 +1116,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
 [20 <./images/Wind Farm Representation.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
@@ -1115,12 +1135,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--85
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
@@ -1129,24 +1149,24 @@ File: images/"Clustering Design (Zhao)".png Graphic file (type png)
 
 <use images/"Clustering Design (Zhao)".png>
 Package pdftex.def Info: images/"Clustering Design (Zhao)".png used on input li
-ne 126.
+ne 128.
 (pdftex.def)             Requested size: 185.8912pt x 130.0837pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
-
- []
-
-[22]
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[23 <./images/Clustering Design (Zhao).png>]
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
+[22] [23 <./images/Clustering Design (Zhao).png>]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
@@ -1154,15 +1174,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 File: images/"Ring Topology".png Graphic file (type png)
 
 <use images/"Ring Topology".png>
-Package pdftex.def Info: images/"Ring Topology".png used on input line 143.
+Package pdftex.def Info: images/"Ring Topology".png used on input line 145.
 (pdftex.def)             Requested size: 188.50569pt x 98.46863pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 150--151
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 [24 <./images/Ring Topology.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
@@ -1171,30 +1191,30 @@ File: images/"Individual Representation (Mora)".png Graphic file (type png)
 
 <use images/"Individual Representation (Mora)".png>
 Package pdftex.def Info: images/"Individual Representation (Mora)".png used on 
-input line 159.
+input line 161.
 (pdftex.def)             Requested size: 167.02103pt x 86.72246pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
 [25 <./images/Individual Representation (Mora).png>]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 [26]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
@@ -1254,34 +1274,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
 [33]) (./project.bbl [34 <./images/Class Diagram DGA.png>]) [35
 
-] (./project.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./project.aux) ) 
 Here is how much of TeX's memory you used:
- 14974 strings out of 493117
- 289681 string characters out of 6135434
- 337136 words of memory out of 5000000
- 18117 multiletter control sequences out of 15000+600000
+ 15044 strings out of 493117
+ 291322 string characters out of 6135434
+ 341296 words of memory out of 5000000
+ 18187 multiletter control sequences out of 15000+600000
  11282 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,75p,2392b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (35 pages, 820457 bytes).
+ 62i,11n,76p,2392b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.
+pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on project.pdf (35 pages, 821070 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  124 compressed objects within 2 object streams

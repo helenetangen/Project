@@ -3,9 +3,10 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: project.aux
 The style file: apalike.bst
 Database file #1: mybib.bib
+Warning--I didn't find a database entry for "Jensen"
 You've used 1 entry,
             1935 wiz_defined-function locations,
-            477 strings with 3873 characters,
+            479 strings with 3885 characters,
 and the built_in function-call counts, 353 in all, are:
 = -- 31
 > -- 18
@@ -44,3 +45,4 @@ warning$ -- 0
 while$ -- 2
 width$ -- 0
 write$ -- 14
+(There was 1 warning)
