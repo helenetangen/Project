@@ -116,7 +116,7 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 \end{table}
 
 
-\noindent In summary, Grady et al. is able to show that an optimal solution for scenario (a) can be obtained by genetic algorithm search. It also shows that the power production obtained in Mosetti et al. can be increased by optimizing of parameter values and more sophisticated implementation of the genetic algorithm. However, they make no attempt to compare their solutions for scenario (b) and (c) to solutions obtained using other optimization techniques. For a similar study where individuals are implemented as matrices in MATLAB see \textcolor{red}{[Emani et al., 2010]}.\\
+\noindent In summary, Grady et al. is able to show that an optimal solution for scenario (a) can be obtained by genetic algorithm search. It also shows that the power production obtained in Mosetti et al. can be increased by optimizing of parameter values and more sophisticated implementation of the genetic algorithm. However, they make no attempt to compare their solutions for scenario (b) and (c) to solutions obtained using other optimization techniques. For a similar study where individuals are implemented as matrices in MATLAB see \textcolor{red}{[Emani et al., 2009]}.\\
 
 
 % Zhao et al.
@@ -168,6 +168,30 @@ All studies presented above have used binary encoding in their wind farm represe
 \noindent Five crossover methods, and a masked mutation method were presented for the new type of encoding, see \textcolor{red}{Mora et al., 2007} for implementation details. To model the wind speed, the Weibull distribution was used, a more realistic wind speed model than the one used in the previous studies. The Weibull distribution will be explained in more detail later, since it is also used in the simulator for this thesis. Three different case studies are performed, the first one searches for an optimal solution when the number of turbines are decided beforehand. The second searches for an optimal positioning, type and height of turbines within a given budget. And the third one where there are no such constraints. Even thought the results are only briefly discussed, and presented by the authors as optimal with no explanation, this paper marks the switch from binary encoding to integer encoding, and from simple wind models to the Weibull distribution.\\
 
 
+%Wan et al, 2009.
+\noindent Wan et al. \textcolor{red}{[2009]} criticized the simple power-, and wind distribution model presented by Mosetti et al., and Grady et al. As Mora et al., they suggested using the Weibull distribution to model the wind. However, they introduced a novel power model \\
+
+
+\begin{equation}
+\label{Power Model (Wan)}
+\int_{u_in}^{u_out} P(u)f(u) du,
+\end{equation}
+
+
+\noindent where $u_{in}$ is the cut-in wind speed of the turbine, and $u_{out}$ is the cut-out wind speed of the turbine. $P(u)$ is the power output for the wind speed $u$ and $f(u)$ is the probability density of the wind speed $u$. The genetic algorithm was similar to that of Grady et al., and results show that the produced power increases. The results are not that important thought, because different objective function will produce different optimal solutions, however the power model introduced will be utilized in many future studies.\\
+
+
+% Kusiak et al., 2009
+\noindent One of the most complete studies of the wind farm layout optimization problem was done by Kusiak et al. (2009). \textcolor{red}{Should I write et al. when only two authors?} The study is based on six assumptions, which according to the authors are realistic and industrial-accepted. The study assume a fixed, predetermined turbine count, small variations of surface roughness, turbines with equal power curves, wind speed following the Weibull distribution, that wind speed at different locations with same direction share the same Weibull distribution, and last, it assumes that any two turbines are separated with at least four rotor diameters. A multi-objective function was used to calculate the fitness of the solutions. It consisted of one objective function to maximize expected energy produced, and one to minimize the constraint violations. Kusiak et al. critiques Mosetti et al. and Grady et al. for not basing their wind energy calculation on the power curve function and not thoroughly discussing wind direction. Their work include an extensive model of wind energy based on a discretization of the expected power production for each wind direction. \\
+
+
+% Representation
+% Weibull distribution
+% Power curve
+% Wind scenarios
+% Results
+
+
 % Sisbot et al. 2010
 \noindent \c{S}i\c{s}bot et al. published a case study of wind turbine placement on a wind farm at the Island G{\"o}k\c{c}eada, at the north east of the Aegean Sea \textcolor{red}{[\c{S}i\c{s}bot et al., 2010]}. A distributed genetic algorithm was used, but, unlike Huang, the individuals were evaluated based on multiple objective functions; one that measures the total cost (installation and operational), and one that measure total power production. \c{S}i\c{s}bot et al. argue that in an environment with changing demands, the use of a multi-objective function gives the decision-makers the opportunity to evaluate the different designs based on cost and power production separately, without ill-informed, randomly generated weights. The selection process used is a controlled, elitist process, meaning that not only the fittest, but also some individuals that can spread diversity to the population are selected for reproduction. The genetic algorithm returns a set of Pareto optimal solutions; a set of solutions that are not dominated by any other solution in the set. Stated more formally, solutions \textbf{y} is said to dominate solution \textbf{x} if
 
@@ -189,17 +213,6 @@ where $f_i$ is objective function \textcolor{red}{[Murata et al., 2001]}. Other 
 \end{itemize}
 
 \noindent The genetic algorithm proposed was different than the previous ones on two points. First, for each new generation the turbine height- and type was optimized to find the maximum net present value (NPV). Second, if the best fitness was unchanged from one generation to another, a local search was performed to improve the fitness of the individuals even more if possible. Results was compared against Grady et al., and the proposed algorithm was also able to find the optimal solution for wind scenario (a). For wind scenario (b), and (c), the proposed solution produced slightly more energy than that of Grady et al., and it needed a lot fewer generations to do so - which one would expect when local search is used.\\
-
-
-% Kusiak et al., 2009
-\noindent One of the most complete studies of the wind farm layout optimization problem was done by Kusiak et al. (2009). \textcolor{red}{Should I write et al. when only two authors?} The study is based on six assumptions, which according to the authors are realistic and industrial-accepted. The study assume a fixed, predetermined turbine count, small variations of surface roughness, turbines with equal power curves, wind speed following the Weibull distribution, that wind speed at different locations with same direction share the same Weibull distribution, and last, it assumes that any two turbines are separated with at least four rotor diameters. A multi-objective function was used to calculate the fitness of the solutions. It consisted of one objective function to maximize expected energy produced, and one to minimize the constraint violations. Kusiak et al. critiques Mosetti et al. and Grady et al. for not basing their wind energy calculation on the power curve function and not thoroughly discussing wind direction. Their work include an extensive model of wind energy based on a discretization of the expected power production for each wind direction. \\
-
-
-% Representation
-% Weibull distribution
-% Power curve
-% Wind scenarios
-% Results
 
 
 % Saavedra-Moreno et al., 2010
