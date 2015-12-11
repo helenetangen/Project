@@ -169,19 +169,24 @@ As in nature, we want individuals of the evolutionary search to inherit features
 \subsection{Distributed Genetic Algorithms (DGAs)}
 On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population do not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that does not look that good at first, and consequently get the opportunity to find better, more sophisticated solutions. \\
 
-\noindent The goal of this thesis is to investigate and compare the performance of different distributed genetic algorithms in solving the wind farm layout optimization problem. In order to give an answer to the research questions, different distributed genetic algorithms needs to be implemented and tested. This section introduces the seven different distributed algorithms presented by \textcolor{red}{[Gong et al., 2015]}. These will all be implemented and tested in this thesis.\\
+\noindent The goal of this thesis is to investigate and compare the performance of different distributed genetic algorithms in solving the wind farm layout optimization problem. In order to give an answer to the research questions, different distributed genetic algorithms needs to be implemented and tested. This section introduces the seven different distributed algorithms presented by \textcolor{red}{[Gong et al., 2015]}. These will all be implemented and tested in this thesis. \textcolor{red}{Write that DGA means population is distributed.}\\
 
 
 \subsubsection{The Master-Slave Model}
+
+The master-slave model is not really a distributed genetic algorithm, but a simple genetic algorithm where the main operations of the algorithm are distributed between different processors. It will be implemented in this thesis for two reasons; (1) distributing tasks between different processors gives a faster-running algorithm than an simple genetic algorithm, (2) results obtained will be the same as results obtained by a simple genetic algorithm, and can therefore be used to compare against true distributed algorithms. The master-slave model is displayed in figure \ref{Master-Slave Model}.\\
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Master-Slave Model"}
-\caption{Master-slave model. \textcolor{red}{[Gong, 2014]}}
-\label{Cellular model}
+\caption{Master-slave model. The master process distributes the population to different slave processes, which calculate the fitness of each individual and return the results to the master process \textcolor{red}{[Gong, 2014]}.}
+\label{Master-Slave Model}
 \end{center}
 \end{figure}
+
+
+\noindent When the master-slave model is used, the main loop is taken care of by the master process, however the most expensive operation in the genetic algorithm, calculation of fitness, is distributed to different slave processes. Each slave simply calculate the fitness of the individuals received from the master, and return the calculated fitness to the master. 
 
 
 \subsubsection{The Island Model}
@@ -223,6 +228,7 @@ Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Go
 
 
 \subsubsection{Hybrid Models}
+Hybrid models, are distributed genetic algorithms that combine different distributed genetic algorithm models. Gong et al. presented the three different hybrid models presented in figure \ref{Hybrid Models}.\\
 
 
 \begin{figure}[h!]
@@ -242,3 +248,11 @@ Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Go
     \caption{Different hybrid models. (a) Island-master-slave hybrid model, (b) Island-cellular hybrid model, and (c) Island-island hybrid model \textcolor{red}{[Gong, 2014]}.}
     \label{Hybrid Models}
 \end{figure}
+
+
+\noindent The first hybrid model combines the island model with the master-slave model. By combining these two models, each deme will be processed faster because it is distributed between different processors. The second model combines the island model and the cellular model. By combining these two models the diversity within a given deme can be kept longer than when the simple island model is used, and make sure premature convergence will not happen in the demes. The last model has a similar function as the second one, but instead of using the cellular model in each deme, it uses the island model inside the demes. \\
+
+
+\subsubsection{Pool Model}
+
+
