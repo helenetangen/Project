@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  11 DEC 2015 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  11 DEC 2015 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1017,12 +1017,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
 [14 <./images/Single point crossover.png> <./images/Double point crossover.png>
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
-
+Overfull \hbox (28.32437pt too wide) in paragraph at lines 173--173
+\OT1/cmr/m/n/12 populations.  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Overfull \hbox (28.32437pt too wide) in paragraph at lines 173--173
+\OT1/cmr/m/n/12 populations.  
+ []
+
+
+Overfull \hbox (28.32437pt too wide) in paragraph at lines 173--173
+\OT1/cmr/m/n/12 populations.  
+ []
+
+
+Overfull \hbox (28.32437pt too wide) in paragraph at lines 173--173
+\OT1/cmr/m/n/12 populations.  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
@@ -1030,7 +1045,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 177--178
 File: images/"Master-Slave Model".png Graphic file (type png)
 
 <use images/"Master-Slave Model".png>
-Package pdftex.def Info: images/"Master-Slave Model".png used on input line 182
+Package pdftex.def Info: images/"Master-Slave Model".png used on input line 183
 .
 (pdftex.def)             Requested size: 109.91147pt x 110.21259pt.
 
@@ -1038,7 +1053,7 @@ Package pdftex.def Info: images/"Master-Slave Model".png used on input line 182
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
@@ -1046,15 +1061,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 193--194
 File: images/"Island Model".png Graphic file (type png)
 
 <use images/"Island Model".png>
-Package pdftex.def Info: images/"Island Model".png used on input line 198.
+Package pdftex.def Info: images/"Island Model".png used on input line 199.
 (pdftex.def)             Requested size: 145.44449pt x 122.25769pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 [16 <./images/Master-Slave Model.png> <./images/Island Model.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
@@ -1062,19 +1077,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--213
 File: images/"Cellular Model".png Graphic file (type png)
 
 <use images/"Cellular Model".png>
-Package pdftex.def Info: images/"Cellular Model".png used on input line 217.
+Package pdftex.def Info: images/"Cellular Model".png used on input line 218.
 (pdftex.def)             Requested size: 136.71179pt x 118.64417pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
+Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
@@ -1083,7 +1098,7 @@ File: images/"Island-Master-Slave Hybrid".png Graphic file (type png)
 
 <use images/"Island-Master-Slave Hybrid".png>
 Package pdftex.def Info: images/"Island-Master-Slave Hybrid".png used on input 
-line 237.
+line 238.
 (pdftex.def)             Requested size: 116.99673pt x 113.80937pt.
 
 <images/"Island-Cellular Hybrid Model".png, id=87, 484.81125pt x 418.56375pt>
@@ -1091,7 +1106,7 @@ File: images/"Island-Cellular Hybrid Model".png Graphic file (type png)
 
 <use images/"Island-Cellular Hybrid Model".png>
 Package pdftex.def Info: images/"Island-Cellular Hybrid Model".png used on inpu
-t line 241.
+t line 242.
 (pdftex.def)             Requested size: 117.00066pt x 113.80566pt.
 
 <images/"Island-Island Hybrid Model".png, id=88, 484.81125pt x 408.52625pt>
@@ -1099,23 +1114,40 @@ File: images/"Island-Island Hybrid Model".png Graphic file (type png)
 
 <use images/"Island-Island Hybrid Model".png>
 Package pdftex.def Info: images/"Island-Island Hybrid Model".png used on input 
-line 245.
+line 246.
 (pdftex.def)             Requested size: 117.00066pt x 113.80684pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
 
-LaTeX Warning: Reference `Pool Model' on page 18 undefined on input line 257.
+LaTeX Warning: Reference `Pool Model' on page 18 undefined on input line 258.
 
-[18 <./images/Cellular Model.png>]) (./relatedwork.tex [19 <./images/Island-Mas
-ter-Slave Hybrid.png> <./images/Island-Cellular Hybrid Model.png> <./images/Isl
-and-Island Hybrid Model.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+
+ []
+
+[18 <./images/Cellular Model.png>]
+<images/"Pool Model".png, id=93, 848.16875pt x 387.4475pt>
+File: images/"Pool Model".png Graphic file (type png)
+
+<use images/"Pool Model".png>
+Package pdftex.def Info: images/"Pool Model".png used on input line 263.
+(pdftex.def)             Requested size: 254.45258pt x 116.23514pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+
+ []
+
+[19 <./images/Island-Master-Slave Hybrid.png> <./images/Island-Cellular Hybrid 
+Model.png> <./images/Island-Island Hybrid Model.png> <./images/Pool Model.png>]
+) (./relatedwork.tex [20]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
@@ -1127,7 +1159,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-[20
+[21
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 28--29
@@ -1164,7 +1196,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
-<images/"Wind Farm Representation".png, id=104, 1330.9725pt x 956.57375pt>
+<images/"Wind Farm Representation".png, id=109, 1330.9725pt x 956.57375pt>
 File: images/"Wind Farm Representation".png Graphic file (type png)
 
 <use images/"Wind Farm Representation".png>
@@ -1179,7 +1211,7 @@ Overfull \hbox (9.29483pt too wide) in paragraph at lines 45--46
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21]
+[22]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1188,7 +1220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
 
-[22 <./images/Wind Farm Representation.png>]
+[23 <./images/Wind Farm Representation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
@@ -1208,7 +1240,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-[23]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
@@ -1226,7 +1258,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
-[24] <images/"Clustering Design (Zhao)".png, id=122, 929.4725pt x 650.43pt>
+[25] <images/"Clustering Design (Zhao)".png, id=128, 929.4725pt x 650.43pt>
 File: images/"Clustering Design (Zhao)".png Graphic file (type png)
 
 <use images/"Clustering Design (Zhao)".png>
@@ -1238,7 +1270,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[25 <./images/Clustering Design (Zhao).png>]
+[26 <./images/Clustering Design (Zhao).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
@@ -1248,7 +1280,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
-<images/"Ring Topology".png, id=128, 628.3475pt x 328.22626pt>
+<images/"Ring Topology".png, id=133, 628.3475pt x 328.22626pt>
 File: images/"Ring Topology".png Graphic file (type png)
 
 <use images/"Ring Topology".png>
@@ -1259,12 +1291,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-[26 <./images/Ring Topology.png>]
+[27 <./images/Ring Topology.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-<images/"Individual Representation (Mora)".png, id=133, 417.56pt x 216.81pt>
+<images/"Individual Representation (Mora)".png, id=138, 417.56pt x 216.81pt>
 File: images/"Individual Representation (Mora)".png Graphic file (type png)
 
 <use images/"Individual Representation (Mora)".png>
@@ -1276,7 +1308,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
-[27 <./images/Individual Representation (Mora).png>]
+[28 <./images/Individual Representation (Mora).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
@@ -1291,12 +1323,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
-[28]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
-[29]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
@@ -1306,9 +1338,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-[30] [31]) (./tools.tex [32]
+[31] [32]) (./tools.tex [33]
 Chapter 4.
-<images/"Class Diagram".png, id=154, 1320.935pt x 1081.03876pt>
+<images/"Class Diagram".png, id=159, 1320.935pt x 1081.03876pt>
 File: images/"Class Diagram".png Graphic file (type png)
 
 <use images/"Class Diagram".png>
@@ -1322,14 +1354,14 @@ Overfull \hbox (6.28355pt too wide) in paragraph at lines 15--16
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33
+[34
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-[34 <./images/Class Diagram.png>]
+[35 <./images/Class Diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
@@ -1339,12 +1371,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-[35]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<images/"Class Diagram DGA".png, id=167, 1946.27126pt x 610.28pt>
+<images/"Class Diagram DGA".png, id=172, 1946.27126pt x 610.28pt>
 File: images/"Class Diagram DGA".png Graphic file (type png)
 
 <use images/"Class Diagram DGA".png>
@@ -1360,18 +1392,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-[36]) (./project.bbl [37 <./images/Class Diagram DGA.png>]) [38
+[37]) (./project.bbl [38 <./images/Class Diagram DGA.png>]) [39
 
 ] (./project.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 15074 strings out of 493117
- 292307 string characters out of 6135434
- 340331 words of memory out of 5000000
- 18213 multiletter control sequences out of 15000+600000
+ 15084 strings out of 493117
+ 292574 string characters out of 6135434
+ 342331 words of memory out of 5000000
+ 18222 multiletter control sequences out of 15000+600000
  11282 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,76p,2392b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1389,10 +1424,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (38 pages, 941429 bytes).
+Output written on project.pdf (39 pages, 979655 bytes).
 PDF statistics:
- 227 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
+ 232 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

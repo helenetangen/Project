@@ -170,6 +170,7 @@ As in nature, we want individuals of the evolutionary search to inherit features
 On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population do not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that does not look that good at first, and consequently get the opportunity to find better, more sophisticated solutions. \\
 
 \noindent The goal of this thesis is to investigate and compare the performance of different distributed genetic algorithms in solving the wind farm layout optimization problem. In order to give an answer to the research questions, different distributed genetic algorithms needs to be implemented and tested. This section introduces the seven different distributed algorithms presented by \textcolor{red}{[Gong et al., 2015]}. These will all be implemented and tested in this thesis. \textcolor{red}{Write that DGA means population is distributed.}\\
+\todo{Write somewhere that DGA can use different genetic operations on different sub-populations.}
 
 
 \subsubsection{The Master-Slave Model}
@@ -254,16 +255,20 @@ Hybrid models, are distributed genetic algorithms that combine different distrib
 
 
 \subsubsection{Pool Model}
-Another distributed model is called the pool model. In this model the population is put in a shared global pool of $n$ individuals, where it can be accessed by different processors. Each processor draws a population from random positions of the pool, however it has allocated its own positions for which it can return individuals to the pool. This process is demonstrated in figure \ref{Pool Model}. 
+Another distributed model is called the pool model. In this model the population is put in a shared global pool of $n$ individuals, where it can be accessed by different processors. Each processor draws a population from random positions of the pool, however it has allocated its own positions for which it can return individuals to the pool. This process is demonstrated in figure \ref{Pool Model}. \\
 
 
-%\begin{figure}[h!]
-%\begin{center}
-%\includegraphics[scale=0.3]{images/"Cellular Model"}
-%\caption{Cellular model where the neighborhood topology consist of the cells to the left, right, over and under the given cell. \textcolor{red}{[Gong, 2014]}}
-%\label{Cellular model}
-%\end{center}
-%\end{figure}
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.3]{images/"Pool Model"}
+\caption{Explain! \textcolor{red}{[Gong, 2014]}}
+\label{Cellular model}
+\end{center}
+\end{figure}
 
 
-Each processor has $i$ positions in the pool which it is responsible for. It draws a population form random positions in the pool, performs genetic operations and fitness calculations on the individuals, and writes each individual back to one of its allocated positions, if the fitness of the new individual is higher than then fitness of the current individual occupying the position. Key design decisions in this model is individual selection policy and replacement policy \textcolor{red}{Explain positions better}. 
+\noindent Each processor has $i$ positions in the pool which it is responsible for. It draws a population form random positions in the pool, performs genetic operations and fitness calculations on the individuals, and writes each individual back to one of its allocated positions, if the fitness of the new individual is higher than then fitness of the current individual occupying the position. Key design decisions in this model is individual selection policy and replacement policy \textcolor{red}{Explain positions better}.\\
+
+
+\subsubsection{Coevolution model}
+ 
