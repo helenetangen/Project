@@ -192,6 +192,29 @@ All studies presented above have used binary encoding in their wind farm represe
 % Results
 
 
+% Gonzalez et al. 2010.
+Assumptions such as a cost model only dependent on the number of turbines are unrealistic, and needs to be removed in order to model the wind farm layout optimization problem in an realistic way. \textcolor{red}{González et al. [2010]} introduced a cost model based on the net present value, which takes into account wind speed, wind distribution, the number, type, rated power and tower height of turbines, loss to due wake effects, auxiliary costs, road infrastructure, buildings, substation, electrical framework and financial aspects such as return on investment. For example, In order to accurately model civil cost they present an greedy search which connects wind turbines to auxiliary roads or other turbines dependent on their position. 
+
+
+%new wake model.
+%forbinned, areas, terrain with bad siil limited number of generators and money. See yellow.
+
+
+
+
+
+
+%\noindent Certainly wind farm layout optimization using genetic search needed to be tested in a more realistic environment, and in 2010 Gonzalez et al. successfully attempted to do just that \textcolor{red}{[González et al., 2010]}. Three main improvements were presented
+%
+%\begin{itemize}
+%\item[1] A more realistic cost model that takes into account wind speed- and direction distributions, turbine count, type, rated power, and tower height, wake effect and other costs such as foundations, road work, building, electrical networks, maintenance and removal costs.
+%\item[2] A more realistic wake effect model based on \textcolor{red}{[Frandsen, 2006, 2007]}.
+%\item[3] An genetic algorithm that handles forbidden areas, soil capacity, roughness length for wind directions, and that are able to set a limit on the number of turbines or initial cost.
+%\end{itemize}
+%
+%\noindent The genetic algorithm proposed was different than the previous ones on two points. First, for each new generation the turbine height- and type was optimized to find the maximum net present value (NPV). Second, if the best fitness was unchanged from one generation to another, a local search was performed to improve the fitness of the individuals even more if possible. Results was compared against Grady et al., and the proposed algorithm was also able to find the optimal solution for wind scenario (a). For wind scenario (b), and (c), the proposed solution produced slightly more energy than that of Grady et al., and it needed a lot fewer generations to do so - which one would expect when local search is used.\\
+
+
 % Sisbot et al. 2010
 \noindent \c{S}i\c{s}bot et al. published a case study of wind turbine placement on a wind farm at the Island G{\"o}k\c{c}eada, at the north east of the Aegean Sea \textcolor{red}{[\c{S}i\c{s}bot et al., 2010]}. A distributed genetic algorithm was used, but, unlike Huang, the individuals were evaluated based on multiple objective functions; one that measures the total cost (installation and operational), and one that measure total power production. \c{S}i\c{s}bot et al. argue that in an environment with changing demands, the use of a multi-objective function gives the decision-makers the opportunity to evaluate the different designs based on cost and power production separately, without ill-informed, randomly generated weights. The selection process used is a controlled, elitist process, meaning that not only the fittest, but also some individuals that can spread diversity to the population are selected for reproduction. The genetic algorithm returns a set of Pareto optimal solutions; a set of solutions that are not dominated by any other solution in the set. Stated more formally, solutions \textbf{y} is said to dominate solution \textbf{x} if
 
@@ -201,18 +224,6 @@ All studies presented above have used binary encoding in their wind farm represe
 \end{equation}
 
 where $f_i$ is objective function \textcolor{red}{[Murata et al., 2001]}. Other interesting features of this study is the introductions of constraints on wind turbine positions and constraints on the cost, meaning that individuals with wind turbines outside the area of the island, and individuals with costs larger than the budget are removed from the population. Even thought constraints on individuals are not in accordance with the nature genetic algorithms, they can be necessary when the algorithm is applied to a real problem. Another feature introduced in this paper is rectangular cells. The argument behind this decision is that the safe distance between wind turbines is dependent of the direction of the turbine. The minimum distance between turbines in prevailing wind is 8D, while the minimum distance between turbines in the crosswind is 2D. In spite of this attempt to make the wind scenario more realistic, it is critiqued because it operates with a constant wind direction and constant speed, using the average wind direction and speed measured at the Island \textcolor{red}{[Samorani, 2013]}. Results are not compared against previous studies, and the argument behind this decision is that it is hard to compare a Pareto-optimal set of solution to one of the previous solutions. \\
-
-
-% Gonzalez et al. 2010.
-\noindent Certainly wind farm layout optimization using genetic search needed to be tested in a more realistic environment, and in 2010 Gonzalez et al. successfully attempted to do just that \textcolor{red}{[González et al., 2010]}. Three main improvements were presented
-
-\begin{itemize}
-\item[1] A more realistic cost model that takes into account wind speed- and direction distributions, turbine count, type, rated power, and tower height, wake effect and other costs such as foundations, road work, building, electrical networks, maintenance and removal costs.
-\item[2] A more realistic wake effect model based on \textcolor{red}{[Frandsen, 2006, 2007]}.
-\item[3] An genetic algorithm that handles forbidden areas, soil capacity, roughness length for wind directions, and that are able to set a limit on the number of turbines or initial cost.
-\end{itemize}
-
-\noindent The genetic algorithm proposed was different than the previous ones on two points. First, for each new generation the turbine height- and type was optimized to find the maximum net present value (NPV). Second, if the best fitness was unchanged from one generation to another, a local search was performed to improve the fitness of the individuals even more if possible. Results was compared against Grady et al., and the proposed algorithm was also able to find the optimal solution for wind scenario (a). For wind scenario (b), and (c), the proposed solution produced slightly more energy than that of Grady et al., and it needed a lot fewer generations to do so - which one would expect when local search is used.\\
 
 
 % Saavedra-Moreno et al., 2010
