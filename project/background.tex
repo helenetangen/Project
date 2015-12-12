@@ -169,8 +169,7 @@ As in nature, we want individuals of the evolutionary search to inherit features
 \subsection{Distributed Genetic Algorithms (DGAs)}
 On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population do not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that does not look that good at first, and consequently get the opportunity to find better, more sophisticated solutions. \\
 
-\noindent The goal of this thesis is to investigate and compare the performance of different distributed genetic algorithms in solving the wind farm layout optimization problem. In order to give an answer to the research questions, different distributed genetic algorithms needs to be implemented and tested. This section introduces the seven different distributed algorithms presented by \textcolor{red}{[Gong et al., 2015]}. These will all be implemented and tested in this thesis. \textcolor{red}{Write that DGA means population is distributed.}\\
-\todo{Write somewhere that DGA can use different genetic operations on different sub-populations.}
+\noindent The goal of this thesis is to investigate and compare the performance of different distributed genetic algorithms in solving the wind farm layout optimization problem. In order to give an answer to the research questions, different distributed genetic algorithms needs to be implemented and tested. This section introduces five different population-distributed algorithms presented by \textcolor{red}{[Gong et al., 2015]}. These will all be implemented and tested in this thesis.\\
 
 
 \subsubsection{The Master-Slave Model}
@@ -181,7 +180,7 @@ The master-slave model is not really a distributed genetic algorithm, but a simp
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Master-Slave Model"}
-\caption{Master-slave model. The master process distributes the population to different slave processes, which calculate the fitness of each individual and return the results to the master process \textcolor{red}{[Gong, 2014]}.}
+\caption{Master-slave model. The master process distributes the population to different slave processes, which calculate the fitness of each individual and return the results to the master process \textcolor{red}{[Gong et al, 2014]}.}
 \label{Master-Slave Model}
 \end{center}
 \end{figure}
@@ -197,7 +196,7 @@ In the island model, the population is divided into sub populations that are dis
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Island Model"}
-\caption{An island model using a ring topology with four demes of size five. \textcolor{red}{[Gong, 2014]}}
+\caption{An island model using a ring topology with four demes of size five. \textcolor{red}{[Gong et al., 2014]}}
 \label{Island model}
 \end{center}
 \end{figure}
@@ -216,7 +215,7 @@ Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Go
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Cellular Model"}
-\caption{Cellular model where the neighborhood topology consist of the cells to the left, right, over and under the given cell. \textcolor{red}{[Gong, 2014]}}
+\caption{Cellular model where the neighborhood topology consist of the cells to the left, right, over and under the given cell. \textcolor{red}{[Gong et al, 2014]}}
 \label{Cellular model}
 \end{center}
 \end{figure}
@@ -246,7 +245,7 @@ Hybrid models, are distributed genetic algorithms that combine different distrib
         \includegraphics[width=\textwidth, height=4cm]{images/"Island-Island Hybrid Model"}
         \caption{}
     \end{subfigure}
-    \caption{Different hybrid models. (a) Island-master-slave hybrid model, (b) Island-cellular hybrid model, and (c) Island-island hybrid model \textcolor{red}{[Gong, 2014]}.}
+    \caption{Different hybrid models. (a) Island-master-slave hybrid model, (b) Island-cellular hybrid model, and (c) Island-island hybrid model \textcolor{red}{[Gong et al., 2014]}.}
     \label{Hybrid Models}
 \end{figure}
 
@@ -261,14 +260,10 @@ Another distributed model is called the pool model. In this model the population
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Pool Model"}
-\caption{Explain! \textcolor{red}{[Gong, 2014]}}
-\label{Cellular model}
+\caption{The pool model. Each processor has its own positions in the pool for which it is responsible to return individuals to. The red processor is responsible for the red positions in the pool, and so on. Processors draw individuals from random positions in the pool, but writes them back to its own positions, given that their fitness are higher than the individuals currently occupying the position \textcolor{red}{[Gong et al., 2014]}.}
+\label{Pool Model}
 \end{center}
 \end{figure}
 
 
-\noindent Each processor has $i$ positions in the pool which it is responsible for. It draws a population form random positions in the pool, performs genetic operations and fitness calculations on the individuals, and writes each individual back to one of its allocated positions, if the fitness of the new individual is higher than then fitness of the current individual occupying the position. Key design decisions in this model is individual selection policy and replacement policy \textcolor{red}{Explain positions better}.\\
-
-
-\subsubsection{Coevolution model}
- 
+\noindent A processor $p_1$ has $k$ positions in the pool for which it is responsible for as can be seen in figure \ref{Pool Model}, where the processor and the positions it is responsible for has the same color. It draws a population of individuals $i_1, i_2,...,i_k$ from random positions in the pool, performs genetic operations and fitness calculations, and write each individual back to its corresponding position $1, 2,...,k$ in the the positions it is responsible for, given that their fitness is higher then the fitness of the individual currently occupying the position. Key design decisions in this model is individual selection policy and replacement policy.\\
