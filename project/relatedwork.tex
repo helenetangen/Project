@@ -193,7 +193,7 @@ All studies presented above have used binary encoding in their wind farm represe
 
 
 % Gonzalez et al. 2010.
-Assumptions such as a cost model only dependent on the number of turbines are unrealistic, and needs to be removed in order to model the wind farm layout optimization problem in an realistic way. \textcolor{red}{González et al. [2010]} introduced a cost model based on the net present value, which takes into account wind speed, wind distribution, the number, type, rated power and tower height of turbines, loss to due wake effects, auxiliary costs, road infrastructure, buildings, substation, electrical framework and financial aspects such as return on investment. For example, In order to accurately model civil cost they present an greedy search which connects wind turbines to auxiliary roads or other turbines dependent on their position. 
+Assumptions such as a cost model only dependent on the number of turbines are unrealistic, and needs to be removed in order to model the wind farm layout optimization problem in an realistic way. \textcolor{red}{González et al. [2010]} introduced a cost model based on the net present value, which takes into account wind speed, wind distribution, the number, type, rated power and tower height of turbines, loss to due wake effects, auxiliary costs, road infrastructure, buildings, substation, electrical framework and financial aspects such as return on investment. For example, In order to accurately model civil cost they present an greedy search which connects wind turbines to auxiliary roads or other turbines dependent on their position. Figure \ref{Civil Cost Greedy Algorithm (Gonzales)} shows how the greedy algorithm works. To connect the first turbines to one of the roads it measures the distance between every turbine and every road and connects the turbine and road that are nearest. Next it calculates the distance between the remaining turbines and the two roads and the turbine already connected, finds the minimum distance and connect the turbines. \textcolor{red}{Not done. Explain algorithm using example. Make caption.}
 
 
 \begin{figure}[h!]
@@ -203,6 +203,9 @@ Assumptions such as a cost model only dependent on the number of turbines are un
 \label{Civil Cost Greedy Algorithm (Gonzales)}
 \end{center}
 \end{figure}
+
+
+\noindent Other new features included is a new wake model \textcolor{red}{Frandsen et al., 2006, 2007}, and a genetic algorithm that can manage forbidden areas and that gives penalties for turbines positioned in undesirable terrain. Individuals are represented the same way as Mora et al. \textcolor{red}{[2007]} displayed in figure \ref{Individual Representation (Mora)}. Results are compared against Grady, and shows higher produced energy. The authors also include three case studies showing how their algorithm can handle restrictions such as roads crossing, forbidden zones, undesirable zones and maximum investment cost.\\
 
 
 %new wake model.
