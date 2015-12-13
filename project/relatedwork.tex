@@ -241,6 +241,13 @@ where $f_i$ is objective function \textcolor{red}{[Murata et al., 2001]}. Other 
 \section{Wind Farm Layout Optimization Different Approaches}
 
 
+%Ozturk et al., (2004)
+% Minimize distance between generators, while maintaining feasability.
+%
+
+A greedy heuristic approach to the wind farm layout optimization problem was presented by \textcolor{red}{Ozturk et al., (2004)}. The algorithm starts out with an initial solution, where a number of wind turbines are positioned in the wind farm. Next, the greedy algorithm tries to improve the layout by performing either an add operation, a remove operation or a move operations. The add operation works by randomly position a new turbine in the terrain a number of times, and observe the change in the objective function. The remove operation works by observing the change in objective function when a turbine is removed, the process is repeated for all turbines. A move operation consist of moving each turbine 4 rotor diameters away from its current position in eight wind direction on at a time, and observe the change in the objective function. The operation actually performed by the algorithm is the one that improves the objective function value the most. The greedy heuristic often converge to a local optimum, and the authors try to cope with this problem by performing randomly perturbations on a number of turbine positions if the no improvements can be found using the add-, remove-, or move operation.
+
+
 \section{Discussion Related Work}
 
 
