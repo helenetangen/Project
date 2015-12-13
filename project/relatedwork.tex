@@ -1,5 +1,5 @@
 \chapter{Related Work}
-Wind farm layout optimization has been studied extensively the last 20 years and the goal of this section is to provide the reader with an overview. This section is divided into three parts; (1) An extensive overview of wind farm layout optimization using the genetic algorihtm, since that is the main focus of this thesis, (2) an short review of other optimization approaches, and (3) a discussion that relates previous work to the current study. 
+Wind farm layout optimization has been studied extensively the last 20 years and the goal of this section is to provide the reader with an overview. This section is divided into three parts; (1) An extensive overview of wind farm layout optimization using the genetic algorithm, since that is the main focus of this thesis, (2) an short review of other optimization approaches, and (3) a discussion that relates previous work to the current study. 
 
 
 \section{Wind Farm Layout Optimization using Genetic Algorithms}
@@ -72,18 +72,15 @@ Scenario & Configuration & Efficiency & $P_{tot}$(kWyear) & cost/kWyear & Number
 
 
 % Grady et al. 2005.
-\noindent In 2005, Grady et al. picked up where Mosetti et al. left of \textcolor{red}{[Grady et al., 2005]}. They recognized that while the results of Mosetti et al. beat random configurations they were not close to configurations made on simple empirical placement schemes. In their study, they opt to determine the effectiveness of the genetic algorithm compared to optimal configurations to investigate their usefulness in wind farm layout optimization. \\
-
-\noindent As Mosetti et al., they also used a wake model similar to the Jensen model \textcolor{red}{(do I have to reference it again?)} as well as the same cost- and power function. However, the objective function was changed into\\
+\noindent \textcolor{red}{Grady et al. (2005)} picked up where \textcolor{red}{Mosetti et al. (1994)} left of. They recognized that while the results of Mosetti et al. beat random configurations they were not close to configurations made on simple empirical placement schemes. In their study, they wanted to show that by implementing a distributed genetic algorithm the effectiveness of the algorithm could also be compared to optimal configurations.	 As Mosetti et al., they used the Jensen wake decay model, as well as the same cost- and power function. However, the objective function was changed into the following
 
 \begin{equation}
-Objective = \frac{cost}{P_{tot}}
+Objective = \frac{cost}{P_{tot}},
 \label{Objective function Grady et al.}
 \end{equation}
 
-\noindent to minimize the cost per unit of produced energy, losing the weight from Mosetti et al presented in equation \ref{Objective function Mosetti et al.}.\\
 
-\noindent The same three scenarios as Mosetti et al. was considered. However, the number of individuals was increased from 200 to 600, and run for 3000 generations instead of 400. Grady et al. also implemented a distributed genetic algorithm where the individuals was divided into 20 sub-populations, sadly not sharing any more implementations details. On the first scenario, Grady et al. recognized that with uniform wind distribution the optimal solution could be obtained by optimizing on single row of the layout, and copy it to the rest. As opposed to Mosetti et al., their results are identical to the optimal solution. In scenario (b) and (c) however, the optimal solution can not be obtained empirical, and therefore the results are just compared against those of Mosetti et al. The results for each scenario is displayed in table \ref{Results Grady et al.}. \\
+\noindent The same three scenarios as Mosetti et al. was considered. However, the number of individuals was increased from 200 to 600, and run for 3000 generations instead of 400. The distributed model used was an Island model where the individuals was divided into 20 sub-populations. Sadly, not many implementation details were shared. On the first scenario, Grady et al. recognized that with uniform wind distribution the optimal solution could be obtained by optimizing on single row of the layout, and copy it to the rest. As opposed to Mosetti et al., their results are identical to the optimal solution. In scenario (b) and (c) however, the optimal solution can not be obtained empirical, and therefore the results are just compared against those of Mosetti et al. The results for each scenario is displayed in table \ref{Results Grady et al.}. \\
 
 \noindent Table \ref{Results Grady et al.} compare the solutions of the two studies. The first thing to notice is the difference in number of turbines, where Grady et al. ends up with more turbines in each case, approximately doubling the number of turbines in scenario (b) and (c). The explanation behind this observation is the objective functions. Objective function \ref{Objective function Mosetti et al.} prioritizes low cost and hence prioritizes a lower turbine count. \textcolor{red}{Fact check!} The number of turbines for each case explains the largely explains the results. For each scenario the fitness of Mosetti et al. is higher than the fitness obtained in Grady et al. With exception of the first scenario, the efficiency is also larger in Mosetti et al., which makes sense since fewer turbines leads to less wake effect to decrease efficiency \textcolor{red}{Fact check!}. However, in each case, the total power production is largely increased in the current study, which also makes sense based on the turbine count \textcolor{red}{Fact check!}. \\
 
@@ -114,7 +111,7 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 \end{table}
 
 
-\noindent In summary, Grady et al. is able to show that an optimal solution for scenario (a) can be obtained by genetic algorithm search. It also shows that the power production obtained in Mosetti et al. can be increased by optimizing of parameter values and more sophisticated implementation of the genetic algorithm. However, they make no attempt to compare their solutions for scenario (b) and (c) to solutions obtained using other optimization techniques. For a similar study where individuals are implemented as matrices in MATLAB see \textcolor{red}{[Emani et al., 2009]}.\\
+\noindent In summary, Grady et al. were able to show that by implementing a distributed genetic algorihtm optimal solution for scenario (a) can be obtained. It also shows that the power production obtained in Mosetti et al. can be increased by optimizing of parameter values and more sophisticated implementation of the genetic algorithm. However, they make no attempt to compare their solutions for scenario (b) and (c) to solutions obtained using other optimization techniques. For a similar study where individuals are implemented as matrices in MATLAB see \textcolor{red}{[Emani et al., 2009]}.\\
 
 
 % Zhao et al.

@@ -4,9 +4,7 @@
 Since this thesis is part of the Genetic and Evolutionary Computation Conference 2015, the conference has provided all the contestants with an API available on a GitHub. API's for different programming languages are provided, but the Java API will be used in this thesis. The API includes an implementation of a simple genetic algorithm, an evaluation method and ten different wind scenarios. This section will give an explanation of the provided API, display the results from a few test simulations (which will not be included in the final thesis), and discuss future work.
 
 
-\section{API}
-
-
+\section{Application User Interface (API)}
 A class diagram of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \textcolor{red}{Want to reference the first figure of the genetic algorithm process.} Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the ten wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
 
 
@@ -92,6 +90,7 @@ As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the 
 
 
 \subsection{Test Simulation}
+In order to demonstrate that the provided environment works, two test runs were performed. Figure \ref{Test Plots} shows the resulting fitness plots when the provided genetic algorithm was ran once for scenario 1 without obstacles, and once for scenario 1 with obstacles, using default parameters. Each simulation was run for 50 generations, ten times, and the plots show the average fitness over these ten runs. As can be seen, the fitness decreases as the population becomes better and better solutions to the problem. The scenario without obstacles are simpler and converges therefore to a lower fitness value than the scenario with obstacles. Note that these simulations are only ran to show that the simulation works, and the results will not be included in the final thesis. 
 
 
 \begin{figure}[h!]
@@ -104,12 +103,9 @@ As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the 
         \includegraphics[width=\textwidth]{plots/"Fitness Scenario 1 Obstacles"}
         \caption{}
     \end{subfigure}
-    \caption{Minimum-, maximum-, and average fitness for two scenarios provided by GECCO; (a) Fitness for scenario 1, without obstacles, (b) Fitness for scenario 1 with obstacles.}
-    \label{Hybrid Models}
+    \caption{Minimum-, maximum-, and average fitness for two scenarios provided by GECCO; (a) Fitness for scenario 1, without obstacles, (b) Fitness for scenario 1 with obstacles. Each simulation was run for 50 generations, ten times, and the result is averaged over these ten runs.}
+    \label{Test Plots}
 \end{figure}
-
-
-\textcolor{red}{Change title. Include results here.}
 
 
 \subsection{Future Work}
