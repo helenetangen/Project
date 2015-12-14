@@ -3,46 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: project.aux
 The style file: apalike.bst
 Database file #1: mybib.bib
-Warning--I didn't find a database entry for "Jensen"
-You've used 1 entry,
+You've used 2 entries,
             1935 wiz_defined-function locations,
-            479 strings with 3885 characters,
-and the built_in function-call counts, 353 in all, are:
-= -- 31
-> -- 18
-< -- 0
-+ -- 6
-- -- 6
-* -- 27
-:= -- 71
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 8
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 13
-empty$ -- 21
-format.name$ -- 7
-if$ -- 63
+            484 strings with 4005 characters,
+and the built_in function-call counts, 655 in all, are:
+= -- 57
+> -- 25
+< -- 2
++ -- 10
+- -- 8
+* -- 47
+:= -- 124
+add.period$ -- 6
+call.type$ -- 2
+change.case$ -- 13
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 29
+empty$ -- 48
+format.name$ -- 10
+if$ -- 123
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 3
-pop$ -- 8
+missing$ -- 3
+newline$ -- 13
+num.names$ -- 6
+pop$ -- 18
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 14
 quote$ -- 0
-skip$ -- 11
+skip$ -- 20
 stack$ -- 0
-substring$ -- 12
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 26
+swap$ -- 3
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 10
 warning$ -- 0
-while$ -- 2
+while$ -- 4
 width$ -- 0
-write$ -- 14
-(There was 1 warning)
+write$ -- 27
