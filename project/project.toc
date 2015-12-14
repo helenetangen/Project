@@ -22,7 +22,7 @@
 \contentsline {chapter}{\numberline {3}Related Work}{19}
 \contentsline {section}{\numberline {3.1}Wind Farm Layout Optimization using Genetic Algorithms}{19}
 \contentsline {section}{\numberline {3.2}Wind Farm Layout Optimization Different Approaches}{33}
-\contentsline {section}{\numberline {3.3}Discussion Related Work}{33}
+\contentsline {section}{\numberline {3.3}Discussion Related Work}{34}
 \contentsline {chapter}{\numberline {4}Technical Description}{35}
 \contentsline {section}{\numberline {4.1}Application User Interface (API)}{35}
 \contentsline {subsection}{\numberline {4.1.1}Genetic Algorithm}{36}
