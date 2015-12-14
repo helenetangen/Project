@@ -26,7 +26,7 @@
 \contentsline {chapter}{\numberline {4}Technical Description}{36}
 \contentsline {section}{\numberline {4.1}Application User Interface (API)}{36}
 \contentsline {subsection}{\numberline {4.1.1}Genetic Algorithm}{37}
-\contentsline {subsection}{\numberline {4.1.2}Evaluation}{38}
-\contentsline {subsection}{\numberline {4.1.3}Wind- and Power Model}{39}
-\contentsline {subsection}{\numberline {4.1.4}Test Simulation}{39}
-\contentsline {subsection}{\numberline {4.1.5}Future Work}{41}
+\contentsline {subsection}{\numberline {4.1.2}Fitness function}{38}
+\contentsline {subsection}{\numberline {4.1.3}Wake-, Wind- and Power Model}{39}
+\contentsline {subsection}{\numberline {4.1.4}Test Simulation}{40}
+\contentsline {subsection}{\numberline {4.1.5}Future Work}{40}

@@ -30,7 +30,7 @@ The genetic algorithm provided is a simple genetic algorithm that uses a binary 
 \end{figure}
 
 
-\subsection{Evaluation}
+\subsection{Fitness function}
 
 
 The main task of the evaluation classes are to calculate the fitness of each individual based on the objective function.  The objective function to be optimize is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
@@ -70,11 +70,17 @@ $m$ & Farm energy output &  \\
 
 
 
-\subsection{Wind- and Power Model}
-\textcolor{red}{Contains wind- and power model and scenarios. Shorten down the scenario in the example, or maybe just remove it.}
+\subsection{Wake-, Wind- and Power Model}
+The wake model used by the simulator, is the same wake model used in almost every study of the wind farm layout optimization problem, the Jensen model \textcolor{red}{Reference Jensen, Katic and Frandsen?}. As wind model, the Weibull distribution is used as in many of the papers mentioned in related work. The Weibull distribution is a continous probability distribution shown in \ref{equation:Weibull}
 
 
-As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the first 10 out of 24 rows of wind scenario 1 is provided in table \ref{Wind scenario 1}.\textcolor{red}{Not done.}
+\begin{equation}
+f(x; c, k)  = \frac{k}{c} \left( \frac{x}{c} \right)^{k-1} e^{- \left( \frac{x}{c} \right)^k }
+\label{equation:Weibull}
+\end{equation}
+
+
+where $k$ is the shape parameter and $c$ is the scale parameter and $k > 0$ and $c > 0$. \textcolor{red}{Fix equation and reference where it is from.} A wind scenario is therefore a specification of the shape- and scale parameter for different wind angles. Part of an example scenario provided be GECCO is given in table \ref{Wind scenario 1}.
 
 
 \begin{table}[h!]
@@ -87,13 +93,10 @@ As mentioned, ten wind scenarios are provided by GECCO 2015. As an example, the 
 0 & 7.0 & 2.0 & 0.0002 & 0 \\  
 1 & 5.0 & 2.0 & 0.0080 & 15 \\ 
 2 & 5.0 & 2.0 & 0.0227 & 30 \\ 
-3 & 5.0 & 2.0 & 0.0242 & 45 \\ 
-4 & 5.0 & 2.0 & 0.0225 & 60 \\ 
-5 & 4.0 & 2.0 & 0.0339 & 75 \\ 
-6 & 5.0 & 2.0 & 0.0423 & 90 \\ 
-7 & 6.0 & 2.0 & 0.0290 & 105 \\ 
-8 & 7.0 & 2.0 & 0.0617 & 120 \\ 
-9 & 7.0 & 2.0 & 0.0813 & 135 \\ 
+... & ... & ... & ... & ... \\ 
+22 & 5.3 & 2.0 & 0.0031 & 315 \\ 
+23 & 4.5 & 2.0 & 0.0097 & 330 \\ 
+24 & 3.9 & 2.0 & 0.0317 & 345 \\ 
 \end{tabular} 
 \end{center}
 \end{table}
