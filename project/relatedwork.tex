@@ -251,33 +251,10 @@ A greedy heuristic approach to the wind farm layout optimization problem was pre
 
 
 \section{Discussion Related Work}
+Genetic algorithms is a popular technique in solving the wind farm layout optimization problem. Since \textcolor{red}{Mosetti et al., (1995)}, a number of researches has tried to improve the results, some using distributed genetic algorithms, other by introducing local search techniques, seeded genetic algorithm, and other variations. Others again, has optimized focused on making the cost function more realistic, improved the wind distribution model, or improved the power model. Table \ref{Jean tabel} shows gives an overview over the articles discussed in \textcolor{red}{reference section.} and summarizes what was new with each one of them.\\
 
+\noindent Even thought genetic algorithms have been given a great deal of attention in solving the wind farm layout optimization problem, section \textcolor{red}{Reference section} shows promising results using completely different techniques. \\
 
-\begin{table}
-\tiny
-\centering
-\begin{tabular}{l|l|l|l|l|l|l|l|l}
-Paper & Wake Model & Wind Model & Power Model & Cost Model & Objective & GA & Representation & New  \\ 
-\hline 
-Mosetti et al., (1994) & Jensen & ? &  ? & Simple & power cost & SGA & Binary & Novel. \\ 
-Grady et al., (2005)    & Jensen & ? & ? & Simple & power cost & DGA & Binary & DGA \\ 
-Zhao et al., (2006) & NA & NA & NA & Cost and reliability & SGA & Binary & Compared against existing wind farm, optimize cable layout.. \\ 
-Huang et al., (2007) & Jensen & ? & ? & ? & DGA & Binary & Compare DGA against SGA. \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-%• & • & • & • & • & • & • & • \\ 
-\end{tabular} 
-\end{table}
+\noindent \textcolor{red}{Grady et al., (2005)} showed that by using a distributed genetic algorithm the results obtained in \textcolor{red}{Mosetti et al. (1994)} could be improved. \textcolor{red}{Huang, ()}, performed a study with the goal of showing than an distributed genetic algorithm can find a better wind farm layout than an simple genetic algorithm, and his implementation of the Island model showed his hypothesis to be true. However, when seeded genetic algorithms, and local search was introduced the simple genetic algorithms had a come back. \\
 
-
-
+\noindent In this thesis, a complete study, and comparison of different genetic algorithms and the simple genetic algorithm will be performed. As far as the author of this thesis is concerned, no attempt has been to implement other types of distributed genetic algorithms than the Island model. Since the Island model has been proven better than a simple genetic algorithm, it would be interesting to see if the results could be further improved by different distributed genetic algorithm techniques. \\
