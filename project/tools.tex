@@ -102,6 +102,20 @@ where $k$ is the shape parameter and $c$ is the scale parameter and $k > 0$ and 
 \end{table}
 
 
+\noindent The power curve used is also the same as used in \textcolor{red}{Reference Kusiak}, it is shown in equation \ref{equation:Power Curve (API)}. \textcolor{red}{Explain parameters.}
+
+
+\begin{equation}
+ f(v) = 
+  \begin{cases} 
+   0                                  & \text{if }     v < v_{cut_in} \\
+   \lambda v + \eta           & \text{if }     v_{cut_in} \leq v \leq v_{rated} \\
+   P_rated                        & \text{if }     v_{cut-out} > v > v_{rated} \\
+  \end{cases}
+  \label{equation:Power Curv (API)}
+\end{equation}
+
+
 \subsection{Test Simulation}
 In order to demonstrate that the provided environment works, two test runs were performed. Figure \ref{Test Plots} shows the resulting fitness plots when the provided genetic algorithm was ran once for scenario 1 without obstacles, and once for scenario 1 with obstacles, using default parameters. Each simulation was run for 50 generations, ten times, and the plots show the average fitness over these ten runs. As can be seen, the fitness decreases as the population becomes better and better solutions to the problem. The scenario without obstacles are simpler and converges therefore to a lower fitness value than the scenario with obstacles. Note that these simulations are only ran to show that the simulation works, and the results will not be included in the final thesis. 
 
