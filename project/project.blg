@@ -2,50 +2,45 @@ This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: project.aux
 The style file: apalike.bst
-White space in argument---line 124 of file project.aux
- : \citation{Gonz\unhbox
- :                       \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {a\global \mathchardef \accent@spacefactor \spacefactor }\accent 19 a\egroup \spacefactor \accent@spacefactor lez}
-I'm skipping whatever remains of this command
 Database file #1: mybib.bib
-You've used 11 entries,
+You've used 14 entries,
             1935 wiz_defined-function locations,
-            535 strings with 5561 characters,
-and the built_in function-call counts, 3687 in all, are:
-= -- 332
-> -- 184
-< -- 6
-+ -- 66
-- -- 62
-* -- 284
-:= -- 698
-add.period$ -- 33
-call.type$ -- 11
-change.case$ -- 83
-chr.to.int$ -- 11
-cite$ -- 11
-duplicate$ -- 148
-empty$ -- 234
-format.name$ -- 75
-if$ -- 686
+            556 strings with 5953 characters,
+and the built_in function-call counts, 4830 in all, are:
+= -- 444
+> -- 227
+< -- 8
++ -- 82
+- -- 76
+* -- 383
+:= -- 897
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 104
+chr.to.int$ -- 14
+cite$ -- 14
+duplicate$ -- 190
+empty$ -- 317
+format.name$ -- 94
+if$ -- 906
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 58
-num.names$ -- 33
-pop$ -- 92
+missing$ -- 18
+newline$ -- 73
+num.names$ -- 42
+pop$ -- 111
 preamble$ -- 1
-purify$ -- 86
+purify$ -- 108
 quote$ -- 0
-skip$ -- 112
+skip$ -- 143
 stack$ -- 0
-substring$ -- 136
-swap$ -- 12
+substring$ -- 224
+swap$ -- 15
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
+type$ -- 76
 warning$ -- 0
-while$ -- 22
+while$ -- 32
 width$ -- 0
-write$ -- 135
-(There was 1 error message)
+write$ -- 173

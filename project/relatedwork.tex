@@ -258,3 +258,56 @@ Genetic algorithms is a popular technique in solving the wind farm layout optimi
 \noindent \textcolor{red}{Grady et al., (2005)} showed that by using a distributed genetic algorithm the results obtained in \textcolor{red}{Mosetti et al. (1994)} could be improved. \textcolor{red}{Huang, ()}, performed a study with the goal of showing than an distributed genetic algorithm can find a better wind farm layout than an simple genetic algorithm, and his implementation of the Island model showed his hypothesis to be true. However, when seeded genetic algorithms, and local search was introduced the simple genetic algorithms had a come back. \\
 
 \noindent In this thesis, a complete study, and comparison of different genetic algorithms and the simple genetic algorithm will be performed. As far as the author of this thesis is concerned, no attempt has been to implement other types of distributed genetic algorithms than the Island model. Since the Island model has been proven better than a simple genetic algorithm, it would be interesting to see if the results could be further improved by different distributed genetic algorithm techniques. \\
+
+
+\begin{sidewaystable}
+\tiny
+\begin{center}
+\begin{tabular}{l|l|l|l|l|l|l|l|l|}
+Paper                   & Wake Model       & Wind Model      & Power Model  & Cost Model & Objective  & GA  & Representation  \\ 
+\hline 
+
+Mosetti (1994) &	Jensen inspired& 	(a) Single wind direction,mean wind speed (8m/s) &Betz& Mosetti	&Solely a function of number of turbines	&	SGA	&Binary \\
+& & b) Multi-directional Wind (uniform distributed) (12 m/s), &&&& \\
+& & c) uniform + gaussian centered at 270-350 (17m/s) &&&& \\
+Grady (2005)&	Mosetti&	(a) Wind intensity and direction fixed &	Betz (Mosetti)	&Mosetti&	Cost/Total Power Produced&	DGA	Binary \\
+
+& & b) Multi-directional Wind (uniform distributed) &&&& \\
+& &  c) uniform + gaussian centered at 270-350 &&&&\\
+Huang (2007) &	Katic&	& Mosetti & Mosetti &Mosetti	& Annual Profits, Ozturk and Norman (2004) "Heuristic methods for wind energy conversion system positioning"	&DGA	 &Binary \\
+
+Mora (2007)	            & NA	               & a) W(K=3,C={8,14}) & NA          &Complex     &	NPV         & SGA  &Integer \\
+                        &                  & b) W(K=5,C={8,14})&	& & & &\\
+                        &                  & c) W(K=[3,5],C={0,15}) & & & &\\
+Emami (2009)            & Jensen,Simplified& a) Wind intensity and direction fixed &  Mosetti &Mosetti	&minimize cost per unit energy +constraints on cost value             &SGA    &Binary \\
+                        &                  &  b) Wind intensity fixed, direction uniformly distributed &  \\
+Wan (2009)&	Jensen, Mosetti	 &a) 1 wind direction, Speed weibull & Mosetti&	Mosetti	&minimize the cost per unit energy (Grady)&DAG&	Binary \\
+& &  b) multiple wind directions, speed K=2,C=13.54 &&&& \\	
+
+Kusiak (2009)&	Mosetti & a)	K=2, C=13,  &	linear a=140.86,b=-500&	NA&	Minimize expected power production inverse, minimize spatial restraints on turbine positioning enclosed by the wind farm area&	SGA	&Integer\\
+& & b) K=2, C=2.6-10 &,Prated=1500,Vcin=3.5,Vcout=20,Vrated=14 & & & &\\
+Gonzales (2010)	& Frandsen	& K=2, C=11.19, 9.51, 9.51, 8.39 &	Mosetti&	Operational and installation costs&	NPV &	SGA&	Integer (same as mora)\\
+Sisbot (2010)&Jensen, Mosetti, Katic, Grady&	Single Direction, Constant Speed	487.8u$^3$& Betz&	installation and operational costs&	Maximize power production, minimizing installation and operational costs	&DGA&	Binary \\
+Saavedra-Moreno&	Mosetti	&Weibull(K=,C=),*&	Betz (eq 8)	&Turbine installation and infrastructure	Maximize yearly produced power - minus turbine and infrastructure costs&	SGA&Integer \\
+Chen (2013)	&Jensen, Katic, Frandsen&(a) Constant, (b) const. speed, semi-uniform direction, &Betz	&third case (1) Mosetti, third case (2) Mora&	Maximum total power output of windfarm	&SGA	&Binary \\
+
+& & c) varying speed and direction fig 8 (equal shapes) & && &  \\
+Gao et al (2014)	&Jensen, Mosetti&	(a) Constant, (b) uniform (c) Histogram, real data	&Betz&	Mosetti&	Maximum wind farm efficiency while construction, investment  and operational costs	&DGA	 &Integer \\
+
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+%â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ & â¢ \\ 
+\end{tabular} 
+
+\end{center}
+\end{sidewaystable}

@@ -34,6 +34,21 @@ Huang, H.-S. (2007).
   profits.
 \newblock {\em Intelligent Systems Applications to Power Systems}.
 
+\bibitem[Jensen, 1983]{Jensen}
+Jensen, N.~O. (1983).
+\newblock {\em A note on wind generator interaction}.
+\newblock Technical Report Riso-M-2411.
+
+\bibitem[Justus et~al., 1978]{Justus}
+Justus, C., Hargraves, W., Mikhail, A., and Graber, D. (1978).
+\newblock Methods for estimating wind speed frequency distributions.
+\newblock {\em Journal of applied meteorology}, 17(3):350--353.
+
+\bibitem[Kusiak and Song, 2010]{Kusiak}
+Kusiak, A. and Song, Z. (2010).
+\newblock Design of wind farm layout for maximum wind energy capture.
+\newblock {\em Renewable Energy}, 35(3):685--694.
+
 \bibitem[Mora et~al., 2007]{Mora}
 Mora, J.~C., Barón, J. M.~C., Santos, J. M.~R., and Payán, M.~B. (2007).
 \newblock An evolutive algorithm for wind farm optimal design.
