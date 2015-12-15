@@ -1,5 +1,44 @@
 \begin{thebibliography}{}
 
+\bibitem[Emami and Noghreh, 2010]{Emami}
+Emami, A. and Noghreh, P. (2010).
+\newblock New approach on optimization in placement of wind turbines within
+  wind farm by genetic algorithms.
+\newblock {\em Renewable Energy}.
+
+\bibitem[Goldberg, 2005]{Goldberg}
+Goldberg, D.~E. (2005).
+\newblock {\em Genetic Algorithms in Search, Optimzation and Machine Learning}.
+\newblock Addison-Wesley Publishing Company.
+
+\bibitem[Gong et~al., 2015]{Gong}
+Gong, Y.-J., Chen, W.-N., Zhan, Z.-H., Zhang, J., Li, Y., Zhang, Q., and Li,
+  J.-J. (2015).
+\newblock Distributed evolutionary algorithms and their models: A survey of the
+  state-of-the-art.
+\newblock {\em Applied Soft Computing}.
+
+\bibitem[Grady et~al., 2005]{Grady}
+Grady, S.~A., Hussaini, M.~Y., and Abdullah, M.~M. (2005).
+\newblock Placement of wind turbines using genetic algorithms.
+\newblock {\em Renewable Energy}.
+
+\bibitem[Holland, 1992]{Holland}
+Holland, J.~H. (1992).
+\newblock {\em Adaptation in Natural And Artificial Systems}.
+\newblock The MIT Press.
+
+\bibitem[Huang, 2007]{Huang}
+Huang, H.-S. (2007).
+\newblock Distributed genetic algorithm for optimization of wind farm annual
+  profits.
+\newblock {\em Intelligent Systems Applications to Power Systems}.
+
+\bibitem[Mora et~al., 2007]{Mora}
+Mora, J.~C., Barón, J. M.~C., Santos, J. M.~R., and Payán, M.~B. (2007).
+\newblock An evolutive algorithm for wind farm optimal design.
+\newblock {\em Neurocomputing}.
+
 \bibitem[Mosetti et~al., 1994]{Mosetti}
 Mosetti, G., Poloni, C., and Diviacco, B. (1994).
 \newblock Optimization of wind turbine positioning in large windfarms by means
@@ -11,5 +50,19 @@ Samorani, M. (2013).
 \newblock {\em The Handbook of Wind Power Systems}, chapter The Wind Farm
   Layout Optimization Problem.
 \newblock Springer Berlin Heidelberg.
+
+\bibitem[Wan et~al., 2009]{Wan}
+Wan, C., Wang, J., Yang, G., Li, X., and Zhang, X. (2009).
+\newblock Optimal micro-siting of wind turbines by genetic algorithms based on
+  improved wind and turbine models.
+\newblock {\em Joint 48th IEEE Conference on Decision and Control and 28th
+  Chinese Control Conference}.
+
+\bibitem[Zhao et~al., 2006]{Zhao}
+Zhao, M., Cheng, Z., and Hjerrild, J. (2006).
+\newblock Analysis of the behaviour of genetic algorithms applied in
+  optimization of electrical system designs for offshore wind farms.
+\newblock {\em IEEE Industrial Electronics, IECON 2006 - 32nd Annual Conference
+  on}.
 
 \end{thebibliography}

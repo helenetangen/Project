@@ -6,7 +6,7 @@ The goal of this section is to give the reader an understanding of the wind farm
 
 
 \subsection{Definition of the wind farm layout optimization problem}
-An overview of the wind farm layout optimization problem is presented by Samorani \textcolor{red}{[Samorani, 2013]}. Grouping of wind turbines in a wind farm decreases installation and maintenance cost. However, positioning of wind turbines in a farm also introduces new challenges. The power produced by wind turbines is largely dependent on wind speed, therefore it is important that the wind speed that hits a wind turbine is as large as possible. The main challenge for wind farms is that a wind turbine positioned in front of another wind turbine will cause a wake of turbulence, meaning that the wind speed that hits the second wind turbine will be decreased. This effect is called "wake effect", and will be explained later. Since the goal is to produce as much power as possible it is very important to position the wind turbines so that the wake effect is minimal. Samorani states the wind farm layout optimization problem like this ''The wind farm layout optimization problem consists of finding the turbine positioning (wind farm layout) that maximizes the expected power production". However, in this thesis, the problem formulation will be extended to include cost constraints and also the problem of deciding the number of wind turbines, not just their positions. A formal definition is given below
+An overview of the wind farm layout optimization problem is presented by Samorani \citep{Samorani}. Grouping of wind turbines in a wind farm decreases installation and maintenance cost. However, positioning of wind turbines in a farm also introduces new challenges. The power produced by wind turbines is largely dependent on wind speed, therefore it is important that the wind speed that hits a wind turbine is as large as possible. The main challenge for wind farms is that a wind turbine positioned in front of another wind turbine will cause a wake of turbulence, meaning that the wind speed that hits the second wind turbine will be decreased. This effect is called "wake effect", and will be explained later. Since the goal is to produce as much power as possible it is very important to position the wind turbines so that the wake effect is minimal. Samorani states the wind farm layout optimization problem like this ''The wind farm layout optimization problem consists of finding the turbine positioning (wind farm layout) that maximizes the expected power production". However, in this thesis, the problem formulation will be extended to include cost constraints and also the problem of deciding the number of wind turbines, not just their positions. A formal definition is given below
 
 
 \begin{quote}
@@ -19,14 +19,14 @@ Samorani gives an overview of the main challenges of wind farm construction. Fir
 
 \noindent Second, land owner has to be contacted and convinced that hosting a wind farm on their land is a good idea. Land owners usually gets a percentage of the wind farm profit. This phase of contract negotiation  usually takes a few months. At the same time, wind distribution needs to be measured as accurately as possible. This step is extremely important, since the layout of the farm is optimized based on the measured wind distribution. Getting enough data to capture the wind distribution can take a few months if wind conditions are similar all year long, but if the wind conditions vary extensively over the year this step can take a few years. \\
 
-\noindent An evenly important step is to decide on which turbines to buy for the wind farm. Larger turbines usually generate more power, but they are also more expensive than smaller ones. There is therefore a trade off between the cost and power production. Realistic estimation of maintenance cost is also crucial in deciding on turbine type. In \textcolor{red}{[Samorani, 2013]} the number of wind turbines are also decided in this step, but in this project, deciding the number of turbines is included in the wind farm layout optimization problem and will therefore be part of the next step. \\
+\noindent An evenly important step is to decide on which turbines to buy for the wind farm. Larger turbines usually generate more power, but they are also more expensive than smaller ones. There is therefore a trade off between the cost and power production. Realistic estimation of maintenance cost is also crucial in deciding on turbine type. In \citep{Samorani} the number of wind turbines are also decided in this step, but in this project, deciding the number of turbines is included in the wind farm layout optimization problem and will therefore be part of the next step. \\
 
 \noindent After the site is found, turbine type is decided and wind distribution is measured, the layout optimization can begin. Layout optimization faces different challenges, such as positions of the terrain that contain obstacles so that turbines cannot be positioned there. There are also constraint on how close turbines can be positioned, according to \textcolor{red}{[\c{S}i\c{s}bot et al., 2010]}, the minimum spacing rule states that the minimum distance between turbines is 8D in prevailing wind direction, and 2D in cross wind direction, where D is the rotor diameter. However, the greatest challenge of wind farm layout optimization is the wake effect. As mentioned above, the wake effect is the effect of reduced wind speed in the wake behind a wind turbine. Samorani explains the wake effect using the Jensen wake model \textcolor{red}{[Jensen, 1983]}, other wake models exist, but most research in wind farm layout optimization use the Jensen model because it is quite accurate and simple. The Jensen model will also be used briefly in this project, to give an intuitive explanation of the wake effect. 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{images/"Wake Effect"}
-\caption{The wake effect \textcolor{red}{[Samorani, 2013]}}
+\caption{The wake effect \citep{Samorani}}
 \label{Wake effect}
 \end{center}
 \end{figure}
@@ -37,7 +37,7 @@ In figure \ref{Wake effect} the small black rectangle represents a wind turbine,
 
 
 \section{Genetic Algorithms}
-This section first explains the simple genetic algorithm (SGA), invented by Holland \textcolor{red}{[1975]}, to give an understanding of how the genetic algorithm works. If the reader is familiar with the genetic algorithm he or she can skip the first part. Next, the five different distributed genetic algorithms that will be implemented in this thesis are explained, these are all taken from Gong et al. \textcolor{red}{[2015]}. If not otherwise stated, the first part (SGAs) is based on \textcolor{red}{[Holland, 1975] and [Goldberg, 1989]}, and the second part (DGAs) is based on \textcolor{red}{[Gong et al., 2015]}.
+This section first explains the simple genetic algorithm (SGA), invented by \cite{Holland}, to give an understanding of how the genetic algorithm works. If the reader is familiar with the genetic algorithm he or she can skip the first part. Next, the five different distributed genetic algorithms that will be implemented in this thesis are explained, these are all taken from \cite{Gong}. If not otherwise stated, the first part (SGAs) is based on \citep{Holland} and \citep{Goldberg}, and the second part (DGAs) is based on \citep{Gong}.
 
 
 \subsection{Simple Genetic Algorithms (SGAs)}
@@ -58,7 +58,7 @@ Genetic algorithms are probabilistic search algorithms inspired by evolution. Fi
 
 % What is genetic algorithm
 \subsubsection{Representation}
-In genetics, they call an organisms hereditary information for its genotype, and its observable properties its phenotype. For example, the hereditary information in your genes (genotype) are responsible for your eye color (phenotype). The genetic search algorithm usually works on genotypes represented as bit strings. Goldberg \textcolor{red}{[1989]} explained this with a simple example. Let's say the objective function that we want to find an optimal solution for is $x^2$ for $x \in \{0, 31\}$. Then we can generate genotypes for the random solutions using bit strings of size 5, each representing a phenotype value between 0 and 31. Figure \ref{Representation} displays the genotype and phenotype for four randomly generated individuals. Here, the phenotypes are just the genotypes on decimal form, but in other problems the phenotype could be everything from eye color to a wind farm.
+In genetics, they call an organisms hereditary information for its genotype, and its observable properties its phenotype. For example, the hereditary information in your genes (genotype) are responsible for your eye color (phenotype). The genetic search algorithm usually works on genotypes represented as bit strings. \cite{Goldberg} explained this with a simple example. Let's say the objective function that we want to find an optimal solution for is $x^2$ for $x \in \{0, 31\}$. Then we can generate genotypes for the random solutions using bit strings of size 5, each representing a phenotype value between 0 and 31. Figure \ref{Representation} displays the genotype and phenotype for four randomly generated individuals. Here, the phenotypes are just the genotypes on decimal form, but in other problems the phenotype could be everything from eye color to a wind farm.
 
 
 \begin{figure}[h!]
@@ -122,7 +122,7 @@ Mutation is important because without mutation a population can converge to a po
 \subsection{Distributed Genetic Algorithms (DGAs)}
 On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population do not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that does not look that good at first, and consequently get the opportunity to find better, more sophisticated solutions. \\
 
-\noindent The goal of this thesis is to investigate and compare the performance of different distributed genetic algorithms in solving the wind farm layout optimization problem. In order to give an answer to the research questions, different distributed genetic algorithms needs to be implemented and tested. This section introduces five different population-distributed algorithms presented by \textcolor{red}{[Gong et al., 2015]}. These will all be implemented and tested in this thesis.\\
+\noindent The goal of this thesis is to investigate and compare the performance of different distributed genetic algorithms in solving the wind farm layout optimization problem. In order to give an answer to the research questions, different distributed genetic algorithms needs to be implemented and tested. This section introduces five different population-distributed algorithms presented by \cite{Gong}. These will all be implemented and tested in this thesis.\\
 
 
 \subsubsection{The Master-Slave Model}
@@ -133,7 +133,7 @@ The master-slave model is not really a distributed genetic algorithm, but a simp
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Master-Slave Model"}
-\caption{Master-slave model. The master process distributes the population to different slave processes, which calculate the fitness of each individual and return the results to the master process \textcolor{red}{[Gong et al, 2014]}.}
+\caption{Master-slave model. The master process distributes the population to different slave processes, which calculate the fitness of each individual and return the results to the master process \citep{Gong}.}
 \label{Master-Slave Model}
 \end{center}
 \end{figure}
@@ -149,26 +149,26 @@ In the island model, the population is divided into sub populations that are dis
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Island Model"}
-\caption{An island model using a ring topology with four demes of size five. \textcolor{red}{[Gong et al., 2014]}}
+\caption{An island model using a ring topology with four demes of size five. \citep{Gong}}
 \label{Island model}
 \end{center}
 \end{figure}
 
 
-According to \textcolor{red}{[Huang, 2007]}, six parameters needs to be specified when using the island model. First of all, the deme size needs to be specified; the number of individuals on each island (deme). Second, one needs to decide on the number of demes. In figure \ref{Island model} the deme size is five and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows are the legal migration routes, since the topology forms a circle it is called a ring topology. The forth and fifth parameters listed by Huang are migration rate and migration interval, meaning the number of individuals that migrate from one population to another and the number of generations between each migration respectively. These parameters are very important since they largely affect the time the population gets to explore different solutions before the best solutions from some of the demes takes over the population. Sixth, the policy of selection emigrants and how to replace existing individuals with new migrants. \\
+According to \cite{Huang}, six parameters needs to be specified when using the island model. First of all, the deme size needs to be specified; the number of individuals on each island (deme). Second, one needs to decide on the number of demes. In figure \ref{Island model} the deme size is five and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows are the legal migration routes, since the topology forms a circle it is called a ring topology. The forth and fifth parameters listed by Huang are migration rate and migration interval, meaning the number of individuals that migrate from one population to another and the number of generations between each migration respectively. These parameters are very important since they largely affect the time the population gets to explore different solutions before the best solutions from some of the demes takes over the population. Sixth, the policy of selection emigrants and how to replace existing individuals with new migrants. \\
 
 
 \noindent The above parameters must be given careful thought when implementing the island model, but as Gong explains, they are not the only ones. If the island model is implement in parallel one also have to decide if the migration is synchronous or asynchronous. Synchronous migration means that all migration is performed at the same time; at a specific generation, while as asynchronous migration is used migration can be performed whenever one of the parallel processes is ready. Additionally, it has to be decided if the island model is homogeneous or heterogeneous. By a homogeneous island model, Gong means an island model where each sub population use the same selection strategy, genetic operations and fitness function, while as an heterogeneous island model can implement different settings for different sub populations.
 
 
 \subsubsection{The Cellular Model}
-Figure \ref{Cellular model} displays the cellular model from \textcolor{red}{[Gong, 2014]}. In the cellular model the population is distributed in a grid of cells where each cell holds one individual. Each individual only ''sees'' the individuals of its neighborhood (as decided by the given neighborhood topology) and can only be compared with and mate with individuals in its neighborhood. \\
+Figure \ref{Cellular model} displays the cellular model from \citep{Gong}. In the cellular model the population is distributed in a grid of cells where each cell holds one individual. Each individual only ''sees'' the individuals of its neighborhood (as decided by the given neighborhood topology) and can only be compared with and mate with individuals in its neighborhood. \\
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Cellular Model"}
-\caption{Cellular model where the neighborhood topology consist of the cells to the left, right, over and under the given cell. \textcolor{red}{[Gong et al, 2014]}}
+\caption{Cellular model where the neighborhood topology consist of the cells to the left, right, over and under the given cell \citep{Gong}.}
 \label{Cellular model}
 \end{center}
 \end{figure}
@@ -198,7 +198,7 @@ Hybrid models, are distributed genetic algorithms that combine different distrib
         \includegraphics[width=\textwidth, height=4cm]{images/"Island-Island Hybrid Model"}
         \caption{}
     \end{subfigure}
-    \caption{Different hybrid models. (a) Island-master-slave hybrid model, (b) Island-cellular hybrid model, and (c) Island-island hybrid model \textcolor{red}{[Gong et al., 2014]}.}
+    \caption{Different hybrid models. (a) Island-master-slave hybrid model, (b) Island-cellular hybrid model, and (c) Island-island hybrid model \citep{Gong}.}
     \label{Hybrid Models}
 \end{figure}
 
@@ -213,7 +213,7 @@ Another distributed model is called the pool model. In this model the population
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Pool Model"}
-\caption{The pool model. Each processor has its own positions in the pool for which it is responsible to return individuals to. The red processor is responsible for the red positions in the pool, and so on. Processors draw individuals from random positions in the pool, but writes them back to its own positions, given that their fitness are higher than the individuals currently occupying the position \textcolor{red}{[Gong et al., 2014]}.}
+\caption{The pool model. Each processor has its own positions in the pool for which it is responsible to return individuals to. The red processor is responsible for the red positions in the pool, and so on. Processors draw individuals from random positions in the pool, but writes them back to its own positions, given that their fitness are higher than the individuals currently occupying the position \citep{Gong}.}
 \label{Pool Model}
 \end{center}
 \end{figure}

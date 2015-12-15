@@ -72,7 +72,7 @@ Scenario & Configuration & Efficiency & $P_{tot}$(kWyear) & cost/kWyear & Number
 
 
 % Grady et al. 2005.
-\noindent \textcolor{red}{Grady et al. (2005)} picked up where \textcolor{red}{Mosetti et al. (1994)} left of. They recognized that while the results of Mosetti et al. beat random configurations they were not close to configurations made on simple empirical placement schemes. In their study, they wanted to show that by implementing a distributed genetic algorithm the effectiveness of the algorithm could also be compared to optimal configurations.	 As Mosetti et al., they used the Jensen wake decay model, as well as the same cost- and power function. However, the objective function was changed into the following
+\noindent \cite{Grady} picked up where \cite{Mosetti} left of. They recognized that while the results of Mosetti et al. beat random configurations they were not close to configurations made on simple empirical placement schemes. In their study, they wanted to show that by implementing a distributed genetic algorithm the effectiveness of the algorithm could also be compared to optimal configurations.	 As Mosetti et al., they used the Jensen wake decay model, as well as the same cost- and power function. However, the objective function was changed into the following
 
 \begin{equation}
 Objective = \frac{cost}{P_{tot}},
@@ -87,7 +87,7 @@ Objective = \frac{cost}{P_{tot}},
 
 \begin{table}[h!]
 \begin{center}
-\caption{Current results compared against the restults from Grady et al. for each of the three scenarios. \textcolor{red}{[Grady et al., 2005]}}
+\caption{Current results compared against the results from Grady et al. for each of the three scenarios \citep{Grady}.}
 \label{Results Grady et al.}
 \begin{tabular}{c|l|l|l}
 Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\ 
@@ -111,17 +111,17 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 \end{table}
 
 
-\noindent In summary, Grady et al. were able to show that by implementing a distributed genetic algorihtm optimal solution for scenario (a) can be obtained. It also shows that the power production obtained in Mosetti et al. can be increased by optimizing of parameter values and more sophisticated implementation of the genetic algorithm. However, they make no attempt to compare their solutions for scenario (b) and (c) to solutions obtained using other optimization techniques. For a similar study where individuals are implemented as matrices in MATLAB see \textcolor{red}{[Emani et al., 2009]}.\\
+\noindent In summary, Grady et al. were able to show that by implementing a distributed genetic algorihtm optimal solution for scenario (a) can be obtained. It also shows that the power production obtained in Mosetti et al. can be increased by optimizing of parameter values and more sophisticated implementation of the genetic algorithm. However, they make no attempt to compare their solutions for scenario (b) and (c) to solutions obtained using other optimization techniques. For a similar study where individuals are implemented as matrices in MATLAB see \citep{Emami}.\\
 
 
 % Zhao et al.
-\noindent Zhao et al. (2006) presented a very interesting study, where the electrical system of an off shore wind farm on Burko Bank in Liverpool Bay was optimized using a genetic algorithm. Although this is a study of cable clustering design, with fixed wind turbine count and positions, it is very interesting because it is compared against an actual result obtained by the Burbo project team. To get an understanding of the optimization problem four different clustering designs are presented in figure \ref{Clustering Design}.\\
+\noindent \cite{Zhao} presented a very interesting study, where the electrical system of an off shore wind farm on Burko Bank in Liverpool Bay was optimized using a genetic algorithm. Although this is a study of cable clustering design, with fixed wind turbine count and positions, it is very interesting because it is compared against an actual result obtained by the Burbo project team. To get an understanding of the optimization problem four different clustering designs are presented in figure \ref{Clustering Design}.\\
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.2]{images/"Clustering Design (Zhao)"}
-\caption{Four example clustering designs \textcolor{red}{[Zhao et al., 2006]}.}
+\caption{Four example clustering designs \citep{Zhao}.}
 \label{Clustering Design}
 \end{center}
 \end{figure}
@@ -133,12 +133,12 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 
 
 % Huang, 2007
-\noindent Huang presented a study in 2007, showing that a distributed genetic algorithm performs better than a simple genetic algorithm \textcolor{red}{[Huang, 2007]}. Huang uses a more realistic objective function than the previous studies, taking into account the selling price of electric energy, as well as cost and energy production. The distributed genetic algorithm uses the Island model, with 600 individuals divided among 20 demes, using the ring-topology shown in figure \ref{Ring Topology}.\\
+\noindent \cite{Huang} presented a study, showing that a distributed genetic algorithm performs better than a simple genetic algorithm. Huang uses a more realistic objective function than the previous studies, taking into account the selling price of electric energy, as well as cost and energy production. The distributed genetic algorithm uses the Island model, with 600 individuals divided among 20 demes, using the ring-topology shown in figure \ref{Ring Topology}.\\
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Ring Topology"}
-\caption{Ring topology example with 6 demes \textcolor{red}{[Huang, 2007]}.}
+\caption{Ring topology example with 6 demes \citep{Huang}.}
 \label{Ring Topology}
 \end{center}
 \end{figure}
@@ -148,23 +148,23 @@ Scenario & Parameter                    & Mosetti et al.  & Grady et al. \\
 
 
 % Mora
-All studies presented above have used binary encoding in their wind farm representation, but in 2007 Mora et al. presented a study where the binary encoding was replaced by an integer encoding. In their approach, an individual was represented with the $(x, y)$ coordinates of a given turbine. In addition to optimize turbine position, Mora et al. also wanted to optimize both turbine type and height. In order to do this, their individuals was represented by a matrix where the first row contained the x-coordinates of the turbines, the second row the y-coordinates, the third row turbine type and the forth row turbine height as shown in figure \ref{Individual Representation (Mora)}. Note that with this type of encoding, different individuals can have different lengths, depending on the number of turbines in each solution. Whether it is reasonable to allow different turbine types is another discussion, which will not be taken here, but previous authors have mentioned that when the same turbine type is used one can expect the price of a turbine to decrease with the number of turbines purchased \textcolor{red}{Reference Mosetti and the others, but double check first}. \\
+All studies presented above have used binary encoding in their wind farm representation, but in 2007 Mora et al. presented a study where the binary encoding was replaced by an integer encoding \citep{Mora}. In their approach, an individual was represented with the $(x, y)$ coordinates of a given turbine. In addition to optimize turbine position, Mora et al. also wanted to optimize both turbine type and height. In order to do this, their individuals was represented by a matrix where the first row contained the x-coordinates of the turbines, the second row the y-coordinates, the third row turbine type and the forth row turbine height as shown in figure \ref{Individual Representation (Mora)}. Note that with this type of encoding, different individuals can have different lengths, depending on the number of turbines in each solution. Whether it is reasonable to allow different turbine types is another discussion, which will not be taken here, but previous authors have mentioned that when the same turbine type is used one can expect the price of a turbine to decrease with the number of turbines purchased \textcolor{red}{Reference Mosetti and the others, but double check first}. \\
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.4]{images/"Individual Representation (Mora)"}
-\caption{Representation of an individual of length $k$ (layout with $k$ turbines), where the first row represents x-coordinates of the turbines, the second row y-coordinates, the third row turbine type, and the forth row turbine height. \textcolor{red}{[Mora et al., 2007]}.}
+\caption{Representation of an individual of length $k$ (layout with $k$ turbines), where the first row represents x-coordinates of the turbines, the second row y-coordinates, the third row turbine type, and the forth row turbine height \citep{Mora}.}
 \label{Individual Representation (Mora)}
 \end{center}
 \end{figure}
 
 
-\noindent Five crossover methods, and a masked mutation method were presented for the new type of encoding, see \textcolor{red}{Mora et al., 2007} for implementation details. To model the wind speed, the Weibull distribution was used, a more realistic wind speed model than the one used in the previous studies. The Weibull distribution will be explained in more detail later, since it is also used in the simulator for this thesis. Three different case studies are performed, the first one searches for an optimal solution when the number of turbines are decided beforehand. The second searches for an optimal positioning, type and height of turbines within a given budget. And the third one where there are no such constraints. Even thought the results are only briefly discussed, and presented by the authors as optimal with no explanation, this paper marks the switch from binary encoding to integer encoding, and from simple wind models to the Weibull distribution.\\
+\noindent Five crossover methods, and a masked mutation method were presented for the new type of encoding, see \cite{Mora} for implementation details. To model the wind speed, the Weibull distribution was used, a more realistic wind speed model than the one used in the previous studies. The Weibull distribution will be explained in more detail later, since it is also used in the simulator for this thesis. Three different case studies are performed, the first one searches for an optimal solution when the number of turbines are decided beforehand. The second searches for an optimal positioning, type and height of turbines within a given budget. And the third one where there are no such constraints. Even thought the results are only briefly discussed, and presented by the authors as optimal with no explanation, this paper marks the switch from binary encoding to integer encoding, and from simple wind models to the Weibull distribution.\\
 
 
 %Wan et al, 2009.
-\noindent Wan et al. \textcolor{red}{[2009]} criticized the simple power-, and wind distribution model presented by Mosetti et al., and Grady et al. As Mora et al., they suggested using the Weibull distribution to model the wind. However, they introduced a novel power model \\
+\noindent \cite{Wan} criticized the simple power-, and wind distribution model presented by Mosetti et al., and Grady et al. As Mora et al., they suggested using the Weibull distribution to model the wind. However, they introduced a novel power model \\
 
 
 \begin{equation}
@@ -177,11 +177,11 @@ All studies presented above have used binary encoding in their wind farm represe
 
 
 % Kusiak et al., 2009
-\noindent One of the most complete studies of the wind farm layout optimization problem was done by Kusiak et al. (2009). \textcolor{red}{Should I write et al. when only two authors?} The study is based on six assumptions, which according to the authors are realistic and industrial-accepted. The study assume a fixed, predetermined turbine count, small variations of surface roughness, turbines with equal power curves, wind speed following the Weibull distribution, that wind speed at different locations with same direction share the same Weibull distribution, and last, it assumes that any two turbines are separated with at least four rotor diameters. A multi-objective function was used to calculate the fitness of the solutions. It consisted of one objective function to maximize expected energy produced, and one to minimize the constraint violations. Kusiak et al. critiques Mosetti et al. and Grady et al. for not basing their wind energy calculation on the power curve function and not thoroughly discussing wind direction. Their work include an extensive model of wind energy based on a discretization of the expected power production for each wind direction. Their algorithm was tested on real wind data, and compared against an upper bound on power production (power produced without wake effect), and their results show that less than 2\% of power is lost due to wake effects when 6 turbines are positioned in the wind farm. \\
+\noindent One of the most complete studies of the wind farm layout optimization problem was done by \textcolor{red}{Kusiak et al. (2009)}. \textcolor{red}{Should I write et al. when only two authors?} The study is based on six assumptions, which according to the authors are realistic and industrial-accepted. The study assume a fixed, predetermined turbine count, small variations of surface roughness, turbines with equal power curves, wind speed following the Weibull distribution, that wind speed at different locations with same direction share the same Weibull distribution, and last, it assumes that any two turbines are separated with at least four rotor diameters. A multi-objective function was used to calculate the fitness of the solutions. It consisted of one objective function to maximize expected energy produced, and one to minimize the constraint violations. Kusiak et al. critiques Mosetti et al. and Grady et al. for not basing their wind energy calculation on the power curve function and not thoroughly discussing wind direction. Their work include an extensive model of wind energy based on a discretization of the expected power production for each wind direction. Their algorithm was tested on real wind data, and compared against an upper bound on power production (power produced without wake effect), and their results show that less than 2\% of power is lost due to wake effects when 6 turbines are positioned in the wind farm. \\
 
 
 % Gonzalez et al. 2010.
-\noindent Assumptions such as a cost model only dependent on the number of turbines are unrealistic, and needs to be removed in order to model the wind farm layout optimization problem in an realistic way. \textcolor{red}{González et al. [2010]} introduced a cost model based on the net present value, which takes into account wind speed, wind distribution, the number, type, rated power and tower height of turbines, loss to due wake effects, auxiliary costs, road infrastructure, buildings, substation, electrical framework and financial aspects such as return on investment. For example, In order to accurately model civil cost they present an greedy search which connects wind turbines to auxiliary roads or other turbines dependent on their position. Figure \ref{Civil Cost Greedy Algorithm (Gonzales)} shows how the greedy algorithm works. To connect the first turbines to one of the roads it measures the distance between every turbine and every road and connects the turbine and road that are nearest. Next it calculates the distance between the remaining turbines and the two roads and the turbine already connected, finds the minimum distance and connect the turbines. \textcolor{red}{Not done. Explain algorithm using example. Make caption.}
+\noindent Assumptions such as a cost model only dependent on the number of turbines are unrealistic, and needs to be removed in order to model the wind farm layout optimization problem in an realistic way.  \textcolor{red}{González et al. [2010]} introduced a cost model based on the net present value, which takes into account wind speed, wind distribution, the number, type, rated power and tower height of turbines, loss to due wake effects, auxiliary costs, road infrastructure, buildings, substation, electrical framework and financial aspects such as return on investment. For example, In order to accurately model civil cost they present an greedy search which connects wind turbines to auxiliary roads or other turbines dependent on their position. Figure \ref{Civil Cost Greedy Algorithm (Gonzales)} shows how the greedy algorithm works. To connect the first turbines to one of the roads it measures the distance between every turbine and every road and connects the turbine and road that are nearest. Next it calculates the distance between the remaining turbines and the two roads and the turbine already connected, finds the minimum distance and connect the turbines. \textcolor{red}{Not done. Explain algorithm using example. Make caption.}
 
 
 \begin{figure}[h!]
