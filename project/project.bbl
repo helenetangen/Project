@@ -6,6 +6,12 @@ Emami, A. and Noghreh, P. (2010).
   wind farm by genetic algorithms.
 \newblock {\em Renewable Energy}.
 
+\bibitem[Frandsen et~al., 2007]{Frandsen}
+Frandsen, S.~T. et~al. (2007).
+\newblock {\em Turbulence and turbulence-generated structural loading in wind
+  turbine clusters}.
+\newblock Ris{\o} National Laboratory.
+
 \bibitem[Goldberg, 2005]{Goldberg}
 Goldberg, D.~E. (2005).
 \newblock {\em Genetic Algorithms in Search, Optimzation and Machine Learning}.
@@ -43,6 +49,11 @@ Jensen, N.~O. (1983).
 Justus, C., Hargraves, W., Mikhail, A., and Graber, D. (1978).
 \newblock Methods for estimating wind speed frequency distributions.
 \newblock {\em Journal of applied meteorology}, 17(3):350--353.
+
+\bibitem[Katic et~al., 1986]{Katic}
+Katic, I., H{\o}jstrup, J., and Jensen, N. (1986).
+\newblock {\em A simple model for cluster efficiency}.
+\newblock European Wind Energy Association Conference and Exhibition.
 
 \bibitem[Kusiak and Song, 2010]{Kusiak}
 Kusiak, A. and Song, Z. (2010).

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  15 DEC 2015 15:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  15 DEC 2015 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1314,7 +1314,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 250--251
  []
 
 
-LaTeX Warning: Reference `Jean tabel' on page 34 undefined on input line 254.
+Package caption Warning: \label without proper \caption on input line 269.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `table:overview related work' on page 34 undefined on 
+input line 254.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 254--255
@@ -1337,7 +1342,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--261
  []
 
 
-Overfull \hbox (1278.36678pt too wide) in paragraph at lines 266--311
+Overfull \hbox (1278.36678pt too wide) in paragraph at lines 270--315
  [] 
  []
 
@@ -1461,10 +1466,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15204 strings out of 493117
- 294856 string characters out of 6135434
- 348917 words of memory out of 5000000
- 18329 multiletter control sequences out of 15000+600000
+ 15210 strings out of 493117
+ 294960 string characters out of 6135434
+ 349042 words of memory out of 5000000
+ 18335 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,76p,2389b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1484,7 +1489,7 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (46 pages, 1161653 bytes).
+Output written on project.pdf (46 pages, 1162542 bytes).
 PDF statistics:
  272 PDF objects out of 1000 (max. 8388607)
  156 compressed objects within 2 object streams

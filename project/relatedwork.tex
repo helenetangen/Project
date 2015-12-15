@@ -160,7 +160,7 @@ All studies presented above have used binary encoding in their wind farm represe
 \end{figure}
 
 
-\noindent Five crossover methods, and a masked mutation method were presented for the new type of encoding, see \cite{Mora} for implementation details. To model the wind speed, the Weibull distribution was used, a more realistic wind speed model than the one used in the previous studies. The Weibull distribution will be explained in more detail later, since it is also used in the simulator for this thesis. Three different case studies are performed, the first one searches for an optimal solution when the number of turbines are decided beforehand. The second searches for an optimal positioning, type and height of turbines within a given budget. And the third one where there are no such constraints. Even thought the results are only briefly discussed, and presented by the authors as optimal with no explanation, this paper marks the switch from binary encoding to integer encoding, and from simple wind models to the Weibull distribution.\\
+\noindent Five crossover methods, and a masked mutation method were presented for the new type of encoding, see \cite{Mora} for implementation details. To model the wind speed, the Weibull distribution was used, a more realistic wind speed model than the one used in the previous studies. The Weibull distribution will be explained in more detail in section \textcolor{red}{reference section Weibull}, since it is also used in the simulator for this thesis. Three different case studies are performed, the first one searches for an optimal solution when the number of turbines are decided beforehand. The second searches for an optimal positioning, type and height of turbines within a given budget. And the third one where there are no such constraints. Even thought the results are only briefly discussed, and presented by the authors as optimal with no explanation, this paper marks the switch from binary encoding to integer encoding, and from simple wind models to the Weibull distribution.\\
 
 
 %Wan et al, 2009.
@@ -251,18 +251,22 @@ A greedy heuristic approach to the wind farm layout optimization problem was pre
 
 
 \section{Discussion Related Work}
-Genetic algorithms is a popular technique in solving the wind farm layout optimization problem. Since \textcolor{red}{Mosetti et al., (1995)}, a number of researches has tried to improve the results, some using distributed genetic algorithms, other by introducing local search techniques, seeded genetic algorithm, and other variations. Others again, has optimized focused on making the cost function more realistic, improved the wind distribution model, or improved the power model. Table \ref{Jean tabel} shows gives an overview over the articles discussed in \textcolor{red}{reference section.} and summarizes what was new with each one of them.\\
+In order to provide an overview of the different publications presented in the two previous sections the wake-, wind-, power-, and cost model, along with objective functions, type of genetic algorithms and a short explanation of novelties presented in each article is presented in table \ref{table:overview related work}. \\
 
-\noindent Even thought genetic algorithms have been given a great deal of attention in solving the wind farm layout optimization problem, section \textcolor{red}{Reference section} shows promising results using completely different techniques. \\
+\noindent As can be seen in the table, each article utilized some variation of the Jensen model, developed by \citep{Jensen}, and later improved upon by \citep{Katic} and \citep{Frandsen}. The same model will also be used in this thesis. \\
 
-\noindent \textcolor{red}{Grady et al., (2005)} showed that by using a distributed genetic algorithm the results obtained in \textcolor{red}{Mosetti et al. (1994)} could be improved. \textcolor{red}{Huang, ()}, performed a study with the goal of showing than an distributed genetic algorithm can find a better wind farm layout than an simple genetic algorithm, and his implementation of the Island model showed his hypothesis to be true. However, when seeded genetic algorithms, and local search was introduced the simple genetic algorithms had a come back. \\
+\noindent Even though not many improvements has been made to the wake model, the wind model has evolved a lot since \citep{Mosetti}. As presented before, the three wind scenarios developed by Mosetti et al.; (a) single wind direction, uniform intensity, (b) multiple wind direction, uniform intensity, and (c) multiple wind directions and intensity, are not very realistic. The Weibull distribution, introduced by \citep{Mora}, models the wind distribution much better, and has been adopted by everyone, except those who still wanted to compare their results against \citep{Mosetti} and \citep{Grady}. As mentioned before, the Weibull distribution will also be used to model wind distribution in this thesis, and will be described in more detail in section \textcolor{red}{Reference section}, when the simulator is explained. \\
 
-\noindent In this thesis, a complete study, and comparison of different genetic algorithms and the simple genetic algorithm will be performed. As far as the author of this thesis is concerned, no attempt has been to implement other types of distributed genetic algorithms than the Island model. Since the Island model has been proven better than a simple genetic algorithm, it would be interesting to see if the results could be further improved by different distributed genetic algorithm techniques. \\
+\noindent The majority of the publications presented uses the simple power model presented by \citep{Mosetti}, however, \citep{Kusiak} presents a more complex, linear power model, which also will be used in this thesis and are explain in section \textcolor{red}{Reference section}.\\ 
+
+
+
 
 
 \begin{sidewaystable}
 \tiny
 \begin{center}
+\label{table:overview related work}
 \begin{tabular}{l|l|l|l|l|l|l|l|l|}
 Paper                   & Wake Model       & Wind Model      & Power Model  & Cost Model & Objective  & GA  & Representation  \\ 
 \hline 
