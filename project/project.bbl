@@ -24,6 +24,13 @@ Gong, Y.-J., Chen, W.-N., Zhan, Z.-H., Zhang, J., Li, Y., Zhang, Q., and Li,
   state-of-the-art.
 \newblock {\em Applied Soft Computing}.
 
+\bibitem[González et~al., 2010]{Gonzales}
+González, J.~S., Rodriguez, A. G.~G., Mora, J.~C., Santos, J.~R., and Payan,
+  M.~B. (2010).
+\newblock Optimization of wind farm turbines layout using an evolutive
+  algorithm.
+\newblock {\em Renewable Energy}.
+
 \bibitem[Grady et~al., 2005]{Grady}
 Grady, S.~A., Hussaini, M.~Y., and Abdullah, M.~M. (2005).
 \newblock Placement of wind turbines using genetic algorithms.
@@ -70,6 +77,13 @@ Mosetti, G., Poloni, C., and Diviacco, B. (1994).
 \newblock Optimization of wind turbine positioning in large windfarms by means
   of genetic algorithm.
 \newblock {\em Journal of Wind Engineering and Industrial Aerodynamics}.
+
+\bibitem[Saavedra-Morena et~al., 2011]{Saavedra-Morena}
+Saavedra-Morena, B., Salcedo-Sanz, S., Paniagua-Tineo, A., Prieto, L., and
+  Portilla-Figueras, A. (2011).
+\newblock Seeding evolutionary algorithms with heuristics for optimal wind
+  turbines positioning in wind farms.
+\newblock {\em Renewable Energy}.
 
 \bibitem[Samorani, 2013]{Samorani}
 Samorani, M. (2013).
