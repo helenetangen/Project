@@ -1,7 +1,7 @@
 \contentsline {chapter}{Bibliography}{1}
 \contentsline {chapter}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {1.1}Introduction}{2}
-\contentsline {subsection}{\numberline {1.1.1}Background and Motivation}{2}
+\contentsline {subsection}{\numberline {1.1.1}Motivation and Background}{2}
 \contentsline {subsection}{\numberline {1.1.2}Goal and Research Questions}{3}
 \contentsline {chapter}{\numberline {2}Background}{5}
 \contentsline {section}{\numberline {2.1}The wind farm layout optimization problem}{5}
@@ -23,10 +23,10 @@
 \contentsline {section}{\numberline {3.1}Wind Farm Layout Optimization using Genetic Algorithms}{19}
 \contentsline {section}{\numberline {3.2}Wind Farm Layout Optimization Different Approaches}{33}
 \contentsline {section}{\numberline {3.3}Discussion Related Work}{35}
-\contentsline {chapter}{\numberline {4}Technical Description}{38}
-\contentsline {section}{\numberline {4.1}Application User Interface (API)}{38}
-\contentsline {subsection}{\numberline {4.1.1}Genetic Algorithm}{39}
-\contentsline {subsection}{\numberline {4.1.2}Fitness function}{40}
-\contentsline {subsection}{\numberline {4.1.3}Wake-, Wind- and Power Model}{41}
-\contentsline {section}{\numberline {4.2}Test Simulation}{42}
-\contentsline {section}{\numberline {4.3}Future Work}{43}
+\contentsline {chapter}{\numberline {4}Technical Description}{39}
+\contentsline {section}{\numberline {4.1}Application User Interface (API)}{39}
+\contentsline {subsection}{\numberline {4.1.1}Genetic Algorithm}{40}
+\contentsline {subsection}{\numberline {4.1.2}Fitness function}{41}
+\contentsline {subsection}{\numberline {4.1.3}Wake-, Wind- and Power Model}{42}
+\contentsline {section}{\numberline {4.2}Test Simulation}{43}
+\contentsline {section}{\numberline {4.3}Future Work}{44}

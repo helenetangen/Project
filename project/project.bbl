@@ -1,5 +1,17 @@
 \begin{thebibliography}{}
 
+\bibitem[Bilbao and Alba, 2009]{Bilbao}
+Bilbao, M. and Alba, E. (2009).
+\newblock Simulated annealing for optimization of wind farm annual profit.
+\newblock In {\em Logistics and Industrial Informatics, 2009. LINDI 2009. 2nd
+  International}, pages 1--5. IEEE.
+
+\bibitem[Chen et~al., 2013]{Chen}
+Chen, Y., Li, H., Jin, K., and Song, Q. (2013).
+\newblock Wind farm layout optimization using genetic algorithm with different
+  hub height wind turbines.
+\newblock {\em Energy Conversion and Management}.
+
 \bibitem[Emami and Noghreh, 2010]{Emami}
 Emami, A. and Noghreh, P. (2010).
 \newblock New approach on optimization in placement of wind turbines within
