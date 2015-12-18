@@ -15,7 +15,7 @@ Wind farm layout optimization has been studied extensively the last 20 years and
 \label{Power Mosetti et al.}
 Power_{total} = \sum^{N_t}_{i} z_0u_i^3,
 \end{equation}
-\todo{Do I have to explain where these come from?}
+%\todo{Do I have to explain where these come from?}
 
 
 \begin{equation}
@@ -34,7 +34,6 @@ Objective = \frac{1}{P_{total}}w_1 + \frac{cost_{total}}{P_{total}}w_2
 
 \noindent where $w_1$ and $w_2$ are weights. In the current study, $w_1$ was kept small so that the focus would be on lowest cost per energy produced. \\
 
-\todo{Should I make a complete reference here?}
 \noindent Mosetti et al. divided the wind farm terrain into a $10\times10$ quadratic grid so that a wind turbine could be installed in the middle of each cell. The optimization problem would then be to find which cells wind turbines should be installed in, in order to maximize power production and minimize cost. With this representation, an individual of the genetic search could be represented as a binary string of length 100, where each index represents a cell in the grid, so that a value of 1 means that a wind turbine is installed in the corresponding cell, and a value of zero means that there is no wind turbine in the corresponding cell. The genetic algorithm used was a simple, single-population genetic search where the fittest individuals where selected for reproduction using crossover and mutation. The crossover operation was performed at random locations with probability $0.6 < P_c < 0.9$ and mutation was performed with probability $0.01 < P_m < 0.1$. Figure \ref{Wind Farm Representation} illustrates how an individual represents a wind park for a wind farm partitioned into nine cells.\\
 
 
@@ -169,7 +168,7 @@ All studies presented above have used binary encoding in their wind farm represe
 
 \begin{equation}
 \label{Power Model (Wan)}
-\int_{u_in}^{u_out} P(u)f(u) du,
+\int_{u_{in}}^{u_{out}} P(u)f(u) du,
 \end{equation}
 
 
