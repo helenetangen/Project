@@ -11,14 +11,14 @@ A class diagram of the provided API is displayed in figure \ref{Class Diagram}. 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Class Diagram"}
-\caption{Class diagram of the API provided på GECCO 2015.}
+\caption{Class diagram of the API provided by GECCO 2015.}
 \label{Class Diagram}
 \end{center}
 \end{figure}
 
 
 \subsection{Genetic Algorithm}
-The genetic algorithm provided is a simple genetic algorithm that uses a binary representation. Even thought a binary representation is used, it is slightly different from the approaches listed in related work, because positions that are not allowed is removed from the representation. This is shown in figure \ref{Binary representation (API)}. Two of the nine positions, the red ones, contains obstacles and are therefore not allowed, these are therefore removed from the individual. This means that even though the wind farm is partitioned into 9 squares, the individual is only represented with a binary string of size seven, since there is only seven legal positions. The selection method, and crossover and mutation methods are the ones presented in the section \textcolor{red}{Reference background section}.
+The genetic algorithm provided is a simple genetic algorithm that uses a binary representation. Even thought a binary representation is used, it is slightly different from the approaches listed in related work, because positions that are not allowed is removed from the representation. This is shown in figure \ref{Binary Representation (API)}. Two of the nine positions, the red ones, contains obstacles and are therefore not allowed, these are therefore removed from the individual. This means that even though the wind farm is partitioned into 9 squares, the individual is only represented with a binary string of size seven, since there is only seven legal positions. The selection method, and crossover and mutation methods are the ones presented in the section \textcolor{red}{Reference background section}.
 
 
 \begin{figure}[h!]

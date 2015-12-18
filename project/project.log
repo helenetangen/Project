@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  18 DEC 2015 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  18 DEC 2015 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1300,7 +1300,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
 [34]
 
-Package caption Warning: \label without proper \caption on input line 274.
+Package caption Warning: \label without proper \caption on input line 273.
 See the caption package documentation for explanation.
 
 
@@ -1328,7 +1328,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--264
  []
 
 
-Package caption Warning: \label without proper \caption on input line 274.
+Package caption Warning: \label without proper \caption on input line 273.
 See the caption package documentation for explanation.
 
 
@@ -1352,23 +1352,19 @@ Overfull \hbox (1278.36678pt too wide) in paragraph at lines 274--319
 
 ) (./tools.tex [37] [38]
 Chapter 4.
-<images/"Class Diagram".png, id=184, 1320.935pt x 1081.03876pt>
+<images/"Class Diagram".png, id=184, 1310.8975pt x 902.37125pt>
 File: images/"Class Diagram".png Graphic file (type png)
 
 <use images/"Class Diagram".png>
 Package pdftex.def Info: images/"Class Diagram".png used on input line 13.
-(pdftex.def)             Requested size: 396.28355pt x 324.31413pt.
+(pdftex.def)             Requested size: 393.2723pt x 270.71346pt.
 
-Overfull \hbox (6.28355pt too wide) in paragraph at lines 13--14
+Overfull \hbox (3.2723pt too wide) in paragraph at lines 13--14
  [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Reference `Binary representation (API)' on page 39 undefined on 
-input line 21.
 
 [39
 
@@ -1468,15 +1464,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 15152 strings out of 493117
- 293514 string characters out of 6135434
+ 15150 strings out of 493117
+ 293477 string characters out of 6135434
  344029 words of memory out of 5000000
- 18277 multiletter control sequences out of 15000+600000
+ 18275 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,75p,2389b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1496,7 +1489,7 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (48 pages, 1167053 bytes).
+Output written on project.pdf (48 pages, 1098970 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  160 compressed objects within 2 object streams
