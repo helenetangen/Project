@@ -5,45 +5,45 @@ The style file: apalike.bst
 Database file #1: mybib.bib
 Warning--I didn't find a database entry for "Gonzales"
 Warning--empty journal in Razali
-You've used 26 entries,
+You've used 27 entries,
             1935 wiz_defined-function locations,
-            633 strings with 8144 characters,
-and the built_in function-call counts, 9588 in all, are:
-= -- 902
-> -- 458
-< -- 14
-+ -- 162
-- -- 154
-* -- 791
-:= -- 1742
-add.period$ -- 78
-call.type$ -- 26
-change.case$ -- 200
-chr.to.int$ -- 26
-cite$ -- 27
-duplicate$ -- 363
-empty$ -- 627
-format.name$ -- 193
-if$ -- 1818
+            640 strings with 8359 characters,
+and the built_in function-call counts, 10158 in all, are:
+= -- 966
+> -- 471
+< -- 16
++ -- 166
+- -- 158
+* -- 829
+:= -- 1822
+add.period$ -- 82
+call.type$ -- 27
+change.case$ -- 207
+chr.to.int$ -- 27
+cite$ -- 28
+duplicate$ -- 392
+empty$ -- 672
+format.name$ -- 200
+if$ -- 1948
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 32
-newline$ -- 132
-num.names$ -- 78
-pop$ -- 205
+missing$ -- 33
+newline$ -- 137
+num.names$ -- 81
+pop$ -- 214
 preamble$ -- 1
-purify$ -- 206
+purify$ -- 213
 quote$ -- 0
-skip$ -- 272
+skip$ -- 297
 stack$ -- 0
-substring$ -- 511
-swap$ -- 31
-text.length$ -- 2
+substring$ -- 563
+swap$ -- 43
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 144
+type$ -- 150
 warning$ -- 1
-while$ -- 69
+while$ -- 74
 width$ -- 0
-write$ -- 322
+write$ -- 336
 (There were 2 warnings)

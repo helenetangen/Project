@@ -84,6 +84,13 @@ Kusiak, A. and Song, Z. (2010).
 \newblock Design of wind farm layout for maximum wind energy capture.
 \newblock {\em Renewable Energy}, 35(3):685--694.
 
+\bibitem[Liang and Fang, 2014]{Liang}
+Liang, S. and Fang, Y. (2014).
+\newblock Analysis of the jensen's model, the frandsen's model and their
+  gaussian variations.
+\newblock In {\em Electrical Machines and Systems (ICEMS), 2014 17th
+  International Conference on}, pages 3213--3219. IEEE.
+
 \bibitem[Marmidis et~al., 2008]{Marmidis}
 Marmidis, G., Lazarou, S., and Pyrgioti, E. (2008).
 \newblock Optimal placement of wind turbines in a wind park using monte carlo
