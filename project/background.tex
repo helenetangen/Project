@@ -6,7 +6,7 @@ The goal of this section is to give the reader an understanding of the wind farm
 
 
 \subsection{Definition of the wind farm layout optimization problem}
-An overview of the wind farm layout optimization problem is presented by Samorani \citep{Samorani}. Grouping of wind turbines in a wind farm decreases installation and maintenance cost. However, positioning of wind turbines in a farm also introduces new challenges. The power produced by wind turbines is largely dependent on wind speed, therefore it is important that the wind speed that hits a wind turbine is as large as possible. The main challenge for wind farms is that a wind turbine positioned in front of another wind turbine will cause a wake of turbulence, meaning that the wind speed that hits the second wind turbine will be decreased. This effect is called "wake effect", and will be explained later. Since the goal is to produce as much power as possible it is very important to position the wind turbines so that the wake effect is minimal. Samorani states the wind farm layout optimization problem like this ''The wind farm layout optimization problem consists of finding the turbine positioning (wind farm layout) that maximizes the expected power production". However, in this thesis, the problem formulation will be extended to include cost constraints and also the problem of deciding the number of wind turbines, not just their positions. A formal definition is given below
+An overview of the wind farm layout optimization problem is presented by \cite{Samorani}. Grouping of wind turbines in a wind farm decreases installation and maintenance cost. However, positioning of wind turbines in a farm also introduces new challenges. The power produced by wind turbines is largely dependent on wind speed, therefore it is important that the wind speed that hits a wind turbine is as large as possible. The main challenge for wind farms is that a wind turbine positioned in front of another will cause a wake of turbulence, meaning that the wind speed that hits the second wind turbine will be decreased. This effect is called ``wake effect'', and will be explained later. Since the goal is to produce as much power as possible it is very important to position the wind turbines so that the wake effect is minimal. Samorani states the wind farm layout optimization problem like this ``The wind farm layout optimization problem consists of finding the turbine positioning (wind farm layout) that maximizes the expected power production". However, in this thesis, the problem formulation will be extended to include cost constraints and also the problem of deciding the number of wind turbines, not just their positions. A formal definition is given below
 
 
 \begin{quote}
@@ -15,33 +15,33 @@ An overview of the wind farm layout optimization problem is presented by Samoran
 
 
 \subsection{Challenges of wind farm construction}
-Samorani gives an overview of the main challenges of wind farm construction. First, a suitable site has to be found, meaning a site with good wind conditions. Sites are classified in 7 different wind power classes, where sites with power class 4 or higher are suitable for hosting a wind farm with today's turbine technology. But, even though the wind farm has the required wind conditions, it might not be suitable for hosting a find farm after all, because it might be far from the electronic grid, so that connecting it to it would be to costly, or it could require costly road work because current roads cannot handle the transportation trucks.\\
+\cite{Samorani} gives an overview of the main challenges of wind farm construction. First, a suitable site has to be found, meaning a site with good wind conditions. Sites are classified in 7 different wind power classes, where sites with power class 4 or higher are suitable for hosting a wind farm with today's turbine technology. But, even though the wind farm has the required wind conditions, it might not be suitable for hosting a find farm after all, because it might be far from the electronic grid, so that connecting it to it would be to costly, or it could require costly road work because current roads cannot handle the transportation trucks.\\
 
 \noindent Second, land owner has to be contacted and convinced that hosting a wind farm on their land is a good idea. Land owners usually gets a percentage of the wind farm profit. This phase of contract negotiation  usually takes a few months. At the same time, wind distribution needs to be measured as accurately as possible. This step is extremely important, since the layout of the farm is optimized based on the measured wind distribution. Getting enough data to capture the wind distribution can take a few months if wind conditions are similar all year long, but if the wind conditions vary extensively over the year this step can take a few years. \\
 
-\noindent An evenly important step is to decide on which turbines to buy for the wind farm. Larger turbines usually generate more power, but they are also more expensive than smaller ones. There is therefore a trade off between the cost and power production. Realistic estimation of maintenance cost is also crucial in deciding on turbine type. In \citep{Samorani} the number of wind turbines are also decided in this step, but in this project, deciding the number of turbines is included in the wind farm layout optimization problem and will therefore be part of the next step. \\
+\noindent An evenly important step is to decide on which turbines to buy for the wind farm. Larger turbines usually generate more power, but they are also more expensive than smaller ones. There is therefore a trade off between the cost and power production. Realistic estimation of maintenance cost is also crucial in deciding on turbine type. In \cite{Samorani} the number of wind turbines are also decided in this step, but in this project, deciding the number of turbines is included in the wind farm layout optimization problem and will therefore be part of the next step. \\
 
-\noindent After the site is found, turbine type is decided and wind distribution is measured, the layout optimization can begin. Layout optimization faces different challenges, such as positions of the terrain that contain obstacles so that turbines cannot be positioned there. There are also constraint on how close turbines can be positioned, according to \citep{Sisbot}, the minimum spacing rule states that the minimum distance between turbines is 8D in prevailing wind direction, and 2D in cross wind direction, where D is the rotor diameter. However, the greatest challenge of wind farm layout optimization is the wake effect. As mentioned above, the wake effect is the effect of reduced wind speed in the wake behind a wind turbine. Samorani explains the wake effect using the Jensen wake model \citep{Jensen}, other wake models exist, but most research in wind farm layout optimization use the Jensen model because it is quite accurate and simple. The Jensen model will also be used briefly in this project, to give an intuitive explanation of the wake effect. 
+\noindent After the site is found, turbine type is decided and wind distribution is measured, the layout optimization can begin. Layout optimization faces different challenges, such as positions of the terrain that contain obstacles so that turbines cannot be positioned there. There are also constraint on how close turbines can be positioned, according to \cite{Sisbot}, the minimum spacing rule states that the minimum distance between turbines is 8D in prevailing wind direction, and 2D in cross wind direction, where D is the rotor diameter. However, the greatest challenge of wind farm layout optimization is the wake effect. As mentioned above, the wake effect is the effect of reduced wind speed in the wake behind a wind turbine. Samorani explains the wake effect using the Jensen wake model \citep{Jensen}, other wake models exist, but most research in wind farm layout optimization use the Jensen model because it is quite accurate and simple. The Jensen model will be explained intuitively below in order to give an brief understanding of how the wake effect is calculated. \\
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.5]{images/"Wake Effect"}
-\caption{The wake effect \citep{Samorani}}
+\caption{The wake effect \citep{Samorani}.}
 \label{Wake effect}
 \end{center}
 \end{figure}
 
-In figure \ref{Wake effect} the small black rectangle represents a wind turbine, and the blue area behind it illustrates the area that is affected by the turbulence created by the wind turbine. In the figure, the wind is blowing from left to right with uniform wind speed of $U_0$. As the wind hits the wind turbine it creates a wake of turbulence behind it so that the wind speed at distance $x$ behind the wind turbine is $U < U_0$. The area behind the wind turbine that is affected by the wake at distance $x$ has the radius $r_1 = \alpha x + r_r$ where $r_r$ is the rotor radius and $\alpha$ is the entrainment constant constant which decides how fast the wake expands. For a detailed, mathematical explanation of the Jensen model and other wake models see \citep{Jensen}, \citep{Liang}.\\
+\noindent In figure \ref{Wake effect} the small black rectangle represents a wind turbine, and the blue area behind it illustrates the area that is affected by the turbulence created by the wind turbine. In the figure, the wind is blowing from left to right with uniform wind speed of $U_0$. As the wind hits the wind turbine it creates a wake of turbulence behind it so that the wind speed at distance $x$ behind the wind turbine is $U < U_0$. The area behind the wind turbine that is affected by the wake at distance $x$ has the radius $r_1 = \alpha x + r_r$ where $r_r$ is the rotor radius and $\alpha$ is the entrainment constant constant which decides how fast the wake expands. For a detailed, mathematical explanation of the Jensen model and other wake models see references \citep{Jensen} and \citep{Liang}.\\
 
 \noindent In summary, construction of a wind farm is a complicated, time consuming process. In order to even start the layout optimization consecutive important decisions has to be made. The layout optimization is dependent on turbine cost, terrain parameters, wind conditions and turbine positioning. Finding the optimal layout is a non-linear, complex problem that only sophisticated algorithms can solve.
 
 
 \section{Genetic Algorithms}
-This section first explains the simple genetic algorithm (SGA), invented by \cite{Holland}, to give an understanding of how the genetic algorithm works. If the reader is familiar with the genetic algorithm he or she can skip the first part. Next, the five different distributed genetic algorithms that will be implemented in this thesis are explained, these are all taken from \cite{Gong}. If not otherwise stated, the first part (SGAs) is based on \citep{Holland} and \citep{Goldberg}, and the second part (DGAs) is based on \citep{Gong}.
+This section first explains the simple genetic algorithm (SGA), invented by \cite{Holland}. If the reader is familiar with the genetic algorithm he or she can skip the first part. If not otherwise stated, the first part is based on references \citep{Holland} and \citep{Goldberg}. Next, the seven different distributed genetic algorithms that will be implemented in this thesis are explained, these are all taken from \cite{Gong}.
 
 
 \subsection{Simple Genetic Algorithms (SGAs)}
-Genetic algorithms are probabilistic search algorithms inspired by evolution. Figure \ref{GA} gives an intuitive explanation of how the algorithm works. The genetic algorithm operates on a population of individuals each representing a solutions to a problem. Usually, the initial population consist of randomly generated individuals which becomes the first child population. For each generation, the child population are evaluated based on some predefined fitness function (objective function), and the fittest individuals are selected as parents for the next generation. Next, the parent population produces a new child population based on different reproduction schemes, such as recombination of parent genes to form child genes. Some genes are also mutated in the process. Finally, the next generation of child solutions are generated and the process starts again.\\
+Genetic algorithms are probabilistic search algorithms inspired by evolution. Figure \ref{GA} gives an intuitive explanation of how the algorithm works. The genetic algorithm operates on a population of individuals each representing a solution to a problem. Usually, the initial population consist of randomly generated individuals which becomes the first child population. For each generation, the child population are evaluated based on some predefined fitness function (objective function), and the fittest individuals are selected as parents for the next generation. Next, the parent population produces a new child population based on different reproduction schemes, such as recombination of parent genes to form child genes. Some genes are also altered in the process. Finally, the next generation of child solutions are generated and the process starts again.\\
 
 
 \begin{figure}[h!]
@@ -56,8 +56,7 @@ Genetic algorithms are probabilistic search algorithms inspired by evolution. Fi
 \noindent Inspired by survival of the fittest, the population evolves into a population of better solutions to the given problem. Two key properties are crucial for the utilization and success of the genetic algorithm; (1) there has to be a way to evaluate the fitness of the solutions, and (2) there needs to be a way to represent individuals so that genetic operations can be performed. Examples of representation, fitness calculation, selection processes, and genetic operations will be given below. Note that there exist numerous different selection schemes and ways to perform mutation and crossover (genetic operations), but here, only the types that are used in the given thesis are presented. \\
 
 
-% What is genetic algorithm
-\subsubsection{Representation}
+\paragraph*{Representation}
 In genetics, they call an organisms hereditary information for its genotype, and its observable properties its phenotype. For example, the hereditary information in your genes (genotype) are responsible for your eye color (phenotype). The genetic search algorithm usually works on genotypes represented as bit strings. \cite{Goldberg} explained this with a simple example. Let's say the objective function that we want to find an optimal solution for is $x^2$ for $x \in \{0, 31\}$. Then we can generate genotypes for the random solutions using bit strings of size 5, each representing a phenotype value between 0 and 31. Figure \ref{Representation} displays the genotype and phenotype for four randomly generated individuals. Here, the phenotypes are just the genotypes on decimal form, but in other problems the phenotype could be everything from eye color to a wind farm.
 
 
@@ -70,8 +69,8 @@ In genetics, they call an organisms hereditary information for its genotype, and
 \end{figure}
 
 
-\subsubsection{Selection}
-\noindent Selection is the process of selecting which individuals from a given population that will be the parents of the next generation. The simplest form of selection is called \textit{elitist selection}, meaning the $n$ individuals from the populations are selected. Unfortunately, this selection strategy often leads to premature convergence of non optimal solutions. It is important to prioritize exploration, at least in the beginning of the search , otherwise, parts of the search space that could have lead to the optimal solution is cut off too soon. To cope with this problem \textit{controlled elitist selection} schemes are preferred. A very popular selection strategy is \textit{tournament selection} \citep{Razali}. In tournament selection, groups of \textit{n} individuals are randomly drawn from the population and the best (fittest) individual from the group is chosen as the tournament winner, and is therefore selected. Figure \ref{Tournament selection} illustrates how tournament selection works. In the example, \textit{n} is equal to 3, therefore the three individuals with fitness 9, 4 and 6 are randomly drawn from the population. The individual with fitness 9 wins the tournament and is chosen for reproduction.\\
+\paragraph*{Selection}
+Selection is the process of selecting which individuals from a given population that will be the parents of the next generation. The simplest form of selection is called \textit{elitist selection}, meaning the $n$ individuals from the populations are selected. Unfortunately, this selection strategy often leads to premature convergence of non optimal solutions. It is important to prioritize exploration, at least in the beginning of the search, otherwise, parts of the search space that could have lead to the optimal solution is cut off too soon. To cope with this problem \textit{controlled elitist selection} schemes are preferred. A very popular selection strategy is \textit{tournament selection} \citep{Razali}. In tournament selection, groups of \textit{n} individuals are randomly drawn from the population and the best (fittest) individual from the group is chosen as the tournament winner, and is therefore selected. Figure \ref{Tournament selection} illustrates how tournament selection works. In the example, \textit{n} is equal to 3, therefore the three individuals with fitness 9, 4 and 6 are randomly drawn from the population. The individual with fitness 9 wins the tournament and is chosen for reproduction.\\
 
 
 \begin{figure}[h!]
@@ -83,10 +82,10 @@ In genetics, they call an organisms hereditary information for its genotype, and
 \end{figure}
 
 
-\noindent By varying the value of \textit{n} you can control how much exploration your algorithm should do. If \textit{n} is equal to the population size, this is elitist selection, if \textit{n} is equal to 1 however the search is completely random. This means that low values of \textit{n} leads to more exploration of the search space, and higher values of \textit{n} leads to faster convergence. These properties makes it desirable to vary the value of \textit{n} during the genetic search so that exploration is prioritized at the beginning of the search, while exploitation is prioritized at the end.\\
+\noindent By varying the value of \textit{n} you can control how much exploration your algorithm should do. If \textit{n} is equal to the population size, this is elitist selection, if \textit{n} is equal to 1 on the other hand the search is completely random. This means that low values of \textit{n} leads to more exploration of the search space, and higher values of \textit{n} leads to faster convergence. These properties makes it desirable to vary the value of \textit{n} during the genetic search so that exploration is prioritized at the beginning of the search, while exploitation (making use of seemingly good solutions) is prioritized at the end.\\
 
 
-\subsubsection{Crossover}
+\paragraph*{Crossover}
 Crossover means combining genes of a parent solution to produce a child. The mutation scheme used in this thesis uses a crossover method called uniform crossover. For each gene of the child solution there is a 50\% chance the gene will be copied from the first parent and a 50\% chance that the gene will be copied from the second parent. Figure \ref{Uniform Crossover} shows how uniform crossover works. As can be seen, the first gene is taken from parent one, the second gene from parent two, the third and forth gene from parent one and so on. 
 
 
@@ -99,21 +98,20 @@ Crossover means combining genes of a parent solution to produce a child. The mut
 \end{figure}
 
 
-% Uniform crossover
-\subsubsection{Mutation}
+\paragraph*{Mutation}
 In biology, mutation is defined as permanent alteration in the DNA sequence that makes up a gene. When the genetic algorithm works on genotypes of bit strings the process consists of simply flipping bits. Mutation is usually implemented by having a given probability of each value in the genotype being flipped as shown in figure \ref{Mutation}.\\
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.2]{images/"Mutation"}
-\caption{Mutation of a single bit. The bit in position 6 at the upper bit string has the value 1 before the mutation, while after mutation the value if flipped into 0.}
+\caption{Mutation of a single bit. The bit in position 6 at the upper bit string has the value 1 before the mutation, while after mutation the value is flipped to 0.}
 \label{Mutation}
 \end{center}
 \end{figure}
 
 
-Mutation is important because without mutation a population can converge to a population of individuals where each genotype has the same value at a given position. Since every individual has the same value in their genotype, reproduction will never be able to make a new individual that doesn't also have the same value at the same position. With mutation however, there is always a probability of the value being flipped, mutation is therefore crucial for maintaining diversity in the population.\\
+\noindent Mutation is important because without mutation a population can converge to a population of individuals where each genotype has the same value at a given position. Since every individual has the same value in their genotype, reproduction will never be able to make a new individual that doesn't also have the same value at the same position. With mutation however, there is always a probability of the value being flipped, mutation is therefore crucial for maintaining diversity in the population.\\
 
 
 \noindent Even though mutation is important, the probability of mutation needs to be kept low. If the mutation rate is very high, the genotype of a new individual will almost be a random bit string. Remember that a new individual is made by reproduction between two individuals with high fitness in the previous population, if mutation heavily changes the new individual, it will not inherit the good features of its parents and the whole point of evolutionary search will be gone.\\
@@ -123,8 +121,7 @@ Mutation is important because without mutation a population can converge to a po
 On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population do not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that does not look that good at first, and consequently get the opportunity to find better, more sophisticated solutions. The goal of this thesis is to investigate and compare the performance of population distributed genetic algorithms with that of simple genetic algorithms. It will be distinguished between population distributed genetic algorithms and genetic algorithms where processing is distributed among different processors, meaning that parallelism is utilized in the implementation. This section introduces seven distributed models. Each model will be implemented with parallelism in order to improve the running time of the algorithm, however the first model introduced, the master-slave model, is not population distributed. It is a simple genetic algorithm, implemented using parallelism in order to run fast, and it will be implemented so that the performance of a simple genetic algorithm (non-population distributed) can be compared to a population distributed algorithm. This section introduces seven different distributed algorithms presented by \cite{Gong}. These will all be implemented and tested in this thesis.\\
 
 
-\subsubsection{The Master-Slave Model}
-
+\paragraph*{Master-Slave Model}
 As mentioned, the master-slave model is not a population distributed genetic algorithm, but a simple genetic algorithm where the main operations of the algorithm are distributed between different processors. It will be implemented in this thesis for two reasons; (1) distributing tasks between different processors gives a faster-running algorithm than an simple genetic algorithm, (2) results obtained will be the same as results obtained by a simple genetic algorithm, and can therefore be used to compare against true distributed algorithms. The master-slave model is displayed in figure \ref{Master-Slave Model}.\\
 
 
@@ -140,7 +137,7 @@ As mentioned, the master-slave model is not a population distributed genetic alg
 \noindent When the master-slave model is used, the main loop is taken care of by the master process, however the most expensive operation in the genetic algorithm, calculation of fitness, is distributed to different slave processes. Each slave simply calculate the fitness of the individuals received from the master, and return the calculated fitness to the master. 
 
 
-\subsubsection{The Island Model}
+\paragraph*{The Island Model}
 In the island model, the population is divided into sub populations that are distributed onto different islands. By letting each population evolve separately different islands can explore different solutions. Figure \ref{Island model} displays a population divided into four sub populations. \\ 
 
 
@@ -156,11 +153,11 @@ In the island model, the population is divided into sub populations that are dis
 According to \cite{Huang}, six parameters needs to be specified when using the Island model. First of all, the deme size needs to be specified; the number of individuals on each island (deme). Second, one needs to decide on the number of demes. In figure \ref{Island model} the deme size is five and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows are the legal migration routes, since the topology forms a circle it is called a ring topology. The forth and fifth parameters listed by Huang are migration rate and migration interval, meaning the number of individuals that migrate from one population to another and the number of generations between each migration respectively. These parameters are very important since they largely affect the time the population gets to explore different solutions before the best solutions from some of the demes takes over the population. Sixth, the policy of selection emigrants and how to replace existing individuals with new migrants. \\
 
 
-\noindent The above parameters must be given careful thought when implementing the island model, but as Gong explains, they are not the only ones. If the island model is implement in parallel one also have to decide if the migration is synchronous or asynchronous. Synchronous migration means that all migration is performed at the same time; at a specific generation, while as asynchronous migration is used migration can be performed whenever one of the parallel processes is ready. Additionally, it has to be decided if the island model is homogeneous or heterogeneous. By a homogeneous island model, Gong means an island model where each sub population use the same selection strategy, genetic operations and fitness function, while as an heterogeneous island model can implement different settings for different sub populations.
+\noindent The above parameters must be given careful thought when implementing the island model, but as Gong explains, they are not the only ones. If the island model is implement in parallel one also have to decide if the migration is synchronous or asynchronous. Synchronous migration means that all migration is performed at the same time; at a specific generation. Asynchronous migration on the other hand, can be performed whenever one of the parallel processes is ready. Additionally, it has to be decided if the island model is homogeneous or heterogeneous. By a homogeneous island model, Gong et al. means an Island model where each sub population use the same selection strategy, genetic operations and fitness function, while as an heterogeneous Island model can implement different settings for different sub populations.
 
 
-\subsubsection{The Cellular Model}
-Figure \ref{Cellular model} displays the cellular model from \citep{Gong}. In the cellular model the population is distributed in a grid of cells where each cell holds one individual. Each individual only ''sees'' the individuals of its neighborhood (as decided by the given neighborhood topology) and can only be compared with and mate with individuals in its neighborhood. \\
+\paragraph*{The Cellular Model}
+Figure \ref{Cellular model} displays the cellular model from \cite{Gong}. In the cellular model the population is distributed in a grid of cells where each cell holds one individual. Each individual only ``sees'' the individuals of its neighborhood (as decided by the given neighborhood topology) and can only be compared with and mate with individuals in its neighborhood. \\
 
 
 \begin{figure}[h!]
@@ -172,13 +169,13 @@ Figure \ref{Cellular model} displays the cellular model from \citep{Gong}. In th
 \end{figure}
 
 
-\noindent The takeover time is defined as the time it takes for one individual to propagate to the whole population. The neighborhood topology largely affects the takeover time. In figure \ref{Cellular model} the neighborhood topology is defined as only the individuals left, right, over and under the given individual. Since the topology includes a small number of individuals the takeover time will be very long, meaning that exploration is prioritized. If the topology consist of a larger number of cells the takeover time will, off course, be mush shorter.\\
+\noindent The takeover time is defined as the time it takes for one individual to propagate to the whole population. The neighborhood topology largely affects the takeover time. In figure \ref{Cellular model} the neighborhood topology is defined as only the individuals left, right, over and under the given individual. Since the topology includes a small number of individuals, the takeover time will be very long, meaning that exploration is prioritized. If the topology consist of a larger number of cells the takeover time will, off course, be much shorter.\\
 
 
-\noindent The cellular model can also be implemented in parallel, ideally with one processor for each cell. As in the island model, updating of the cells can be both synchronous and asynchronous. Synchronous updating means that all the cells are updated at the same time, while as asynchronous updating means that each cell is updated at a certain time following some updating scheme. 
+\noindent The cellular model can also be implemented in parallel, ideally with one processor for each cell. As in the island model, updating of the cells can be both synchronous and asynchronous. 
 
 
-\subsubsection{Hybrid Models}
+\paragraph*{Hybrid Models}
 Hybrid models, are population distributed genetic algorithms that combine different population distributed genetic algorithm models. Gong et al. presented the three different hybrid models presented in figure \ref{Hybrid Models}.\\
 
 
@@ -204,17 +201,17 @@ Hybrid models, are population distributed genetic algorithms that combine differ
 \noindent The first hybrid model combines the island model with the master-slave model. By combining these two models, each deme will be processed faster because it is distributed between different processors. The second model combines the island model and the cellular model. By combining these two models the diversity within a given deme can be kept longer than when the simple island model is used, and make sure premature convergence will not happen in the demes. The last model has a similar function as the second one, but instead of using the cellular model in each deme, it uses the island model inside the demes. \\
 
 
-\subsubsection{Pool Model}
+\paragraph*{Pool Model}
 Another population distributed model is called the pool model. In this model the population is put in a shared global pool of $n$ individuals, where it can be accessed by different processors. Each processor draws a population from random positions of the pool, however it has allocated its own positions for which it can return individuals to the pool. This process is demonstrated in figure \ref{Pool Model}. \\
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Pool Model"}
-\caption{The pool model. Each processor has its own positions in the pool for which it is responsible to return individuals to. The red processor is responsible for the red positions in the pool, and so on. Processors draw individuals from random positions in the pool, but writes them back to its own positions, given that their fitness are higher than the individuals currently occupying the position \citep{Gong}.}
+\caption{The pool model. Each processor has its own positions in the pool for which it is responsible to return individuals to. The red processor is responsible for the red positions in the pool, and so on. Processors draw individuals from random positions in the pool, as indicated by the arrows, but writes them back to its own positions, given that their fitness are higher than the individuals currently occupying the position \citep{Gong}.}
 \label{Pool Model}
 \end{center}
 \end{figure}
 
 
-\noindent A processor $p_1$ has $k$ positions in the pool for which it is responsible for as can be seen in figure \ref{Pool Model}, where the processor and the positions it is responsible for has the same color. It draws a population of individuals $i_1, i_2,...,i_k$ from random positions in the pool, performs genetic operations and fitness calculations, and write each individual back to its corresponding position $1, 2,...,k$ in the the positions it is responsible for, given that their fitness is higher then the fitness of the individual currently occupying the position. Key design decisions in this model is individual selection policy and replacement policy.\\
+\noindent A processor $p_1$ has $k$ positions in the pool for which it is responsible for as can be seen in figure \ref{Pool Model}, where the processor and the positions it is responsible for has the same color. The processor draws a population of individuals $i_1, i_2,...,i_k$ from random positions in the pool and performs genetic operations and fitness calculations on them. Next it writes each individual back to its corresponding position $1, 2,...,k$ in the the positions it is responsible for, given that their fitness is higher then the fitness of the individual currently occupying the position.\\

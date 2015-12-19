@@ -17,6 +17,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {2.1}The Wind Farm Layout Optimization Problem}{6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Definition of the wind farm layout optimization problem}{6}}
 \citation{Samorani}
+\citation{Samorani}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Challenges of wind farm construction}{7}}
 \citation{Sisbot}
 \citation{Jensen}
@@ -24,11 +25,10 @@
 \citation{Samorani}
 \citation{Jensen}
 \citation{Liang}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The wake effect \citep  {Samorani}\relax }}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces The wake effect \citep  {Samorani}.\relax }}{8}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{Wake effect}{{2.1}{8}}
 \citation{Holland}
-\citation{Gong}
 \citation{Holland}
 \citation{Goldberg}
 \citation{Gong}
@@ -37,24 +37,19 @@
 \citation{Goldberg}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Overview of the phases of the genetic algorithm.\relax }}{10}}
 \newlabel{GA}{{2.2}{10}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1.1}Representation}{10}}
 \citation{Razali}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Genotypes and phenotypes for four individuals where the phenotype is the decimal value of the genotype.\relax }}{11}}
 \newlabel{Representation}{{2.3}{11}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1.2}Selection}{11}}
 \citation{Razali}
 \citation{Razali}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Tournament selection. A group of three individuals are randomly drawn from the pool of all individuals. The best individual in the group, the one with fitness 9, is selected for reproduction \citep  {Razali}.\relax }}{12}}
 \newlabel{Tournament selection}{{2.4}{12}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1.3}Crossover}{12}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Uniform crossover. A child genotype is created by a combination of the genotypes of both parents. Each gene is drawn from one of the parents with equal probability.\relax }}{13}}
 \newlabel{Uniform Crossover}{{2.5}{13}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1.4}Mutation}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Mutation of a single bit. The bit in position 6 at the upper bit string has the value 1 before the mutation, while after mutation the value if flipped into 0.\relax }}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Mutation of a single bit. The bit in position 6 at the upper bit string has the value 1 before the mutation, while after mutation the value is flipped to 0.\relax }}{13}}
 \newlabel{Mutation}{{2.6}{13}}
 \citation{Gong}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Distributed Genetic Algorithms (DGAs)}{14}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2.1}The Master-Slave Model}{14}}
 \citation{Gong}
 \citation{Gong}
 \citation{Gong}
@@ -62,24 +57,20 @@
 \citation{Huang}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Master-slave model. The master process distributes the population to different slave processes, which calculate the fitness of each individual and return the results to the master process \citep  {Gong}.\relax }}{15}}
 \newlabel{Master-Slave Model}{{2.7}{15}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2.2}The Island Model}{15}}
 \citation{Gong}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces An island model using a ring topology with four demes of size five. \citep  {Gong}\relax }}{16}}
 \newlabel{Island model}{{2.8}{16}}
 \citation{Gong}
 \citation{Gong}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2.3}The Cellular Model}{17}}
+\citation{Gong}
+\citation{Gong}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Cellular model where the neighborhood topology consist of the cells to the left, right, over and under the given cell \citep  {Gong}.\relax }}{17}}
 \newlabel{Cellular model}{{2.9}{17}}
 \citation{Gong}
 \citation{Gong}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2.4}Hybrid Models}{18}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.10}{\ignorespaces Different hybrid models. (a) Island-master-slave hybrid model, (b) Island-cellular hybrid model, and (c) Island-island hybrid model \citep  {Gong}.\relax }}{18}}
 \newlabel{Hybrid Models}{{2.10}{18}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2.5}Pool Model}{18}}
-\citation{Gong}
-\citation{Gong}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces The pool model. Each processor has its own positions in the pool for which it is responsible to return individuals to. The red processor is responsible for the red positions in the pool, and so on. Processors draw individuals from random positions in the pool, but writes them back to its own positions, given that their fitness are higher than the individuals currently occupying the position \citep  {Gong}.\relax }}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.11}{\ignorespaces The pool model. Each processor has its own positions in the pool for which it is responsible to return individuals to. The red processor is responsible for the red positions in the pool, and so on. Processors draw individuals from random positions in the pool, as indicated by the arrows, but writes them back to its own positions, given that their fitness are higher than the individuals currently occupying the position \citep  {Gong}.\relax }}{19}}
 \newlabel{Pool Model}{{2.11}{19}}
 \citation{Mosetti}
 \citation{Jensen}
@@ -206,10 +197,10 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Wake-, Wind- and Power Model}{44}}
 \newlabel{equation:Weibull}{{4.2}{44}}
 \citation{Kusiak}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The Weibull distribution plotted for different values of $k$ and $c$.\relax }}{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces The Weibull distribution plotted for $k = 2$ for different values of the scale parameter $c$.\relax }}{45}}
 \newlabel{figure:weibull distribution}{{4.3}{45}}
 \newlabel{equation:Power Curv (API)}{{4.3}{45}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Test Simulation}{45}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Test Simulation}{46}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Minimum-, maximum-, and average fitness for two scenarios provided by GECCO; (a) Fitness for scenario 1, without obstacles, (b) Fitness for scenario 1 with obstacles. Each simulation was run for 50 generations, ten times, and the result is averaged over these ten runs.\relax }}{46}}
 \newlabel{Test Plots}{{4.4}{46}}
 \@writefile{toc}{\contentsline {section}{\numberline {4.3}Future Work}{46}}
