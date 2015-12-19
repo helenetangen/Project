@@ -3,44 +3,46 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: project.aux
 The style file: apalike.bst
 Database file #1: mybib.bib
-You've used 25 entries,
+Warning--empty journal in Razali
+You've used 26 entries,
             1935 wiz_defined-function locations,
-            627 strings with 7999 characters,
-and the built_in function-call counts, 9283 in all, are:
-= -- 874
-> -- 445
-< -- 13
-+ -- 158
-- -- 150
-* -- 767
-:= -- 1686
-add.period$ -- 76
-call.type$ -- 25
-change.case$ -- 193
-chr.to.int$ -- 25
-cite$ -- 25
-duplicate$ -- 350
-empty$ -- 607
-format.name$ -- 186
-if$ -- 1761
+            631 strings with 8128 characters,
+and the built_in function-call counts, 9588 in all, are:
+= -- 902
+> -- 458
+< -- 14
++ -- 162
+- -- 154
+* -- 791
+:= -- 1742
+add.period$ -- 78
+call.type$ -- 26
+change.case$ -- 200
+chr.to.int$ -- 26
+cite$ -- 27
+duplicate$ -- 363
+empty$ -- 627
+format.name$ -- 193
+if$ -- 1818
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 31
-newline$ -- 128
-num.names$ -- 75
-pop$ -- 197
+missing$ -- 32
+newline$ -- 132
+num.names$ -- 78
+pop$ -- 205
 preamble$ -- 1
-purify$ -- 199
+purify$ -- 206
 quote$ -- 0
-skip$ -- 261
+skip$ -- 272
 stack$ -- 0
-substring$ -- 499
+substring$ -- 511
 swap$ -- 31
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 138
-warning$ -- 0
-while$ -- 67
+type$ -- 144
+warning$ -- 1
+while$ -- 69
 width$ -- 0
-write$ -- 312
+write$ -- 322
+(There was 1 warning)

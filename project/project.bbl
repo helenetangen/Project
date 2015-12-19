@@ -106,6 +106,11 @@ Ozturk, U.~A. and Norman, B.~A. (2004).
 \newblock Heuristic methods for wind energy conversion system positioning.
 \newblock {\em Electric Power Systems Research}, 70(3):179--185.
 
+\bibitem[Razali and Geraghty, 2011]{Razali}
+Razali, N.~M. and Geraghty, J. (2011).
+\newblock Genetic algorithm performance with different selection strategies in
+  solving tsp.
+
 \bibitem[Saavedra-Morena et~al., 2011]{Saavedra-Morena}
 Saavedra-Morena, B., Salcedo-Sanz, S., Paniagua-Tineo, A., Prieto, L., and
   Portilla-Figueras, A. (2011).
