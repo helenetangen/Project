@@ -84,6 +84,12 @@ Kusiak, A. and Song, Z. (2010).
 \newblock Design of wind farm layout for maximum wind energy capture.
 \newblock {\em Renewable Energy}, 35(3):685--694.
 
+\bibitem[Marmidis et~al., 2008]{Marmidis}
+Marmidis, G., Lazarou, S., and Pyrgioti, E. (2008).
+\newblock Optimal placement of wind turbines in a wind park using monte carlo
+  simulation.
+\newblock {\em Renewable energy}, 33(7):1455--1460.
+
 \bibitem[Mora et~al., 2007]{Mora}
 Mora, J.~C., Barón, J. M.~C., Santos, J. M.~R., and Payán, M.~B. (2007).
 \newblock An evolutive algorithm for wind farm optimal design.
@@ -119,6 +125,12 @@ Samorani, M. (2013).
 \newblock Optimal positioning of wind turbines on g{\"o}k{\c{c}}eada using
   multi-objective genetic algorithm.
 \newblock {\em Wind Energy}, 13(4):297--306.
+
+\bibitem[Wan et~al., 2012]{Wan2012}
+Wan, C., Wang, J., Yang, G., Gu, H., and Zhang, X. (2012).
+\newblock Wind farm micro-siting by gaussian particle swarm optimization with
+  local search strategy.
+\newblock {\em Renewable Energy}, 48:276--286.
 
 \bibitem[Wan et~al., 2009]{Wan}
 Wan, C., Wang, J., Yang, G., Li, X., and Zhang, X. (2009).
