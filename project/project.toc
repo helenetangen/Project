@@ -23,10 +23,10 @@
 \contentsline {section}{\numberline {3.1}Wind Farm Layout Optimization using Genetic Algorithms}{20}
 \contentsline {section}{\numberline {3.2}Wind Farm Layout Optimization Different Approaches}{34}
 \contentsline {section}{\numberline {3.3}Discussion Related Work}{36}
-\contentsline {chapter}{\numberline {4}Technical Description}{40}
-\contentsline {section}{\numberline {4.1}Application User Interface (API)}{40}
-\contentsline {subsection}{\numberline {4.1.1}Genetic Algorithm}{41}
-\contentsline {subsection}{\numberline {4.1.2}Fitness function}{42}
-\contentsline {subsection}{\numberline {4.1.3}Wake-, Wind- and Power Model}{43}
-\contentsline {section}{\numberline {4.2}Test Simulation}{44}
-\contentsline {section}{\numberline {4.3}Future Work}{45}
+\contentsline {chapter}{\numberline {4}Technical Description}{41}
+\contentsline {section}{\numberline {4.1}Application User Interface (API)}{41}
+\contentsline {subsection}{\numberline {4.1.1}Genetic Algorithm}{42}
+\contentsline {subsection}{\numberline {4.1.2}Fitness function}{43}
+\contentsline {subsection}{\numberline {4.1.3}Wake-, Wind- and Power Model}{44}
+\contentsline {section}{\numberline {4.2}Test Simulation}{45}
+\contentsline {section}{\numberline {4.3}Future Work}{46}

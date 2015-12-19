@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  19 DEC 2015 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  19 DEC 2015 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,14 +1048,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-<images/"Pool Model".png, id=94, 848.16875pt x 387.4475pt>
+[18 <./images/Island-Master-Slave Hybrid.png> <./images/Island-Cellular Hybrid 
+Model.png> <./images/Island-Island Hybrid Model.png>]
+<images/"Pool Model".png, id=102, 848.16875pt x 387.4475pt>
 File: images/"Pool Model".png Graphic file (type png)
 
 <use images/"Pool Model".png>
 Package pdftex.def Info: images/"Pool Model".png used on input line 213.
 (pdftex.def)             Requested size: 254.45258pt x 116.23514pt.
- [18 <./images/Island-Master-Slave Hybrid.png> <./images/Island-Cellular Hybrid
- Model.png> <./images/Island-Island Hybrid Model.png>]) (./relatedwork.tex
+) (./relatedwork.tex
 Underfull \hbox (badness 10000) in paragraph at lines 220--1
 
  []
@@ -1273,7 +1274,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 253--254
  []
 
 
-Package caption Warning: \label without proper \caption on input line 273.
+Package caption Warning: \label without proper \caption on input line 275.
 See the caption package documentation for explanation.
 
 
@@ -1301,7 +1302,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--264
  []
 
 
-Package caption Warning: \label without proper \caption on input line 273.
+Package caption Warning: \label without proper \caption on input line 275.
 See the caption package documentation for explanation.
 
 
@@ -1314,22 +1315,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--266
  []
 
 
-Package natbib Warning: Citation `Gonzales' on page 37 undefined on input line 
-267.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 [37]
-Overfull \hbox (1278.36678pt too wide) in paragraph at lines 274--319
+
+Package natbib Warning: Citation `Gonzales' on page 38 undefined on input line 
+269.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--270
+
+ []
+
+
+Overfull \hbox (1278.36678pt too wide) in paragraph at lines 276--321
  [] 
  []
 
-) (./tools.tex [38] [39]
+[38]) (./tools.tex [39] [40]
 Chapter 4.
-<images/"Class Diagram".png, id=187, 1310.8975pt x 902.37125pt>
+<images/"Class Diagram".png, id=190, 1310.8975pt x 902.37125pt>
 File: images/"Class Diagram".png Graphic file (type png)
 
 <use images/"Class Diagram".png>
@@ -1343,10 +1350,10 @@ Overfull \hbox (3.2723pt too wide) in paragraph at lines 13--14
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40
+[41
 
 ]
-<images/"Binary Representation (API)".png, id=191, 816.04875pt x 223.83624pt>
+<images/"Binary Representation (API)".png, id=194, 816.04875pt x 223.83624pt>
 File: images/"Binary Representation (API)".png Graphic file (type png)
 
 <use images/"Binary Representation (API)".png>
@@ -1362,7 +1369,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-[41 <./images/Class Diagram.png>]
+[42 <./images/Class Diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
@@ -1375,7 +1382,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-[42 <./images/Binary Representation (API).png>]
+[43 <./images/Binary Representation (API).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
@@ -1385,7 +1392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-[43] <images/"Include Figure".png, id=206, 336.25626pt x 236.885pt>
+[44] <images/"Include Figure".png, id=209, 336.25626pt x 236.885pt>
 File: images/"Include Figure".png Graphic file (type png)
 
 <use images/"Include Figure".png>
@@ -1396,8 +1403,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[44 <./images/Include Figure.png>]
-<plots/"Fitness Scenario 1".jpg, id=211, 562.1pt x 421.575pt>
+[45 <./images/Include Figure.png>]
+<plots/"Fitness Scenario 1".jpg, id=214, 562.1pt x 421.575pt>
 File: plots/"Fitness Scenario 1".jpg Graphic file (type jpg)
 
 <use plots/"Fitness Scenario 1".jpg>
@@ -1405,7 +1412,7 @@ Package pdftex.def Info: plots/"Fitness Scenario 1".jpg used on input line 124.
 
 (pdftex.def)             Requested size: 175.49881pt x 131.61963pt.
 
-<plots/"Fitness Scenario 1 Obstacles".jpg, id=212, 562.1pt x 421.575pt>
+<plots/"Fitness Scenario 1 Obstacles".jpg, id=215, 562.1pt x 421.575pt>
 File: plots/"Fitness Scenario 1 Obstacles".jpg Graphic file (type jpg)
 
 <use plots/"Fitness Scenario 1 Obstacles".jpg>
@@ -1417,13 +1424,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-<images/"Class Diagram DGA".png, id=213, 1947.275pt x 609.27625pt>
+<images/"Class Diagram DGA".png, id=216, 1946.27126pt x 730.73pt>
 File: images/"Class Diagram DGA".png Graphic file (type png)
 
 <use images/"Class Diagram DGA".png>
 Package pdftex.def Info: images/"Class Diagram DGA".png used on input line 141.
 
-(pdftex.def)             Requested size: 389.4481pt x 121.85309pt.
+(pdftex.def)             Requested size: 389.24736pt x 146.1434pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1433,19 +1440,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-[45 <./plots/Fitness Scenario 1.jpg> <./plots/Fitness Scenario 1 Obstacles.jpg>
+[46 <./plots/Fitness Scenario 1.jpg> <./plots/Fitness Scenario 1 Obstacles.jpg>
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-) (./project.bbl [46 <./images/Class Diagram DGA.png>] [47
+) (./project.bbl [47 <./images/Class Diagram DGA.png>] [48
 
-] [48])
+] [49])
 
 Package natbib Warning: There were undefined citations.
 
-[49] (./project.aux)
+[50] (./project.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1453,7 +1460,7 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  15170 strings out of 493117
  293756 string characters out of 6135434
- 346263 words of memory out of 5000000
+ 347263 words of memory out of 5000000
  18295 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1474,10 +1481,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (50 pages, 1109429 bytes).
+Output written on project.pdf (51 pages, 1118046 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
+ 288 PDF objects out of 1000 (max. 8388607)
+ 167 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
