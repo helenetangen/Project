@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  18 DEC 2015 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  18 DEC 2015 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1459,17 +1459,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--152
 [44 <./plots/Fitness Scenario 1.jpg> <./plots/Fitness Scenario 1 Obstacles.jpg>
 ]) (./project.bbl [45 <./images/Class Diagram DGA.png>] [46
 
-]) [47]
+] [47]) [48]
 (./project.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15150 strings out of 493117
- 293477 string characters out of 6135434
- 344029 words of memory out of 5000000
- 18275 multiletter control sequences out of 15000+600000
+ 15155 strings out of 493117
+ 293535 string characters out of 6135434
+ 344072 words of memory out of 5000000
+ 18280 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,75p,2389b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1489,10 +1489,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (48 pages, 1098970 bytes).
+Output written on project.pdf (49 pages, 1099583 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
+ 282 PDF objects out of 1000 (max. 8388607)
+ 163 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

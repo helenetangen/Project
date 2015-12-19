@@ -103,6 +103,13 @@ Samorani, M. (2013).
   Layout Optimization Problem.
 \newblock Springer Berlin Heidelberg.
 
+\bibitem[{\c{S}}i{\c{s}}bot et~al., 2010]{Sisbot}
+{\c{S}}i{\c{s}}bot, S., Turgut, {\"O}., Tun{\c{c}}, M., and {\c{C}}amdal{\i},
+  {\"U}. (2010).
+\newblock Optimal positioning of wind turbines on g{\"o}k{\c{c}}eada using
+  multi-objective genetic algorithm.
+\newblock {\em Wind Energy}, 13(4):297--306.
+
 \bibitem[Wan et~al., 2009]{Wan}
 Wan, C., Wang, J., Yang, G., Li, X., and Zhang, X. (2009).
 \newblock Optimal micro-siting of wind turbines by genetic algorithms based on
