@@ -16,8 +16,8 @@
 \contentsline {subsection}{\numberline {2.2.2}Distributed Genetic Algorithms (DGAs)}{14}
 \contentsline {subsubsection}{\numberline {2.2.2.1}The Master-Slave Model}{14}
 \contentsline {subsubsection}{\numberline {2.2.2.2}The Island Model}{15}
-\contentsline {subsubsection}{\numberline {2.2.2.3}The Cellular Model}{16}
-\contentsline {subsubsection}{\numberline {2.2.2.4}Hybrid Models}{17}
+\contentsline {subsubsection}{\numberline {2.2.2.3}The Cellular Model}{17}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Hybrid Models}{18}
 \contentsline {subsubsection}{\numberline {2.2.2.5}Pool Model}{18}
 \contentsline {chapter}{\numberline {3}Related Work}{20}
 \contentsline {section}{\numberline {3.1}Wind Farm Layout Optimization using Genetic Algorithms}{20}

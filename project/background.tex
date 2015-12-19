@@ -120,14 +120,12 @@ Mutation is important because without mutation a population can converge to a po
 
 
 \subsection{Distributed Genetic Algorithms (DGAs)}
-On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population do not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that does not look that good at first, and consequently get the opportunity to find better, more sophisticated solutions. \\
-
-\noindent The goal of this thesis is to investigate and compare the performance of different distributed genetic algorithms in solving the wind farm layout optimization problem. In order to give an answer to the research questions, different distributed genetic algorithms needs to be implemented and tested. This section introduces five different population-distributed algorithms presented by \cite{Gong}. These will all be implemented and tested in this thesis.\\
+On of the main challenges of simple genetic algorithms is keeping diversity in the population long enough so that the population do not converge to a sub-optimal solution. By distributing the population, the population is able to explore different solution paths, even some that does not look that good at first, and consequently get the opportunity to find better, more sophisticated solutions. The goal of this thesis is to investigate and compare the performance of population distributed genetic algorithms with that of simple genetic algorithms. It will be distinguished between population distributed genetic algorithms and genetic algorithms where processing is distributed among different processors, meaning that parallelism is utilized in the implementation. This section introduces seven distributed models. Each model will be implemented with parallelism in order to improve the running time of the algorithm, however the first model introduced, the master-slave model, is not population distributed. It is a simple genetic algorithm, implemented using parallelism in order to run fast, and it will be implemented so that the performance of a simple genetic algorithm (non-population distributed) can be compared to a population distributed algorithm. This section introduces seven different distributed algorithms presented by \cite{Gong}. These will all be implemented and tested in this thesis.\\
 
 
 \subsubsection{The Master-Slave Model}
 
-The master-slave model is not really a distributed genetic algorithm, but a simple genetic algorithm where the main operations of the algorithm are distributed between different processors. It will be implemented in this thesis for two reasons; (1) distributing tasks between different processors gives a faster-running algorithm than an simple genetic algorithm, (2) results obtained will be the same as results obtained by a simple genetic algorithm, and can therefore be used to compare against true distributed algorithms. The master-slave model is displayed in figure \ref{Master-Slave Model}.\\
+As mentioned, the master-slave model is not a population distributed genetic algorithm, but a simple genetic algorithm where the main operations of the algorithm are distributed between different processors. It will be implemented in this thesis for two reasons; (1) distributing tasks between different processors gives a faster-running algorithm than an simple genetic algorithm, (2) results obtained will be the same as results obtained by a simple genetic algorithm, and can therefore be used to compare against true distributed algorithms. The master-slave model is displayed in figure \ref{Master-Slave Model}.\\
 
 
 \begin{figure}[h!]
@@ -155,7 +153,7 @@ In the island model, the population is divided into sub populations that are dis
 \end{figure}
 
 
-According to \cite{Huang}, six parameters needs to be specified when using the island model. First of all, the deme size needs to be specified; the number of individuals on each island (deme). Second, one needs to decide on the number of demes. In figure \ref{Island model} the deme size is five and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows are the legal migration routes, since the topology forms a circle it is called a ring topology. The forth and fifth parameters listed by Huang are migration rate and migration interval, meaning the number of individuals that migrate from one population to another and the number of generations between each migration respectively. These parameters are very important since they largely affect the time the population gets to explore different solutions before the best solutions from some of the demes takes over the population. Sixth, the policy of selection emigrants and how to replace existing individuals with new migrants. \\
+According to \cite{Huang}, six parameters needs to be specified when using the Island model. First of all, the deme size needs to be specified; the number of individuals on each island (deme). Second, one needs to decide on the number of demes. In figure \ref{Island model} the deme size is five and four demes are used. Third, the topology must be specified; the allowed routes to migrate from one population to another. Numerous topologies can be used. In figure \ref{Island model} the arrows are the legal migration routes, since the topology forms a circle it is called a ring topology. The forth and fifth parameters listed by Huang are migration rate and migration interval, meaning the number of individuals that migrate from one population to another and the number of generations between each migration respectively. These parameters are very important since they largely affect the time the population gets to explore different solutions before the best solutions from some of the demes takes over the population. Sixth, the policy of selection emigrants and how to replace existing individuals with new migrants. \\
 
 
 \noindent The above parameters must be given careful thought when implementing the island model, but as Gong explains, they are not the only ones. If the island model is implement in parallel one also have to decide if the migration is synchronous or asynchronous. Synchronous migration means that all migration is performed at the same time; at a specific generation, while as asynchronous migration is used migration can be performed whenever one of the parallel processes is ready. Additionally, it has to be decided if the island model is homogeneous or heterogeneous. By a homogeneous island model, Gong means an island model where each sub population use the same selection strategy, genetic operations and fitness function, while as an heterogeneous island model can implement different settings for different sub populations.
@@ -181,7 +179,7 @@ Figure \ref{Cellular model} displays the cellular model from \citep{Gong}. In th
 
 
 \subsubsection{Hybrid Models}
-Hybrid models, are distributed genetic algorithms that combine different distributed genetic algorithm models. Gong et al. presented the three different hybrid models presented in figure \ref{Hybrid Models}.\\
+Hybrid models, are population distributed genetic algorithms that combine different population distributed genetic algorithm models. Gong et al. presented the three different hybrid models presented in figure \ref{Hybrid Models}.\\
 
 
 \begin{figure}[h!]
@@ -207,7 +205,7 @@ Hybrid models, are distributed genetic algorithms that combine different distrib
 
 
 \subsubsection{Pool Model}
-Another distributed model is called the pool model. In this model the population is put in a shared global pool of $n$ individuals, where it can be accessed by different processors. Each processor draws a population from random positions of the pool, however it has allocated its own positions for which it can return individuals to the pool. This process is demonstrated in figure \ref{Pool Model}. \\
+Another population distributed model is called the pool model. In this model the population is put in a shared global pool of $n$ individuals, where it can be accessed by different processors. Each processor draws a population from random positions of the pool, however it has allocated its own positions for which it can return individuals to the pool. This process is demonstrated in figure \ref{Pool Model}. \\
 
 
 \begin{figure}[h!]
