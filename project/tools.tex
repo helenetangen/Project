@@ -5,7 +5,7 @@ Since this thesis is part of the Genetic and Evolutionary Computation Conference
 
 
 \section{Application User Interface (API)}
-A class diagram of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \textcolor{red}{Want to reference the first figure of the genetic algorithm process.} Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the ten wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
+A class diagram of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \ref{GA}. Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the ten wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
 
 
 \begin{figure}[h!]
@@ -18,7 +18,7 @@ A class diagram of the provided API is displayed in figure \ref{Class Diagram}. 
 
 
 \subsection{Genetic Algorithm}
-The genetic algorithm provided is a simple genetic algorithm that uses a binary representation. Even though a binary representation is used, it is slightly different from the approaches listed in related work, because positions that are not allowed is removed from the representation. This is shown in figure \ref{Binary Representation (API)}. Two of the nine positions, highlighted with the color red, contains obstacles and are therefore not allowed, these are therefore removed from the individual. This means that even though the wind farm is partitioned into 9 squares, the individual is only represented with a binary string of size seven, since there is only seven legal positions. The selection method, and crossover and mutation methods are the ones presented in the section \textcolor{red}{Reference background section}.
+The genetic algorithm provided is a simple genetic algorithm that uses a binary representation. Even though a binary representation is used, it is slightly different from the approaches listed in related work, because positions that are not allowed is removed from the representation. This is shown in figure \ref{Binary Representation (API)}. Two of the nine positions, highlighted with the color red, contains obstacles and are therefore not allowed, these are therefore removed from the individual. This means that even though the wind farm is partitioned into 9 squares, the individual is only represented with a binary string of size seven, since there is only seven legal positions. The selection method, and crossover and mutation methods are the ones presented in the section \ref{subsection:sga}.
 
 
 \begin{figure}[h!]
@@ -30,7 +30,7 @@ The genetic algorithm provided is a simple genetic algorithm that uses a binary 
 \end{figure}
 
 
-\subsection{Fitness function}
+\subsection{Fitness function}\label{subsection:fitnessfunction}
 
 
 The main task of the evaluation classes are to calculate the fitness of each individual based on the fitness function.  The fitness function to be optimize is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
@@ -70,8 +70,8 @@ $m$ & Farm energy output &  \\
 
 
 
-\subsection{Wake-, Wind- and Power Model}
-The evaluation class uses the same wake-, wind- and power model as \cite{Kusiak}. The wake model used is the classical Jensen model \citep{Jensen}, which is used in almost every study of the wind farm layout optimization problem, as can be seen in table \textcolor{red}{Reference table from RW}. \\
+\subsection{Wake-, Wind- and Power Model}\label{subsection:wakewindpower}
+The evaluation class uses the same wake-, wind- and power model as \cite{Kusiak}. The wake model used is the classical Jensen model \citep{Jensen}, which is used in almost every study of the wind farm layout optimization problem, as can be seen in table \ref{table:overview}. \\
 
 \noindent Wind distribution is modeled using the Weibull distribution, a continuous probability distribution shown to model wind distribution quite well \citep{Justus}. The probability density function is shown in equation \ref{equation:Weibull}
 
@@ -134,7 +134,7 @@ In order to demonstrate that the provided environment works, two test runs were 
 
 
 \section{Future Work}
-In order to investigate the goal statement and answer the research questions the provided genetic algorithm needs to be extended as shown in figure \ref{Class Diagram DGA}. The provided genetic algorithm will be used as a super class, which will be extended by seven different distributed genetic algorithms; the master-slave model, the Island model, the cellular model, three different hybrid models and the pool model, all described in detail in section \textcolor{red}{reference}. Even though the hybrid models are drawn as one class in \ref{Class Diagram DGA} they will be implemented as three different classes. \\
+In order to investigate the goal statement and answer the research questions the provided genetic algorithm needs to be extended as shown in figure \ref{Class Diagram DGA}. The provided genetic algorithm will be used as a super class, which will be extended by seven different distributed genetic algorithms; the master-slave model, the Island model, the cellular model, three different hybrid models and the pool model, all described in detail in section \ref{subsection:dga}. Even though the hybrid models are drawn as one class in \ref{Class Diagram DGA} they will be implemented as three different classes. \\
 
 \begin{figure}[h!]
 \begin{center}
