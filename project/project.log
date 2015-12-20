@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  20 DEC 2015 12:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  20 DEC 2015 12:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -848,7 +848,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen183
 \l_MT_below_shortintertext_sep=\dimen184
 )
-(./project.aux (./preface.aux))
+(./project.aux)
 \openout1 = `project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -929,24 +929,26 @@ Package pdftex.def Info: logo_ntnu_eng.png used on input line 11.
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logo_
-ntnu_eng.png>])
-\openout2 = `preface.aux'.
+ntnu_eng.png>]) (./preface.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
 
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 \tableofcontents
+                      [1
 
-No file preface.tex.
-(./project.toc)
+] (./project.toc)
 \tf@toc=\write5
 \openout5 = `project.toc'.
 
- (./introduction.texpdfTeX warning (ext4): destination with the same identifier
- (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Introduction} [1
-
-
-
+ (./introduction.tex [2
 
 ]
 Chapter 1.
@@ -955,7 +957,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-[2
+[3
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
@@ -967,19 +969,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[3]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-) (./background.tex [4] [5]
+) (./background.tex [5] [6]
 Chapter 2.
 
 Overfull \hbox (18.47974pt too wide) in paragraph at lines 5--5
  |[]\OT1/cmr/bx/n/17.28 The Wind Farm Lay-out Op-ti-miza-tion Prob-
  []
 
-[6
+[7
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
@@ -996,12 +998,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-[7]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-<images/"Wake Effect".png, id=188, 502.87875pt x 387.4475pt>
+<images/"Wake Effect".png, id=193, 502.87875pt x 387.4475pt>
 File: images/"Wake Effect".png Graphic file (type png)
 
 <use images/"Wake Effect".png>
@@ -1016,13 +1018,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[8]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-[9 <./images/Wake Effect.png>]
-<images/"GA".png, id=228, 577.15625pt x 387.4475pt>
+[10 <./images/Wake Effect.png>]
+<images/"GA".png, id=233, 577.15625pt x 387.4475pt>
 File: images/"GA".png Graphic file (type png)
  <use images/"GA".png>
 Package pdftex.def Info: images/"GA".png used on input line 50.
@@ -1032,8 +1034,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[10 <./images/GA.png>]
-<images/"Genotype and Phenotype".png, id=237, 658.46pt x 418.56375pt>
+[11 <./images/GA.png>]
+<images/"Genotype and Phenotype".png, id=242, 658.46pt x 418.56375pt>
 File: images/"Genotype and Phenotype".png Graphic file (type png)
 
 <use images/"Genotype and Phenotype".png>
@@ -1045,8 +1047,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-[11 <./images/Genotype and Phenotype.png>]
-<images/"Tournament selection".png, id=248, 1050.92625pt x 408.52625pt>
+[12 <./images/Genotype and Phenotype.png>]
+<images/"Tournament selection".png, id=253, 1050.92625pt x 408.52625pt>
 File: images/"Tournament selection".png Graphic file (type png)
 
 <use images/"Tournament selection".png>
@@ -1058,8 +1060,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
-[12 <./images/Tournament selection.png>]
-<images/"Uniform Crossover".png, id=263, 484.81125pt x 464.73625pt>
+[13 <./images/Tournament selection.png>]
+<images/"Uniform Crossover".png, id=267, 484.81125pt x 464.73625pt>
 File: images/"Uniform Crossover".png Graphic file (type png)
 
 <use images/"Uniform Crossover".png>
@@ -1070,7 +1072,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
-<images/"Mutation".png, id=265, 487.8225pt x 257.96375pt>
+<images/"Mutation".png, id=269, 487.8225pt x 257.96375pt>
 File: images/"Mutation".png Graphic file (type png)
 
 <use images/"Mutation".png>
@@ -1081,7 +1083,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
-[13 <./images/Uniform Crossover.png> <./images/Mutation.png>]
+[14 <./images/Uniform Crossover.png> <./images/Mutation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
@@ -1096,7 +1098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-[14] <images/"Master-Slave Model".png, id=281, 366.36874pt x 367.3725pt>
+[15] <images/"Master-Slave Model".png, id=285, 366.36874pt x 367.3725pt>
 File: images/"Master-Slave Model".png Graphic file (type png)
 
 <use images/"Master-Slave Model".png>
@@ -1108,7 +1110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
-<images/"Island Model".png, id=287, 484.81125pt x 407.5225pt>
+<images/"Island Model".png, id=291, 484.81125pt x 407.5225pt>
 File: images/"Island Model".png Graphic file (type png)
 
 <use images/"Island Model".png>
@@ -1123,12 +1125,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
-[15 <./images/Master-Slave Model.png>] [16 <./images/Island Model.png>]
+[16 <./images/Master-Slave Model.png>] [17 <./images/Island Model.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-<images/"Cellular Model".png, id=313, 455.7025pt x 395.4775pt>
+<images/"Cellular Model".png, id=317, 455.7025pt x 395.4775pt>
 File: images/"Cellular Model".png Graphic file (type png)
 
 <use images/"Cellular Model".png>
@@ -1144,8 +1146,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
-[17 <./images/Cellular Model.png>]
-<images/"Island-Master-Slave Hybrid".png, id=326, 525.965pt x 603.25375pt>
+[18 <./images/Cellular Model.png>]
+<images/"Island-Master-Slave Hybrid".png, id=331, 525.965pt x 603.25375pt>
 File: images/"Island-Master-Slave Hybrid".png Graphic file (type png)
 
 <use images/"Island-Master-Slave Hybrid".png>
@@ -1153,7 +1155,7 @@ Package pdftex.def Info: images/"Island-Master-Slave Hybrid".png used on input
 line 186.
 (pdftex.def)             Requested size: 116.99673pt x 113.80937pt.
 
-<images/"Island-Cellular Hybrid Model".png, id=327, 484.81125pt x 418.56375pt>
+<images/"Island-Cellular Hybrid Model".png, id=332, 484.81125pt x 418.56375pt>
 File: images/"Island-Cellular Hybrid Model".png Graphic file (type png)
 
 <use images/"Island-Cellular Hybrid Model".png>
@@ -1161,7 +1163,7 @@ Package pdftex.def Info: images/"Island-Cellular Hybrid Model".png used on inpu
 t line 190.
 (pdftex.def)             Requested size: 117.00066pt x 113.80566pt.
 
-<images/"Island-Island Hybrid Model".png, id=328, 484.81125pt x 408.52625pt>
+<images/"Island-Island Hybrid Model".png, id=333, 484.81125pt x 408.52625pt>
 File: images/"Island-Island Hybrid Model".png Graphic file (type png)
 
 <use images/"Island-Island Hybrid Model".png>
@@ -1178,9 +1180,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-[18 <./images/Island-Master-Slave Hybrid.png> <./images/Island-Cellular Hybrid 
+[19 <./images/Island-Master-Slave Hybrid.png> <./images/Island-Cellular Hybrid 
 Model.png> <./images/Island-Island Hybrid Model.png>]
-<images/"Pool Model".png, id=345, 848.16875pt x 387.4475pt>
+<images/"Pool Model".png, id=349, 848.16875pt x 387.4475pt>
 File: images/"Pool Model".png Graphic file (type png)
 
 <use images/"Pool Model".png>
@@ -1191,7 +1193,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-) (./relatedwork.tex [19 <./images/Pool Model.png>]
+) (./relatedwork.tex [20 <./images/Pool Model.png>]
 Chapter 3.
 
 Overfull \hbox (1.51028pt too wide) in paragraph at lines 2--3
@@ -1209,7 +1211,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[20
+[21
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
@@ -1226,7 +1228,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
 
-<images/"Wind Farm Representation".png, id=375, 1330.9725pt x 956.57375pt>
+<images/"Wind Farm Representation".png, id=379, 1330.9725pt x 956.57375pt>
 File: images/"Wind Farm Representation".png Graphic file (type png)
 
 <use images/"Wind Farm Representation".png>
@@ -1241,7 +1243,7 @@ Overfull \hbox (9.29483pt too wide) in paragraph at lines 42--43
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21]
+[22]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1250,12 +1252,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
 
-[22 <./images/Wind Farm Representation.png>]
+[23 <./images/Wind Farm Representation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-[23]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 84--85
 
  []
@@ -1265,12 +1267,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-[24]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
-<images/"Clustering Design (Zhao)".png, id=428, 929.4725pt x 650.43pt>
+<images/"Clustering Design (Zhao)".png, id=432, 929.4725pt x 650.43pt>
 File: images/"Clustering Design (Zhao)".png Graphic file (type png)
 
 <use images/"Clustering Design (Zhao)".png>
@@ -1287,12 +1289,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
-[25 <./images/Clustering Design (Zhao).png>]
+[26 <./images/Clustering Design (Zhao).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-<images/"Ring Topology".png, id=446, 628.3475pt x 328.22626pt>
+<images/"Ring Topology".png, id=450, 628.3475pt x 328.22626pt>
 File: images/"Ring Topology".png Graphic file (type png)
 
 <use images/"Ring Topology".png>
@@ -1308,8 +1310,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
-[26 <./images/Ring Topology.png>]
-<images/"Individual Representation (Mora)".png, id=461, 417.56pt x 216.81pt>
+[27 <./images/Ring Topology.png>]
+<images/"Individual Representation (Mora)".png, id=465, 417.56pt x 216.81pt>
 File: images/"Individual Representation (Mora)".png Graphic file (type png)
 
 <use images/"Individual Representation (Mora)".png>
@@ -1326,7 +1328,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-[27 <./images/Individual Representation (Mora).png>]
+[28 <./images/Individual Representation (Mora).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
@@ -1341,8 +1343,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-[28]
-<images/"Civil Cost Greedy Algorithm (Gonzales)".png, id=497, 1059.96pt x 893.3
+[29]
+<images/"Civil Cost Greedy Algorithm (Gonzales)".png, id=501, 1059.96pt x 893.3
 375pt>
 File: images/"Civil Cost Greedy Algorithm (Gonzales)".png Graphic file (type pn
 g)
@@ -1355,12 +1357,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-[29 <./images/Civil Cost Greedy Algorithm (Gonzales).png>]
+[30 <./images/Civil Cost Greedy Algorithm (Gonzales).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-[30]
+[31]
 Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
@@ -1370,7 +1372,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-[31] <images/"Representation (Chen)".png, id=539, 1050.92625pt x 977.6525pt>
+[32] <images/"Representation (Chen)".png, id=543, 1050.92625pt x 977.6525pt>
 File: images/"Representation (Chen)".png Graphic file (type png)
 
 <use images/"Representation (Chen)".png>
@@ -1391,12 +1393,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-[32] [33 <./images/Representation (Chen).png>]
+[33] [34 <./images/Representation (Chen).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
-[34]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
@@ -1406,9 +1408,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
-[35]
+[36]
 
-LaTeX Warning: Reference `table:overview related work' on page 36 undefined on 
+LaTeX Warning: Reference `table:overview related work' on page 37 undefined on 
 input line 253.
 
 
@@ -1431,9 +1433,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
-[36]
+[37]
 
-LaTeX Warning: Reference `table:overview related work' on page 37 undefined on 
+LaTeX Warning: Reference `table:overview related work' on page 38 undefined on 
 input line 261.
 
 
@@ -1447,7 +1449,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--264
  []
 
 
-Package natbib Warning: Citation `Gonzales' on page 37 undefined on input line 
+Package natbib Warning: Citation `Gonzales' on page 38 undefined on input line 
 265.
 
 
@@ -1455,14 +1457,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--266
 
  []
 
-[37]
+[38]
 Overfull \hbox (1278.36678pt too wide) in paragraph at lines 272--317
  [] 
  []
 
-) (./tools.tex [38] [39]
+) (./tools.tex [39] [40]
 Chapter 4.
-<images/"Class Diagram".png, id=695, 1310.8975pt x 902.37125pt>
+<images/"Class Diagram".png, id=699, 1310.8975pt x 902.37125pt>
 File: images/"Class Diagram".png Graphic file (type png)
 
 <use images/"Class Diagram".png>
@@ -1476,10 +1478,10 @@ Overfull \hbox (3.2723pt too wide) in paragraph at lines 13--14
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[40
+[41
 
 ]
-<images/"Binary Representation (API)".png, id=704, 816.04875pt x 223.83624pt>
+<images/"Binary Representation (API)".png, id=708, 816.04875pt x 223.83624pt>
 File: images/"Binary Representation (API)".png Graphic file (type png)
 
 <use images/"Binary Representation (API)".png>
@@ -1495,7 +1497,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-[41 <./images/Class Diagram.png>]
+[42 <./images/Class Diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
@@ -1513,7 +1515,7 @@ Package caption Warning: \label without proper \caption on input line 271.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `table:overview' on page 42 undefined on input line 74
+LaTeX Warning: Reference `table:overview' on page 43 undefined on input line 74
 .
 
 
@@ -1521,12 +1523,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-[42 <./images/Binary Representation (API).png>]
+[43 <./images/Binary Representation (API).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-<images/"Weibull".png, id=736, 578.16pt x 433.62pt>
+<images/"Weibull".png, id=740, 578.16pt x 433.62pt>
 File: images/"Weibull".png Graphic file (type png)
  <use images/"Weibull".png>
 Package pdftex.def Info: images/"Weibull".png used on input line 94.
@@ -1540,8 +1542,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[43] [44 <./images/Weibull.png>]
-<plots/"Fitness Scenario 1".png, id=758, 544.434pt x 430.4883pt>
+[44] [45 <./images/Weibull.png>]
+<plots/"Fitness Scenario 1".png, id=762, 544.434pt x 430.4883pt>
 File: plots/"Fitness Scenario 1".png Graphic file (type png)
 
 <use plots/"Fitness Scenario 1".png>
@@ -1549,7 +1551,7 @@ Package pdftex.def Info: plots/"Fitness Scenario 1".png used on input line 124.
 
 (pdftex.def)             Requested size: 175.49881pt x 138.77065pt.
 
-<plots/"Fitness Scenario 1 Obstacles".png, id=759, 544.434pt x 430.4883pt>
+<plots/"Fitness Scenario 1 Obstacles".png, id=763, 544.434pt x 430.4883pt>
 File: plots/"Fitness Scenario 1 Obstacles".png Graphic file (type png)
 
 <use plots/"Fitness Scenario 1 Obstacles".png>
@@ -1561,7 +1563,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-<images/"Class Diagram DGA".png, id=763, 1946.27126pt x 730.73pt>
+<images/"Class Diagram DGA".png, id=767, 1946.27126pt x 730.73pt>
 File: images/"Class Diagram DGA".png Graphic file (type png)
 
 <use images/"Class Diagram DGA".png>
@@ -1577,22 +1579,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-[45 <./plots/Fitness Scenario 1.png> <./plots/Fitness Scenario 1 Obstacles.png>
+[46 <./plots/Fitness Scenario 1.png> <./plots/Fitness Scenario 1 Obstacles.png>
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-) (./project.bbl [46 <./images/Class Diagram DGA.png>] [47
+) (./project.bbl [47 <./images/Class Diagram DGA.png>] [48
 
-] [48])
+] [49])
 
 Package natbib Warning: There were undefined citations.
 
-[49]
+[50]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 42.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 42.
- (./project.aux (./preface.aux))
+ (./project.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 42.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 42.
 Package rerunfilecheck Info: File `project.out' has not changed.
@@ -1604,10 +1606,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 42.
  ) 
 Here is how much of TeX's memory you used:
- 18805 strings out of 493117
- 348653 string characters out of 6135434
- 428199 words of memory out of 5000000
- 21765 multiletter control sequences out of 15000+600000
+ 18820 strings out of 493117
+ 348928 string characters out of 6135434
+ 426744 words of memory out of 5000000
+ 21778 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,75p,2355b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1627,10 +1629,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (50 pages, 1491288 bytes).
+Output written on project.pdf (51 pages, 1491822 bytes).
 PDF statistics:
- 878 PDF objects out of 1000 (max. 8388607)
- 721 compressed objects within 8 object streams
- 139 named destinations out of 1000 (max. 500000)
+ 882 PDF objects out of 1000 (max. 8388607)
+ 724 compressed objects within 8 object streams
+ 140 named destinations out of 1000 (max. 500000)
  327 words of extra memory for PDF output out of 10000 (max. 10000000)
 
