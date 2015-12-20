@@ -2,49 +2,47 @@ This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: project.aux
 The style file: apalike.bst
-A level-1 auxiliary file: preface.aux
 Database file #1: mybib.bib
-Warning--I didn't find a database entry for "Gonzales"
 Warning--empty journal in Razali
-You've used 29 entries,
+You've used 28 entries,
             1935 wiz_defined-function locations,
-            655 strings with 8771 characters,
-and the built_in function-call counts, 11114 in all, are:
-= -- 1064
-> -- 512
+            643 strings with 8552 characters,
+and the built_in function-call counts, 10667 in all, are:
+= -- 1019
+> -- 494
 < -- 17
-+ -- 180
-- -- 172
-* -- 907
-:= -- 1980
-add.period$ -- 89
-call.type$ -- 29
-change.case$ -- 224
-chr.to.int$ -- 29
-cite$ -- 30
-duplicate$ -- 431
-empty$ -- 738
-format.name$ -- 216
-if$ -- 2143
++ -- 174
+- -- 166
+* -- 864
+:= -- 1904
+add.period$ -- 86
+call.type$ -- 28
+change.case$ -- 216
+chr.to.int$ -- 28
+cite$ -- 29
+duplicate$ -- 417
+empty$ -- 706
+format.name$ -- 209
+if$ -- 2057
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 35
-newline$ -- 147
-num.names$ -- 87
-pop$ -- 232
+missing$ -- 34
+newline$ -- 142
+num.names$ -- 84
+pop$ -- 226
 preamble$ -- 1
-purify$ -- 230
+purify$ -- 222
 quote$ -- 0
-skip$ -- 325
+skip$ -- 315
 stack$ -- 0
-substring$ -- 630
-swap$ -- 52
+substring$ -- 587
+swap$ -- 51
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
+type$ -- 156
 warning$ -- 1
-while$ -- 83
+while$ -- 79
 width$ -- 0
-write$ -- 363
-(There were 2 warnings)
+write$ -- 350
+(There was 1 warning)
