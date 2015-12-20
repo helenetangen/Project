@@ -29,6 +29,13 @@ Frandsen, S.~T. et~al. (2007).
   turbine clusters}.
 \newblock Ris{\o} National Laboratory.
 
+\bibitem[Gao et~al., 2015]{Gao}
+Gao, X., Yang, H., Lin, L., and Koo, P. (2015).
+\newblock Wind turbine layout optimization using multi-population genetic
+  algorithm and a case study in hong kong offshore.
+\newblock {\em Journal of Wind Engineering and Industrial Aerodynamics},
+  139:89--99.
+
 \bibitem[Goldberg, 2005]{Goldberg}
 Goldberg, D.~E. (2005).
 \newblock {\em Genetic Algorithms in Search, Optimzation and Machine Learning}.
@@ -107,6 +114,13 @@ Mosetti, G., Poloni, C., and Diviacco, B. (1994).
 \newblock Optimization of wind turbine positioning in large windfarms by means
   of genetic algorithm.
 \newblock {\em Journal of Wind Engineering and Industrial Aerodynamics}.
+
+\bibitem[Murata et~al., 2001]{Murata}
+Murata, T., Ishibuchi, H., and Gen, M. (2001).
+\newblock Specification of genetic search directions in cellular
+  multi-objective genetic algorithms.
+\newblock In {\em Evolutionary multi-criterion optimization}, pages 82--95.
+  Springer.
 
 \bibitem[Ozturk and Norman, 2004]{Ozturk}
 Ozturk, U.~A. and Norman, B.~A. (2004).

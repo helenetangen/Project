@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  20 DEC 2015 00:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  20 DEC 2015 01:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1188,11 +1188,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
-[26 <./images/Ring Topology.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
+[26 <./images/Ring Topology.png>]
 <images/"Individual Representation (Mora)".png, id=139, 417.56pt x 216.81pt>
 File: images/"Individual Representation (Mora)".png Graphic file (type png)
 
@@ -1205,18 +1206,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-[27 <./images/Individual Representation (Mora).png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-
+[27 <./images/Individual Representation (Mora).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 179--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
@@ -1230,30 +1236,26 @@ Package pdftex.def Info: images/"Civil Cost Greedy Algorithm (Gonzales)".png us
 ed on input line 188.
 (pdftex.def)             Requested size: 317.99045pt x 268.00331pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-[29]
+[29 <./images/Civil Cost Greedy Algorithm (Gonzales).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
-[30 <./images/Civil Cost Greedy Algorithm (Gonzales).png>]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-[31]
+
 Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-<images/"Representation (Chen)".png, id=159, 1050.92625pt x 977.6525pt>
+[31] <images/"Representation (Chen)".png, id=159, 1050.92625pt x 977.6525pt>
 File: images/"Representation (Chen)".png Graphic file (type png)
 
 <use images/"Representation (Chen)".png>
@@ -1269,31 +1271,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
-[32]
+
 Underfull \hbox (badness 10000) in paragraph at lines 237--238
 
  []
 
-[33 <./images/Representation (Chen).png>]
+[32] [33 <./images/Representation (Chen).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
-[34]
+
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
-
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 249--250
 
  []
 
-[35]
+
 Underfull \hbox (badness 10000) in paragraph at lines 253--254
 
  []
 
+[35]
 
 Package caption Warning: \label without proper \caption on input line 275.
 See the caption package documentation for explanation.
@@ -1307,7 +1310,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[36]
+
 Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
@@ -1317,7 +1320,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
@@ -1340,9 +1343,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
-[37]
 
-Package natbib Warning: Citation `Gonzales' on page 38 undefined on input line 
+Package natbib Warning: Citation `Gonzales' on page 37 undefined on input line 
 269.
 
 
@@ -1350,14 +1352,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 269--270
 
  []
 
-
+[37]
 Overfull \hbox (1278.36678pt too wide) in paragraph at lines 276--321
  [] 
  []
 
-[38]) (./tools.tex [39] [40]
+) (./tools.tex [38] [39]
 Chapter 4.
-<images/"Class Diagram".png, id=190, 1310.8975pt x 902.37125pt>
+<images/"Class Diagram".png, id=187, 1310.8975pt x 902.37125pt>
 File: images/"Class Diagram".png Graphic file (type png)
 
 <use images/"Class Diagram".png>
@@ -1371,10 +1373,10 @@ Overfull \hbox (3.2723pt too wide) in paragraph at lines 13--14
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[41
+[40
 
 ]
-<images/"Binary Representation (API)".png, id=194, 816.04875pt x 223.83624pt>
+<images/"Binary Representation (API)".png, id=191, 816.04875pt x 223.83624pt>
 File: images/"Binary Representation (API)".png Graphic file (type png)
 
 <use images/"Binary Representation (API)".png>
@@ -1390,7 +1392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-[42 <./images/Class Diagram.png>]
+[41 <./images/Class Diagram.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
@@ -1403,7 +1405,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-[43 <./images/Binary Representation (API).png>]
+[42 <./images/Binary Representation (API).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
@@ -1413,7 +1415,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-[44] <images/"Weibull".png, id=209, 578.16pt x 433.62pt>
+[43] <images/"Weibull".png, id=206, 578.16pt x 433.62pt>
 File: images/"Weibull".png Graphic file (type png)
 
 <use images/"Weibull".png>
@@ -1424,29 +1426,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[45 <./images/Weibull.png>]
-<plots/"Fitness Scenario 1".jpg, id=214, 562.1pt x 421.575pt>
-File: plots/"Fitness Scenario 1".jpg Graphic file (type jpg)
+[44 <./images/Weibull.png>]
+<plots/"Fitness Scenario 1".png, id=211, 578.16pt x 433.62pt>
+File: plots/"Fitness Scenario 1".png Graphic file (type png)
 
-<use plots/"Fitness Scenario 1".jpg>
-Package pdftex.def Info: plots/"Fitness Scenario 1".jpg used on input line 124.
+<use plots/"Fitness Scenario 1".png>
+Package pdftex.def Info: plots/"Fitness Scenario 1".png used on input line 124.
 
-(pdftex.def)             Requested size: 175.49881pt x 131.61963pt.
+(pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
-<plots/"Fitness Scenario 1 Obstacles".jpg, id=215, 562.1pt x 421.575pt>
-File: plots/"Fitness Scenario 1 Obstacles".jpg Graphic file (type jpg)
+<plots/"Fitness Scenario 1 Obstacles".png, id=212, 578.16pt x 433.62pt>
+File: plots/"Fitness Scenario 1 Obstacles".png Graphic file (type png)
 
-<use plots/"Fitness Scenario 1 Obstacles".jpg>
-Package pdftex.def Info: plots/"Fitness Scenario 1 Obstacles".jpg used on input
+<use plots/"Fitness Scenario 1 Obstacles".png>
+Package pdftex.def Info: plots/"Fitness Scenario 1 Obstacles".png used on input
  line 128.
-(pdftex.def)             Requested size: 175.49881pt x 131.61963pt.
+(pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[46 <./plots/Fitness Scenario 1.jpg> <./plots/Fitness Scenario 1 Obstacles.jpg>
-] <images/"Class Diagram DGA".png, id=219, 1946.27126pt x 730.73pt>
+[45 <./plots/Fitness Scenario 1.png> <./plots/Fitness Scenario 1 Obstacles.png>
+] <images/"Class Diagram DGA".png, id=218, 1946.27126pt x 730.73pt>
 File: images/"Class Diagram DGA".png Graphic file (type png)
 
 <use images/"Class Diagram DGA".png>
@@ -1463,25 +1465,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-) (./project.bbl [47 <./images/Class Diagram DGA.png>] [48
+) (./project.bbl [46 <./images/Class Diagram DGA.png>] [47
 
-] [49])
+] [48])
 
 Package natbib Warning: There were undefined citations.
 
-[50] (./project.aux (./preface.aux))
+[49] (./project.aux (./preface.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15176 strings out of 493117
- 293749 string characters out of 6135434
- 347680 words of memory out of 5000000
- 18296 multiletter control sequences out of 15000+600000
+ 15180 strings out of 493117
+ 293807 string characters out of 6135434
+ 346744 words of memory out of 5000000
+ 18302 multiletter control sequences out of 15000+600000
  12412 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,75p,2366b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,75p,2349b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
@@ -1498,10 +1500,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (51 pages, 1252429 bytes).
+Output written on project.pdf (50 pages, 1458515 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
+ 287 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
