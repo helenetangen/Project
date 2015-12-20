@@ -1,11 +1,11 @@
 \chapter{Technical Description}
 
 
-Since this thesis is part of the Genetic and Evolutionary Computation Conference 2015, the conference has provided all the contestants with an API available on a GitHub. API's for different programming languages are provided, but the Java API will be used in this thesis. The API includes an implementation of a simple genetic algorithm, an evaluation method and ten different wind scenarios. Section \ref{section:api} give an explanation of the provided API, section \ref{section:testsimulation} display the results from a few test simulations (which will not be included in the final thesis), and section \ref{section:futurework} provides a discussion of future work.
+Since this thesis is part of the Genetic and Evolutionary Computation Conference 2015, the conference has provided all the contestants with an API available on a GitHub. API's for different programming languages are provided, but the Java API will be used in this thesis. The API includes an implementation of a simple genetic algorithm, an evaluation method and twenty different wind scenarios. Section \ref{section:api} give an explanation of the provided API, section \ref{section:testsimulation} display the results from a few test simulations (which will not be included in the final thesis), and section \ref{section:futurework} provides a discussion of future work.
 
 
 \section{Application User Interface (API)}\label{section:api}
-A class diagram of the most important variables and methods of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \ref{GA}. Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the ten wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
+A class diagram of the most important variables and methods of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \ref{GA}. Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the twenty wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
 
 
 \begin{figure}[h!]
@@ -18,7 +18,7 @@ A class diagram of the most important variables and methods of the provided API 
 
 
 \subsection{Genetic Algorithm}
-The genetic algorithm provided is a simple genetic algorithm that uses a binary representation. Even though a binary representation is used, it is slightly different from the approaches listed in related work, because positions that are not allowed is removed from the representation. This is shown in figure \ref{Binary Representation (API)}. Two of the nine positions, highlighted with the color red, contains obstacles and are therefore not allowed, these are therefore removed from the individual. This means that even though the wind farm is partitioned into 9 squares, the individual is only represented with a binary string of size seven, since there is only seven legal positions. The selection method, and crossover and mutation methods are the ones presented in the section \ref{subsection:sga}.
+The genetic algorithm provided is a simple genetic algorithm that uses a binary representation. Even though a binary representation is used, it is slightly different from the approaches listed in related work, because positions that are not allowed is removed from the representation. This is shown in figure \ref{Binary Representation (API)}. Two of the nine positions, highlighted with the color red, contains obstacles and are therefore not allowed, these are therefore removed from the individual. This means that even though the wind farm is partitioned into 9 squares, the individual is only represented with a binary string of size seven, since there is only seven legal positions. The selection-, crossover- and mutation methods are the ones presented in the section \ref{subsection:sga}.
 
 
 \begin{figure}[h!]
@@ -33,7 +33,7 @@ The genetic algorithm provided is a simple genetic algorithm that uses a binary 
 \subsection{Fitness function}\label{subsection:fitnessfunction}
 
 
-The main task of the evaluation classes are to calculate the fitness of each individual based on the fitness function.  The fitness function to be optimize is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
+The main task of the evaluation classes is to calculate the fitness of each individual based on the fitness function.  The fitness function to be optimize is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
 
 \begin{small}
 \begin{equation}
@@ -43,7 +43,7 @@ fitness =  \frac{ \left( c_t \cdot n + c_s \cdot \floor*{\frac{n}{m}} \right) \l
 \end{small}
 
 
-\noindent Description and value of all parameters given in equation \ref{Objective function} are displayed in table \ref{Parameters}. As can be seen in this table, the values of $n$, the number of turbines, and $P$, farm energy output, are not given. This is because the number of turbines, together with the turbine positions, are the parameters to be optimized by the genetic algorithm. Farm energy output is the indirect parameter that we are trying to optimize, it is dependent on turbines count, position, wind scenario and so on, and is of course therefore not provided in table \ref{Parameters} either.\\
+\noindent Description and value of all parameters given in equation \ref{Objective function} are displayed in table \ref{Parameters}. As can be seen in this table, the values of $n$, the number of turbines, and $P$, farm energy output, are not given. This is because the number of turbines, together with the turbine positions, are the parameters to be optimized by the genetic algorithm. Farm energy output is the indirect parameter that we are trying to optimize, it is dependent on turbines count, position, wind scenario and so on, and is off course therefore not provided in table \ref{Parameters} either.\\
 
 
 \begin{table}[h!]
@@ -97,7 +97,7 @@ f(x; c, k)  =
 \end{center}
 \end{figure}
 
-\noindent The wind scenarios used in this thesis is therefore an specification of the shape- and scale parameters for every wind direction, where wind direction is partitioned into 24 different directions. Twenty wind scenarios are provided be GECCO 2015, ten which simply specify wind distribution, and ten that specify wind direction and locations of obstacles. \\
+\noindent The wind scenarios used in this thesis are therefore a specification of the shape- and scale parameters for every wind direction, where wind direction is partitioned into 24 different directions. Twenty wind scenarios are provided be GECCO 2015, ten which simply specify wind distribution parameters, and ten that specify wind distribution parameters and locations of obstacles. \\
 
 \noindent The power curve used is also the same as used in \cite{Kusiak}, it is a linear function, shown in equation \ref{equation:Power Curv (API)},
 
@@ -144,7 +144,7 @@ In order to investigate the goal statement and answer the research questions the
 \end{center}
 \end{figure}
 
-\noindent After the simple genetic algorithm, and the population distributed genetic algorithms are implemented, extensive simulations will be run for all the models. In order to be able to run simulations on a personal computer, each model, even the simple genetic algorithm, will use parallelism. Each model will be compared based on five parameters; (1) fitness value, (2) total power generated, (3) efficiency, (4) number of turbines in solution layout, and (5) total cost. Efficiency is a measure of how much of the maximum energy amount that would have been produced without wake effect, the final layout is able to produce. \\
+\noindent After the simple genetic algorithm and the population distributed genetic algorithms are implemented, extensive simulations will be run for all the models. In order to be able to run simulations on a personal computer, each model, even the simple genetic algorithm, will use parallelism. Each model will be compared based on five parameters; (1) fitness value, (2) total power generated, (3) efficiency, (4) number of turbines in solution layout, and (5) total cost. Efficiency is a measure of how much energy, out of the maximum energy amount that would have been produced without wake effect, the final layout is able to produce. \\
 
 \noindent In addition to implementing the distributed genetic algorithms listed above, there might be a few changes done to the class GA.java depending on the ''goodness'' of the results, such as changes to the selection-, mutation and/or crossover methods. Other extensions might also be included if needed, such as seeding the genetic algorithm in order to get as good results as possible for the competition.\\
 
