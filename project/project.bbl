@@ -1,5 +1,13 @@
 \begin{thebibliography}{}
 
+\bibitem[Albring, 1967]{Albring}
+Albring, W. (1967).
+\newblock A. betz, introduction to the theory of flow machines. xvi+ 281 s. m.
+  168 fig. oxford/london/edinburgh/new york/toronto/paris/braunschweig 1966.
+  pergamon pres. preis geb. 75 s. net.
+\newblock {\em ZAMM-Journal of Applied Mathematics and Mechanics/Zeitschrift
+  f{\"u}r Angewandte Mathematik und Mechanik}, 47(2):140--141.
+
 \bibitem[Bilbao and Alba, 2009]{Bilbao}
 Bilbao, M. and Alba, E. (2009).
 \newblock Simulated annealing for optimization of wind farm annual profit.
@@ -11,6 +19,11 @@ Chen, Y., Li, H., Jin, K., and Song, Q. (2013).
 \newblock Wind farm layout optimization using genetic algorithm with different
   hub height wind turbines.
 \newblock {\em Energy Conversion and Management}.
+
+\bibitem[EIA, 2015]{url1}
+EIA (2015).
+\newblock Accessed December 2015.
+\newblock \href{http://www.eia.gov/tools/faqs/faq.cfm?id=527&t=4}{www.eia.gov}.
 
 \bibitem[Emami and Noghreh, 2010]{Emami}
 Emami, A. and Noghreh, P. (2010).
@@ -70,6 +83,11 @@ Huang, H.-S. (2007).
 \newblock Distributed genetic algorithm for optimization of wind farm annual
   profits.
 \newblock {\em Intelligent Systems Applications to Power Systems}.
+
+\bibitem[IRIT, 2015]{url2}
+IRIT (2015).
+\newblock Accessed December 2015.
+\newblock \href{http://www.irit.fr/wind-competition/}{www.irit.fr}.
 
 \bibitem[Jensen, 1983]{Jensen}
 Jensen, N.~O. (1983).
