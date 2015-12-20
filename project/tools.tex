@@ -18,13 +18,13 @@ A class diagram of the provided API is displayed in figure \ref{Class Diagram}. 
 
 
 \subsection{Genetic Algorithm}
-The genetic algorithm provided is a simple genetic algorithm that uses a binary representation. Even thought a binary representation is used, it is slightly different from the approaches listed in related work, because positions that are not allowed is removed from the representation. This is shown in figure \ref{Binary Representation (API)}. Two of the nine positions, the red ones, contains obstacles and are therefore not allowed, these are therefore removed from the individual. This means that even though the wind farm is partitioned into 9 squares, the individual is only represented with a binary string of size seven, since there is only seven legal positions. The selection method, and crossover and mutation methods are the ones presented in the section \textcolor{red}{Reference background section}.
+The genetic algorithm provided is a simple genetic algorithm that uses a binary representation. Even though a binary representation is used, it is slightly different from the approaches listed in related work, because positions that are not allowed is removed from the representation. This is shown in figure \ref{Binary Representation (API)}. Two of the nine positions, highlighted with the color red, contains obstacles and are therefore not allowed, these are therefore removed from the individual. This means that even though the wind farm is partitioned into 9 squares, the individual is only represented with a binary string of size seven, since there is only seven legal positions. The selection method, and crossover and mutation methods are the ones presented in the section \textcolor{red}{Reference background section}.
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Binary Representation (API)"}
-\caption{Binary representation of a wind farm. Red cells contains obstacles and are not included in the binary representation. White cells are empty, grey cells contains turbines.}
+\caption{Binary representation of a wind farm. Red cells contains obstacles and are therefore not included in the binary representation. White cells represents empty positions, grey cells contains turbines.}
 \label{Binary Representation (API)}
 \end{center}
 \end{figure}
@@ -33,7 +33,7 @@ The genetic algorithm provided is a simple genetic algorithm that uses a binary 
 \subsection{Fitness function}
 
 
-The main task of the evaluation classes are to calculate the fitness of each individual based on the objective function.  The objective function to be optimize is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
+The main task of the evaluation classes are to calculate the fitness of each individual based on the fitness function.  The fitness function to be optimize is provided by GECCO, and is displayed in equation \ref{Objective function}.\\
 
 \begin{small}
 \begin{equation}
@@ -43,7 +43,7 @@ fitness =  \frac{ \left( c_t \cdot n + c_s \cdot \floor*{\frac{n}{m}} \right) \l
 \end{small}
 
 
-\noindent Description and value of all parameters given in equation \ref{Objective function} are displayed in table \ref{Parameters}. As can be seen in this table, the values of $n$, the number of turbines, and $P$, farm energy output, are not given. This is because the number of turbines, together with the turbine positions, are the parameters to be optimized by the genetic algorithm. Farm energy output is the indirect parameter that we are trying to optimize, it is dependent on turbines count, position, wind scenario and so on, and is of course therefore not provided in table \ref{Parameters} either. \textcolor{red}{Explain fitness well! What is positive, negative.}\\
+\noindent Description and value of all parameters given in equation \ref{Objective function} are displayed in table \ref{Parameters}. As can be seen in this table, the values of $n$, the number of turbines, and $P$, farm energy output, are not given. This is because the number of turbines, together with the turbine positions, are the parameters to be optimized by the genetic algorithm. Farm energy output is the indirect parameter that we are trying to optimize, it is dependent on turbines count, position, wind scenario and so on, and is of course therefore not provided in table \ref{Parameters} either.\\
 
 
 \begin{table}[h!]
@@ -66,12 +66,12 @@ $m$ & Farm energy output &  \\
 \end{table}
 
 
-\noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator is the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \textcolor{red}{Not finished with this section. Don't know if wake, power curve and stuff should be here. Explain how power is calculated, since it is needed to calculate fitness.} \textcolor{red}{Explain how every term in the objective function is calculated, then this is done.}\\
+\noindent Intuitively, the objective function can be divided into different parts. The first parenthesis in the nominator of the first fraction is the construction cost, while the second parenthesis is the economies of scale and the third part of the nominator is yearly operating costs. The denominator represents the interests. The denominator of the second fraction describes yearly power output, while the number $0.1$ in the nominator of the last fraction is a farm size coefficient. \\
 
 
 
 \subsection{Wake-, Wind- and Power Model}
-The evaluation class uses the same wake-, wind- and power model as \citep{Kusiak}. The wake model used is the classical Jensen model \citep{Jensen}, which is used in almost every study of the wind farm layout optimization problem, as can be seen in table \textcolor{red}{Reference table from RW}. \\
+The evaluation class uses the same wake-, wind- and power model as \cite{Kusiak}. The wake model used is the classical Jensen model \citep{Jensen}, which is used in almost every study of the wind farm layout optimization problem, as can be seen in table \textcolor{red}{Reference table from RW}. \\
 
 \noindent Wind distribution is modeled using the Weibull distribution, a continuous probability distribution shown to model wind distribution quite well \citep{Justus}. The probability density function is shown in equation \ref{equation:Weibull}
 
@@ -99,19 +99,19 @@ f(x; c, k)  =
 
 \noindent The wind scenarios used in this thesis is therefore an specification of the shape- and scale parameters for every wind direction, where wind direction is partitioned into 24 different directions. Twenty wind scenarios are provided be GECCO 2015, ten which simply specify wind distribution, and ten that specify wind direction and locations of obstacles. \\
 
-\noindent The power curve used is also the same as used in \citep{Kusiak}, it is a linear function, shown in equation \ref{equation:Power Curv (API)}.
+\noindent The power curve used is also the same as used in \cite{Kusiak}, it is a linear function, shown in equation \ref{equation:Power Curv (API)},
 
 \begin{equation}
  f(v) = 
   \begin{cases} 
    0                                  & \text{if }     v < v_{cut-in} \\
    \lambda v + \eta           & \text{if }     v_{cut-in} \leq v \leq v_{rated} \\
-   P_{rated}                        & \text{if }     v_{cut-out} > v > v_{rated} \\
+   P_{rated}                        & \text{if }     v_{cut-out} > v > v_{rated}. \\
   \end{cases}
   \label{equation:Power Curv (API)}
 \end{equation}
 
-\noindent where $\lambda$ is the slope parameter, $v$ the wind speed, $\eta$ the intercept parameter, $P_{rated}$ is the fixed power output, and $v_{cut-in}$ is the cut-in speed; the minimum speed for which the turbine produces power, and $v_{cut-out}$ is the cut-out speed; the maximum wind speed for which the turbine is kept on. 
+\noindent Here $\lambda$ is the slope parameter, $v$ the wind speed, $\eta$ the intercept parameter, $P_{rated}$ is the fixed power output, and $v_{cut-in}$ is the cut-in speed; the minimum speed for which the turbine produces power, and $v_{cut-out}$ is the cut-out speed; the maximum wind speed for which the turbine is kept on. 
 
 
 \section{Test Simulation}

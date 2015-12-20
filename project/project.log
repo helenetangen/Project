@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  20 DEC 2015 01:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.6)  20 DEC 2015 01:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1405,50 +1405,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-[42 <./images/Binary Representation (API).png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 74--75
 
  []
 
-
+[42 <./images/Binary Representation (API).png>]
 Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
-[43] <images/"Weibull".png, id=206, 578.16pt x 433.62pt>
+<images/"Weibull".png, id=203, 578.16pt x 433.62pt>
 File: images/"Weibull".png Graphic file (type png)
-
-<use images/"Weibull".png>
+ <use images/"Weibull".png>
 Package pdftex.def Info: images/"Weibull".png used on input line 94.
 (pdftex.def)             Requested size: 173.44933pt x 130.087pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[44 <./images/Weibull.png>]
-<plots/"Fitness Scenario 1".png, id=211, 578.16pt x 433.62pt>
+[43] [44 <./images/Weibull.png>]
+<plots/"Fitness Scenario 1".png, id=211, 544.434pt x 430.4883pt>
 File: plots/"Fitness Scenario 1".png Graphic file (type png)
 
 <use plots/"Fitness Scenario 1".png>
 Package pdftex.def Info: plots/"Fitness Scenario 1".png used on input line 124.
 
-(pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
+(pdftex.def)             Requested size: 175.49881pt x 138.77065pt.
 
-<plots/"Fitness Scenario 1 Obstacles".png, id=212, 578.16pt x 433.62pt>
+<plots/"Fitness Scenario 1 Obstacles".png, id=212, 544.434pt x 430.4883pt>
 File: plots/"Fitness Scenario 1 Obstacles".png Graphic file (type png)
 
 <use plots/"Fitness Scenario 1 Obstacles".png>
 Package pdftex.def Info: plots/"Fitness Scenario 1 Obstacles".png used on input
  line 128.
-(pdftex.def)             Requested size: 175.49881pt x 131.62202pt.
+(pdftex.def)             Requested size: 175.49881pt x 138.77065pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[45 <./plots/Fitness Scenario 1.png> <./plots/Fitness Scenario 1 Obstacles.png>
-] <images/"Class Diagram DGA".png, id=218, 1946.27126pt x 730.73pt>
+<images/"Class Diagram DGA".png, id=213, 1946.27126pt x 730.73pt>
 File: images/"Class Diagram DGA".png Graphic file (type png)
 
 <use images/"Class Diagram DGA".png>
@@ -1456,11 +1458,16 @@ Package pdftex.def Info: images/"Class Diagram DGA".png used on input line 141.
 
 (pdftex.def)             Requested size: 389.24736pt x 146.1434pt.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
-
+[45 <./plots/Fitness Scenario 1.png> <./plots/Fitness Scenario 1 Obstacles.png>
+]
 Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
@@ -1500,7 +1507,7 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on project.pdf (50 pages, 1458515 bytes).
+Output written on project.pdf (50 pages, 1474759 bytes).
 PDF statistics:
  287 PDF objects out of 1000 (max. 8388607)
  165 compressed objects within 2 object streams
