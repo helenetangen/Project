@@ -1,10 +1,10 @@
 \chapter{Technical Description}
 
 
-Since this thesis is part of the Genetic and Evolutionary Computation Conference 2015, the conference has provided all the contestants with an API available on a GitHub. API's for different programming languages are provided, but the Java API will be used in this thesis. The API includes an implementation of a simple genetic algorithm, an evaluation method and ten different wind scenarios. This section will give an explanation of the provided API, display the results from a few test simulations (which will not be included in the final thesis), and discuss future work.
+Since this thesis is part of the Genetic and Evolutionary Computation Conference 2015, the conference has provided all the contestants with an API available on a GitHub. API's for different programming languages are provided, but the Java API will be used in this thesis. The API includes an implementation of a simple genetic algorithm, an evaluation method and ten different wind scenarios. Section \ref{section:api} give an explanation of the provided API, section \ref{section:testsimulation} display the results from a few test simulations (which will not be included in the final thesis), and section \ref{section:futurework} provides a discussion of future work.
 
 
-\section{Application User Interface (API)}
+\section{Application User Interface (API)}\label{section:api}
 A class diagram of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \ref{GA}. Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the ten wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
 
 
@@ -114,7 +114,7 @@ f(x; c, k)  =
 \noindent Here $\lambda$ is the slope parameter, $v$ the wind speed, $\eta$ the intercept parameter, $P_{rated}$ is the fixed power output, and $v_{cut-in}$ is the cut-in speed; the minimum speed for which the turbine produces power, and $v_{cut-out}$ is the cut-out speed; the maximum wind speed for which the turbine is kept on. 
 
 
-\section{Test Simulation}
+\section{Test Simulation}\label{section:testsimulation}
 In order to demonstrate that the provided environment works, two test runs were performed. Figure \ref{Test Plots} shows the resulting fitness plots when the provided genetic algorithm was ran once for scenario 1 without obstacles, and once for scenario 1 with obstacles, using default parameters. Each simulation was run for 50 generations, ten times, and the plots show the average fitness over these ten runs. As can be seen, the fitness decreases as the population becomes better and better solutions to the problem. The scenario without obstacles are simpler and converges therefore to a lower fitness value than the scenario with obstacles. Note that these simulations are only ran to show that the simulation works, and the results will not be included in the final thesis. 
 
 
@@ -133,7 +133,7 @@ In order to demonstrate that the provided environment works, two test runs were 
 \end{figure}
 
 
-\section{Future Work}
+\section{Future Work}\label{section:futurework}
 In order to investigate the goal statement and answer the research questions the provided genetic algorithm needs to be extended as shown in figure \ref{Class Diagram DGA}. The provided genetic algorithm will be used as a super class, which will be extended by seven different distributed genetic algorithms; the master-slave model, the Island model, the cellular model, three different hybrid models and the pool model, all described in detail in section \ref{subsection:dga}. Even though the hybrid models are drawn as one class in \ref{Class Diagram DGA} they will be implemented as three different classes. \\
 
 \begin{figure}[h!]

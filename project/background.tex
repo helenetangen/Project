@@ -1,7 +1,8 @@
 \chapter{Background}
+In this chapter the wind farm layout optimization problem will be defined and explained in section \ref{section:wflop}. Section \ref{section:ga} is partitioned into two subsections. In \ref{subsection:sga} the simple genetic algorithm is explain, and in \ref{subsection:dga} seven distributed genetic algorithms that will be implemented in this thesis are explained. 
 
 
-\section{The Wind Farm Layout Optimization Problem}
+\section{The Wind Farm Layout Optimization Problem}\label{section:wflop}
 The goal of this section is to give the reader an understanding of the wind farm layout optimization problem, and explain the key factors that makes the problem so complex.
 
 
@@ -36,7 +37,7 @@ An overview of the wind farm layout optimization problem is presented by \cite{S
 \noindent In summary, construction of a wind farm is a complicated, time consuming process. In order to even start the layout optimization consecutive important decisions has to be made. The layout optimization is dependent on turbine cost, terrain parameters, wind conditions and turbine positioning. Finding the optimal layout is a non-linear, complex problem that only sophisticated algorithms can solve.
 
 
-\section{Genetic Algorithms}
+\section{Genetic Algorithms}\label{section:ga}
 This section first explains the simple genetic algorithm (SGA), invented by \cite{Holland}. If the reader is familiar with the genetic algorithm he or she can skip the first part. If not otherwise stated, the first part is based on references \citep{Holland} and \citep{Goldberg}. Next, the seven different distributed genetic algorithms that will be implemented in this thesis are explained, these are all taken from \cite{Gong}.
 
 
@@ -215,3 +216,6 @@ Another population distributed model is called the pool model. In this model the
 
 
 \noindent A processor $p_1$ has $k$ positions in the pool for which it is responsible for as can be seen in figure \ref{Pool Model}, where the processor and the positions it is responsible for has the same color. The processor draws a population of individuals $i_1, i_2,...,i_k$ from random positions in the pool and performs genetic operations and fitness calculations on them. Next it writes each individual back to its corresponding position $1, 2,...,k$ in the the positions it is responsible for, given that their fitness is higher then the fitness of the individual currently occupying the position.\\
+
+
+\noindent In summary, this chapter has introduced the wind farm layout optimization and explained its complexity. A simple genetic algorithms has been introduced, with the selection-, crossover- and mutations types that will be used in this thesis. Last, the seven distributed models that will be implemented has been presented. The master-slave model is a simple genetic algorithm implemented using parallelism. The Island model, the cellular model, the three hybrid models and the pool model on the other hand are population distributed parallel algorithms that  will be compared against the simple genetic algorithm and each other in order to answer the research questions. 
