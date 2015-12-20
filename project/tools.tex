@@ -5,13 +5,13 @@ Since this thesis is part of the Genetic and Evolutionary Computation Conference
 
 
 \section{Application User Interface (API)}\label{section:api}
-A class diagram of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \ref{GA}. Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the ten wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
+A class diagram of the most important variables and methods of the provided API is displayed in figure \ref{Class Diagram}. As can be seen, the diagram consist of six classes. The GA.java class which contains a simple genetic algorithm, i.e. the whole process displayed in figure \ref{GA}. Layout evaluation is taken care of by the evaluation classes. WindFarmLayoutEvaluator.java is an abstract class, implemented by KusiakEvaluator.java and CompetitionEvaluator.java, where the last one connects the evaluation cost function of the competition to the online server of the competition. Next, the class called WindScenario.java is used to initialized one of the ten wind scenarios provided by the competition. Running the program is simple, it only requires initializing the wind scenario, layout evaluator, and the genetic algorithm, and then start the run() method in the GA.java class.
 
 
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[scale=0.3]{images/"Class Diagram"}
-\caption{Class diagram of the API provided by GECCO 2015.}
+\caption{Class diagram of the most important variables and methods from the API provided by GECCO 2015.}
 \label{Class Diagram}
 \end{center}
 \end{figure}
