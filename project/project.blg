@@ -6,15 +6,15 @@ Database file #1: mybib.bib
 Warning--empty journal in Razali
 You've used 31 entries,
             1935 wiz_defined-function locations,
-            658 strings with 9034 characters,
-and the built_in function-call counts, 11518 in all, are:
-= -- 1109
+            658 strings with 8843 characters,
+and the built_in function-call counts, 11508 in all, are:
+= -- 1106
 > -- 515
 < -- 20
 + -- 180
 - -- 172
-* -- 925
-:= -- 2064
+* -- 924
+:= -- 2063
 add.period$ -- 95
 call.type$ -- 31
 change.case$ -- 232
@@ -35,14 +35,14 @@ purify$ -- 240
 quote$ -- 0
 skip$ -- 340
 stack$ -- 0
-substring$ -- 648
+substring$ -- 644
 swap$ -- 52
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 174
 warning$ -- 1
-while$ -- 87
+while$ -- 86
 width$ -- 0
 write$ -- 387
 (There was 1 warning)
